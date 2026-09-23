@@ -1,0 +1,1256 @@
+{
+  "schema_version": 1,
+  "input_name": "こはるキッチンの開発日誌｜SWEBOK 全458話・構成案.xlsx",
+  "input_sha256": "256a0e957a7a3c47ac5647072fb65d3c049ee6c8f239ab2b327316f3d79b7ef5",
+  "sheet_count": 21,
+  "sheets": [
+    {
+      "name": "00_全体設計",
+      "state": "visible",
+      "record_count": 0,
+      "populated_cells": 70
+    },
+    {
+      "name": "20_会話を読む",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 4593
+    },
+    {
+      "name": "14_一話リーダー",
+      "state": "visible",
+      "record_count": 0,
+      "populated_cells": 14
+    },
+    {
+      "name": "17_少年漫画版台本",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 12855
+    },
+    {
+      "name": "18_連載アーク",
+      "state": "visible",
+      "record_count": 13,
+      "populated_cells": 171
+    },
+    {
+      "name": "19_キャラと伏線",
+      "state": "visible",
+      "record_count": 20,
+      "populated_cells": 255
+    },
+    {
+      "name": "11_読書ルート",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 4135
+    },
+    {
+      "name": "01_全話一覧",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 12856
+    },
+    {
+      "name": "12_原文対照",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 7347
+    },
+    {
+      "name": "02_単話と通読設計",
+      "state": "visible",
+      "record_count": 458,
+      "populated_cells": 6888
+    },
+    {
+      "name": "03_原書トピック",
+      "state": "visible",
+      "record_count": 728,
+      "populated_cells": 9956
+    },
+    {
+      "name": "04_章別集計",
+      "state": "visible",
+      "record_count": 19,
+      "populated_cells": 282
+    },
+    {
+      "name": "05_物語の時系列",
+      "state": "visible",
+      "record_count": 13,
+      "populated_cells": 142
+    },
+    {
+      "name": "06_登場人物",
+      "state": "visible",
+      "record_count": 10,
+      "populated_cells": 124
+    },
+    {
+      "name": "07_編集ルール",
+      "state": "visible",
+      "record_count": 42,
+      "populated_cells": 174
+    },
+    {
+      "name": "08_共通設定",
+      "state": "visible",
+      "record_count": 24,
+      "populated_cells": 152
+    },
+    {
+      "name": "09_出典と監査",
+      "state": "visible",
+      "record_count": 39,
+      "populated_cells": 242
+    },
+    {
+      "name": "10_話と項目の対応",
+      "state": "visible",
+      "record_count": 616,
+      "populated_cells": 7406
+    },
+    {
+      "name": "13_会話劇台本",
+      "state": "hidden",
+      "record_count": 458,
+      "populated_cells": 2995
+    },
+    {
+      "name": "15_連載構成",
+      "state": "hidden",
+      "record_count": 0,
+      "populated_cells": 10
+    },
+    {
+      "name": "16_人物と演出",
+      "state": "hidden",
+      "record_count": 0,
+      "populated_cells": 9
+    }
+  ],
+  "episode_count": 458,
+  "format_counts": {
+    "本編": 276,
+    "比較ノート": 39,
+    "技術ノート": 140,
+    "付録ガイド": 3
+  },
+  "parts": [
+    {
+      "部番号": 1,
+      "部": "発端・現場を知る",
+      "アーク": "腹ぺこの約束",
+      "開始順": 1,
+      "終了順": 8,
+      "先頭話ID": "REQ-01",
+      "末尾話ID": "ENG-08",
+      "話数": 8,
+      "形式別": {
+        "本編": 8
+      }
+    },
+    {
+      "部番号": 2,
+      "部": "投資と範囲を決める",
+      "アーク": "三千万円の挑戦状",
+      "開始順": 9,
+      "終了順": 69,
+      "先頭話ID": "REQ-05",
+      "末尾話ID": "ECO-29",
+      "話数": 61,
+      "形式別": {
+        "本編": 51,
+        "比較ノート": 2,
+        "技術ノート": 8
+      }
+    },
+    {
+      "部番号": 3,
+      "部": "予約の約束を形にする",
+      "アーク": "紙の店で、迎え撃て",
+      "開始順": 70,
+      "終了順": 139,
+      "先頭話ID": "REQ-10",
+      "末尾話ID": "ENG-14",
+      "話数": 70,
+      "形式別": {
+        "本編": 45,
+        "技術ノート": 22,
+        "比較ノート": 3
+      }
+    },
+    {
+      "部番号": 4,
+      "部": "小さく作って確かめる",
+      "アーク": "注文一周リレー",
+      "開始順": 140,
+      "終了順": 217,
+      "先頭話ID": "CMP-02",
+      "末尾話ID": "PRO-24",
+      "話数": 78,
+      "形式別": {
+        "技術ノート": 34,
+        "本編": 44
+      }
+    },
+    {
+      "部番号": 5,
+      "部": "公開前に危険を見つける",
+      "アーク": "赤い札の向こう側",
+      "開始順": 218,
+      "終了順": 288,
+      "先頭話ID": "REQ-26",
+      "末尾話ID": "CFG-15",
+      "話数": 71,
+      "形式別": {
+        "技術ノート": 31,
+        "本編": 39,
+        "比較ノート": 1
+      }
+    },
+    {
+      "部番号": 6,
+      "部": "2店舗で使ってみる",
+      "アーク": "ふたつの開店ベル",
+      "開始順": 289,
+      "終了順": 303,
+      "先頭話ID": "OPS-15",
+      "末尾話ID": "CMP-35",
+      "話数": 15,
+      "形式別": {
+        "本編": 15
+      }
+    },
+    {
+      "部番号": 7,
+      "部": "全店展開と初めての障害",
+      "アーク": "八つの正午",
+      "開始順": 304,
+      "終了順": 323,
+      "先頭話ID": "OPS-17",
+      "末尾話ID": "ENG-24",
+      "話数": 20,
+      "形式別": {
+        "本編": 8,
+        "技術ノート": 12
+      }
+    },
+    {
+      "部番号": 8,
+      "部": "変え続ける仕組み",
+      "アーク": "置き去りの札を拾え",
+      "開始順": 324,
+      "終了順": 358,
+      "先頭話ID": "REQ-19",
+      "末尾話ID": "ENG-25",
+      "話数": 35,
+      "形式別": {
+        "本編": 33,
+        "技術ノート": 2
+      }
+    },
+    {
+      "部番号": 9,
+      "部": "数字で改善を確かめる",
+      "アーク": "勝ったはずの、その先で",
+      "開始順": 359,
+      "終了順": 400,
+      "先頭話ID": "REQ-24",
+      "末尾話ID": "ENG-21",
+      "話数": 42,
+      "形式別": {
+        "本編": 19,
+        "技術ノート": 21,
+        "比較ノート": 2
+      }
+    },
+    {
+      "部番号": 10,
+      "部": "広げる前に調べる",
+      "アーク": "こはるの外へ",
+      "開始順": 401,
+      "終了順": 441,
+      "先頭話ID": "CMP-03",
+      "末尾話ID": "ENG-26",
+      "話数": 41,
+      "形式別": {
+        "比較ノート": 29,
+        "技術ノート": 10,
+        "本編": 2
+      }
+    },
+    {
+      "部番号": 11,
+      "部": "次の担当者へ渡す",
+      "アーク": "藤堂のいない席",
+      "開始順": 442,
+      "終了順": 449,
+      "先頭話ID": "MNT-11",
+      "末尾話ID": "ENG-22",
+      "話数": 8,
+      "形式別": {
+        "本編": 6,
+        "比較ノート": 2
+      }
+    },
+    {
+      "部番号": 12,
+      "部": "終わらせるもの、続けるもの",
+      "アーク": "ただいま、十二時二十分",
+      "開始順": 450,
+      "終了順": 455,
+      "先頭話ID": "ECO-15",
+      "末尾話ID": "ENG-01",
+      "話数": 6,
+      "形式別": {
+        "本編": 6
+      }
+    },
+    {
+      "部番号": 13,
+      "部": "付録・調べ方ガイド",
+      "アーク": "閉店後の三つの扉",
+      "開始順": 456,
+      "終了順": 458,
+      "先頭話ID": "APP-01",
+      "末尾話ID": "APP-03",
+      "話数": 3,
+      "形式別": {
+        "付録ガイド": 3
+      }
+    }
+  ],
+  "formula_count": 24354,
+  "recomputed_cells": [
+    {
+      "sheet": "17_少年漫画版台本",
+      "cell": "Z6",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "17_少年漫画版台本",
+      "cell": "AA463",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G29",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G30",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G31",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G32",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G38",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G46",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G55",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G57",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G71",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G72",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G76",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G77",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G89",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G96",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G102",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G104",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G112",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G113",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G117",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G121",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G123",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G124",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G129",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G130",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G131",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G132",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G133",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G135",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G136",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G137",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G138",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G139",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G141",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G142",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G143",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G145",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G146",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G147",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G148",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G149",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G150",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G151",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G152",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G153",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G157",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G158",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G159",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G160",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G161",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G162",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G165",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G167",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G169",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G170",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G171",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G172",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G173",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G174",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G184",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G188",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G189",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G190",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G191",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G193",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G196",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G197",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G198",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G203",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G208",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G223",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G224",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G227",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G228",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G229",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G230",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G231",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G232",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G233",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G239",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G240",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G242",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G243",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G248",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G256",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G259",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G265",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G266",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G267",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G268",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G269",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G270",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G272",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G273",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G275",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G277",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G279",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G280",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G281",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G282",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G284",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G288",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G316",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G317",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G318",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G319",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G320",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G321",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G322",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G323",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G324",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G325",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G326",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G328",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G334",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G341",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G366",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G367",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G368",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G369",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G370",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G371",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G372",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G373",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G374",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G379",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G381",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G382",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G383",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G384",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G388",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G392",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G398",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G399",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G400",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G401",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G402",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G403",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G404",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G406",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G407",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G408",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G409",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G410",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G411",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G413",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G414",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G415",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G416",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G417",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G418",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G419",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G420",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G421",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G422",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G423",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G424",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G425",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G426",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G427",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G428",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G429",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G430",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G431",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G432",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G433",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G434",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G435",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G436",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G437",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G438",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G439",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G440",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G441",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G442",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G444",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G445",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G446",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G449",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G453",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G461",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G462",
+      "reason": "missing_cache"
+    },
+    {
+      "sheet": "11_読書ルート",
+      "cell": "G463",
+      "reason": "missing_cache"
+    }
+  ],
+  "topic_count": 728,
+  "leaf_topic_count": 591,
+  "mapping_count": 616,
+  "reader_selection": 10,
+  "needs_additional_source": [
+    "MTH-19"
+  ]
+}

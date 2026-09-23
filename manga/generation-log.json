@@ -1,0 +1,280 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-09-23",
+  "total_initial_generations": 9,
+  "total_regenerations": 11,
+  "post_processing": "None. Selected generated PNGs copied byte-for-byte.",
+  "character_reference": "manga/00-character-sheet.png",
+  "assets": [
+    {
+      "file": "manga/00-character-sheet.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-294a98fb-21fc-430f-b65b-ac6ccde582f7.png",
+      "regenerations": 0,
+      "prompts": [
+        "manga/prompts/00-character-sheet.txt"
+      ],
+      "visually_reviewed": true,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8973e0aaf4978a9c56652ba2c5224a05ab2fbbc9b414abc1c744e4c5f4e1a387",
+      "bytes": 1743623
+    },
+    {
+      "file": "manga/pages/01-REQ-01.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cde1-004f-7893-b9ff-fb66834d78ba/exec-b166c365-2247-40b9-a9e4-c8c05215708d.png",
+      "regenerations": 1,
+      "panels": 6,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/01-REQ-01.txt",
+        "manga/prompts/01-REQ-01-revision1.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-c863b8b2-6f79-4a50-9724-ae14f7a0dd46.png"
+      ],
+      "width": 1052,
+      "height": 1495,
+      "sha256": "26dad58926afc5bda219ad2cfd24f469b8584ddd83b3d29f43218a1b02e85c3c",
+      "bytes": 2587438,
+      "revision_history": [
+        {
+          "date": "2026-09-23",
+          "reason": "store_brand_correction",
+          "previous_asset": {
+            "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-c863b8b2-6f79-4a50-9724-ae14f7a0dd46.png",
+            "sha256": "022a93654fa0b723f8a793a39210d7441bd703c1bc686a8c78c557495e3b673f",
+            "width": 1052,
+            "height": 1494,
+            "bytes": 2770004
+          },
+          "prompt": "manga/prompts/01-REQ-01-revision1.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "edit_target_source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-c863b8b2-6f79-4a50-9724-ae14f7a0dd46.png",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cde1-004f-7893-b9ff-fb66834d78ba/exec-b166c365-2247-40b9-a9e4-c8c05215708d.png",
+          "review": "3か所ののれんと右下コマの黒板の「あおば弁当」を「こはるキッチン 青葉店」に修正。6コマ・構図・タイトル・セリフ・人物・12:20・空袋から弁当入り袋への流れを目視確認。"
+        }
+      ]
+    },
+    {
+      "file": "manga/pages/02-CON-11.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-64a4ebfd-35c6-4d86-8f81-3136d1123f67.png",
+      "regenerations": 1,
+      "panels": 5,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/02-CON-11.txt",
+        "manga/prompts/02-CON-11-revision1.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-f62a8e68-c85e-458d-84d7-63a79381c2c7.png"
+      ],
+      "width": 1054,
+      "height": 1493,
+      "sha256": "45b98d7de29037f70904b29281e6dea0d193d4f906b067832c775612d09595b7",
+      "bytes": 2392538
+    },
+    {
+      "file": "manga/pages/03-PRO-24.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-264ce1c1-44d3-4bf8-8b84-df4fb5155d8f.png",
+      "regenerations": 2,
+      "panels": 6,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/03-PRO-24.txt",
+        "manga/prompts/03-PRO-24-revision1.txt",
+        "manga/prompts/03-PRO-24-revision2.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-74188ff4-f7d6-4b61-96a3-b2da9764193e.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-254a43cc-efd4-4698-86ec-d8f5def2e130.png"
+      ],
+      "width": 1052,
+      "height": 1495,
+      "sha256": "154736941e6ff8b92e2a92348e37e9ab84a4738e4acb092e6471037f35cf77df",
+      "bytes": 2370988
+    },
+    {
+      "file": "manga/pages/04-TST-40.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-14d518c2-b514-42da-8db3-0b2ea2f726e5.png",
+      "regenerations": 1,
+      "panels": 5,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/04-TST-40.txt",
+        "manga/prompts/04-TST-40-revision1.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-95c99460-edf4-476f-8321-74fcf466049c.png"
+      ],
+      "width": 1054,
+      "height": 1493,
+      "sha256": "2b93dd78516ba615a37135fda3f464357f5113bea64d60e9fdca795b97c1a9c1",
+      "bytes": 2469504
+    },
+    {
+      "file": "manga/pages/05-OPS-15.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-2bede8bd-298c-4063-9e71-61837acabfe8.png",
+      "regenerations": 1,
+      "panels": 6,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/05-OPS-15.txt",
+        "manga/prompts/05-OPS-15-revision1.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-c3f39e99-f08c-4a40-88fb-f901d9fe3910.png"
+      ],
+      "width": 1056,
+      "height": 1489,
+      "sha256": "77c541232a4a55df8aa7651271c8c55c83dff4e15a696b4a19e0fe4afc802a58",
+      "bytes": 2388542
+    },
+    {
+      "file": "manga/pages/06-OPS-17.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-1b5a3bb8-e182-4d8c-be16-8c65b3fdd4ed.png",
+      "regenerations": 2,
+      "panels": 4,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/06-OPS-17.txt",
+        "manga/prompts/06-OPS-17-revision1.txt",
+        "manga/prompts/06-OPS-17-revision2.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-8e213668-1c39-4b21-b96c-a992f1659c11.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-4471f0eb-0fd2-4ebc-992f-79d16e26d1f5.png"
+      ],
+      "width": 1054,
+      "height": 1493,
+      "sha256": "296ebfa0b6044566fefab2e4310def4e65416771219c3d5d19c7cc476b85ee7e",
+      "bytes": 2270636
+    },
+    {
+      "file": "manga/pages/07-ECO-15.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-fe42aff2-6f26-4281-bf72-44f53b2ee50b.png",
+      "regenerations": 1,
+      "panels": 5,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/07-ECO-15.txt",
+        "manga/prompts/07-ECO-15-revision1.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-55e97455-84de-4aa3-bb93-da8403534c9e.png"
+      ],
+      "width": 1053,
+      "height": 1494,
+      "sha256": "0974fa7316b147645a52952a5603f4422f0e85bd3e634384a76db8cd4ef28996",
+      "bytes": 2350995
+    },
+    {
+      "file": "manga/pages/08-ENG-01.png",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cde1-004f-7893-b9ff-fb66834d78ba/exec-3e01d2ca-be07-4992-bb71-f435dbf60bec.png",
+      "regenerations": 2,
+      "panels": 6,
+      "visually_reviewed": true,
+      "prompts": [
+        "manga/prompts/08-ENG-01.txt",
+        "manga/prompts/08-ENG-01-revision1.txt",
+        "manga/prompts/08-ENG-01-revision2.txt"
+      ],
+      "discarded_sources": [
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-d2145110-5273-47e1-a7e1-2f39b34141fb.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-2d44b40c-5934-429f-a622-e8b96358c07e.png"
+      ],
+      "width": 1054,
+      "height": 1492,
+      "sha256": "e0800428ad228ec9f288a420b3295a153cddcedf904c06c656e13c7969928e12",
+      "bytes": 2396349,
+      "revision_history": [
+        {
+          "date": "2026-09-23",
+          "reason": "store_brand_correction",
+          "previous_asset": {
+            "source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-2d44b40c-5934-429f-a622-e8b96358c07e.png",
+            "sha256": "29e7962dee6c41e8cbb46b264afaa62de368d67160ddd407142221de7483e70b",
+            "width": 1054,
+            "height": 1492,
+            "bytes": 2441095
+          },
+          "prompt": "manga/prompts/08-ENG-01-revision2.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/08-ENG-01.png"
+          ],
+          "edit_target_source": "/home/t-tsuji/.codex/generated_images/01a0cdc1-e52a-7492-aa0b-d24610a4ad01/exec-2d44b40c-5934-429f-a622-e8b96358c07e.png",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cde1-004f-7893-b9ff-fb66834d78ba/exec-3e01d2ca-be07-4992-bb71-f435dbf60bec.png",
+          "review": "右上と左下の黒板の屋号に見える「青葉」を「こはるキッチン 青葉店」に修正。6コマ・構図・タイトル・セリフ・人物・12:20・一袋一箱・注文番号126/127の維持を目視確認。"
+        }
+      ]
+    }
+  ],
+  "store_brand_review": {
+    "date": "2026-09-23",
+    "setting_reference": "docs/story-bible.md",
+    "brand": "こはるキッチン",
+    "branch": "青葉店",
+    "regenerations_this_revision": 2,
+    "pages": [
+      {
+        "file": "manga/pages/01-REQ-01.png",
+        "visually_reviewed": true,
+        "action": "regenerated",
+        "result": "3か所ののれんと右下コマの黒板の「あおば弁当」を「こはるキッチン 青葉店」に修正。6コマ・構図・タイトル・セリフ・人物・12:20・空袋から弁当入り袋への流れを目視確認。",
+        "sha256": "26dad58926afc5bda219ad2cfd24f469b8584ddd83b3d29f43218a1b02e85c3c"
+      },
+      {
+        "file": "manga/pages/02-CON-11.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "事務所の場面。別屋号の看板・ブランド表示なし。",
+        "sha256": "45b98d7de29037f70904b29281e6dea0d193d4f906b067832c775612d09595b7"
+      },
+      {
+        "file": "manga/pages/03-PRO-24.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "事務所での試験場面。袋の「お弁当 SAMPLE」は一般的な試料表示で、別屋号ではない。",
+        "sha256": "154736941e6ff8b92e2a92348e37e9ab84a4738e4acb092e6471037f35cf77df"
+      },
+      {
+        "file": "manga/pages/04-TST-40.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "事務所の場面。背景標語に別屋号なし。",
+        "sha256": "2b93dd78516ba615a37135fda3f464357f5113bea64d60e9fdca795b97c1a9c1"
+      },
+      {
+        "file": "manga/pages/05-OPS-15.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "「青葉店」「駅前店」は設定どおりの支店表示。別屋号なし。",
+        "sha256": "77c541232a4a55df8aa7651271c8c55c83dff4e15a696b4a19e0fe4afc802a58"
+      },
+      {
+        "file": "manga/pages/06-OPS-17.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "「青葉店」と8店舗の一覧は支店表示。青葉・駅前以外の仮の支店名は既存の制作上の補間で、別チェーンの屋号ではない。",
+        "sha256": "296ebfa0b6044566fefab2e4310def4e65416771219c3d5d19c7cc476b85ee7e"
+      },
+      {
+        "file": "manga/pages/07-ECO-15.png",
+        "visually_reviewed": true,
+        "action": "retained",
+        "result": "扉の「青葉店 / Aoba」は支店表示。別屋号なし。",
+        "sha256": "0974fa7316b147645a52952a5603f4422f0e85bd3e634384a76db8cd4ef28996"
+      },
+      {
+        "file": "manga/pages/08-ENG-01.png",
+        "visually_reviewed": true,
+        "action": "regenerated",
+        "result": "右上と左下の黒板の屋号に見える「青葉」を「こはるキッチン 青葉店」に修正。6コマ・構図・タイトル・セリフ・人物・12:20・一袋一箱・注文番号126/127の維持を目視確認。",
+        "sha256": "e0800428ad228ec9f288a420b3295a153cddcedf904c06c656e13c7969928e12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+.workspace/
+
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# 原文・本教材訳を全件保持するローカル中間データ。公開用索引は別出力。
+data/sheets/
+data/episodes.json
