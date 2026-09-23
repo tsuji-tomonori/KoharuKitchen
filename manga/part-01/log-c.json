@@ -1,0 +1,142 @@
+{
+  "task": "c",
+  "date": "2026-09-23",
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "destination": "manga/part-01/000-cover.png",
+  "prompt": "manga/part-01/prompts/000-cover.txt",
+  "final_prompt": "manga/part-01/prompts/000-cover-revision2.txt",
+  "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-d062d721-0c5e-4df8-a89f-6c2460d6520c.png",
+  "policy": {
+    "image_processing": "image_genのみで生成・修正。採用PNGは元画像から同一バイトでコピー。Pillow等による描画・合成・文字追加・リサイズ・色変換なし。",
+    "scope": "docs/art/README.mdと軽微な美術文書の整合修正、000-cover.png、担当プロンプト、log-c.json。本文NNN画像とlog-a/log-bは編集していない。",
+    "git_commit": false,
+    "max_regenerations_per_image": 2,
+    "verification": "画像全試行を表示して目視。PNGヘッダー、ハッシュ、相対リンクの検査。実寸印刷校正・厳密な色測定・OCRによる細字の全数照合は未実施。"
+  },
+  "sources": [
+    "README.md",
+    "docs/story-bible.md",
+    "docs/character-design.md",
+    "docs/art/world.md",
+    "docs/art/characters.md",
+    "docs/art/locations.md",
+    "docs/art/props.md",
+    "docs/art/style-guide.md",
+    "script/part-01.md"
+  ],
+  "art_images_visually_reviewed": 26,
+  "document_changes": [
+    {
+      "path": "docs/art/README.md",
+      "change": "5文書の目次、相対パスのサムネイル、設定優先順位、修正済み4項目と画像に残る差8項目、扉と台本への導線。"
+    },
+    {
+      "path": "docs/art/locations.md",
+      "change": "季節をworldの美術補足表へ統一。台本の具体指定を優先。"
+    },
+    {
+      "path": "docs/art/world.md",
+      "change": "間取りの美術基準をlocationsへ明示。キービジュアル・季節ボードと用途を区別。"
+    },
+    {
+      "path": "docs/art/style-guide.md",
+      "change": "カラーの許可範囲に人物カラー設定とカラー指定の扉・表紙を明記。"
+    },
+    {
+      "path": "docs/art/props.md",
+      "change": "電話の事務机の有線親機、カウンターのコードレス子機と充電台、オフィスの卓上電話と携帯端末を区別。"
+    }
+  ],
+  "generation_requests": 4,
+  "preflight_errors": [
+    {
+      "request": 1,
+      "error": "referenced_image_paths must contain at most 5 paths; reduced 6 references to 5 before generation (no image returned).",
+      "image_created": false,
+      "resolution": "入力上限の5枚へ整理。カラー設定の色は目視確認し、プロンプトの配色に記載。"
+    }
+  ],
+  "initial_generations": 1,
+  "regenerations": 2,
+  "successful_imagegen_calls": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "regeneration": 0,
+      "prompt": "manga/part-01/prompts/000-cover.txt",
+      "references": [
+        "art/key-visual/01-key-visual-color.png",
+        "art/characters/01-aoi-haruka.png",
+        "art/characters/07-sakamoto-makoto.png",
+        "art/characters/08-saeki-maho.png",
+        "art/backgrounds/02-aoba-counter.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-091af834-cd5c-4a4b-a552-1d0e79b7d5bb.png",
+      "selected": false,
+      "visual_review": "タイトル二種、三人、12:20、空袋、透明蓋付き焼き魚一箱、白ピン2本と左腕時計を確認。看板と題字の一枚葉を二枚葉へ修正対象。",
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "sha256": "91dcb5cc7d907bea0d96832a7f22bdae902128280e5ee4a7f0f0f64503a63333"
+    },
+    {
+      "attempt": 2,
+      "regeneration": 1,
+      "prompt": "manga/part-01/prompts/000-cover-revision1.txt",
+      "references": [
+        "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-091af834-cd5c-4a4b-a552-1d0e79b7d5bb.png",
+        "art/props/02-bento-and-uniform.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-b0befa3c-46c0-4400-97ff-13c547051a38.png",
+      "selected": false,
+      "visual_review": "二枚葉にそろったが、作品タイトルの助詞「の」が脱落。不採用。",
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "sha256": "ac69c4a838209adcb16693acd7e25637e93073e8cdd634b651cc481d11f761ef"
+    },
+    {
+      "attempt": 3,
+      "regeneration": 2,
+      "prompt": "manga/part-01/prompts/000-cover-revision2.txt",
+      "references": [
+        "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-b0befa3c-46c0-4400-97ff-13c547051a38.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-8977-7bc0-9888-34a88ab9cd30/exec-d062d721-0c5e-4df8-a89f-6c2460d6520c.png",
+      "selected": true,
+      "visual_review": "「こはるキッチンの開発日誌」「第1部 腹ぺこの約束」の全文、のれんの屋号と青葉店、二枚葉を確認。遥・坂本・佐伯各一人、成人の体格、遥本人右の白ピン2本、佐伯の左腕時計、服の基調色、棚の右上の壁時計12:20、空の無地袋、焼き魚切り身一箱、閉じたPCを確認。",
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "sha256": "78a6a145b0b4c37ac539df094cd431a194ef239d8a24d1adb97bb439ea039426"
+    }
+  ],
+  "remaining_issues": [
+    "遥の見学証は「見学」を判読できるが、下段の所属・氏名の細字に生成の字形の揺れがある。",
+    "坂本の名札は役職・姓が二段で、横長一行の小道具基準と文字組が異なる。",
+    "カウンターの電話は背景参照由来の有線表現が残り、文書で整理したコードレス子機と一致しない。",
+    "題材は第1話の袋詰め前だが、表紙として三人を見せる構図。台帳は閉じ、坂本の表情はやや笑顔、弁当は袋の左上にある。本文のコマ4の厳密な再現ではない。",
+    "背景の「厨房」「事務」、台帳の「ご予約台帳」は生成で残った場所・物品ラベル。新しい事件・注文番号・時期は示さない。"
+  ],
+  "dimensions_px": [
+    1055,
+    1491
+  ],
+  "sha256": "78a6a145b0b4c37ac539df094cd431a194ef239d8a24d1adb97bb439ea039426",
+  "bytes": 2154022,
+  "copy_verified_identical": true,
+  "validation": {
+    "all_attempts_visually_reviewed": true,
+    "relative_links_checked": 139,
+    "broken_file_links": 0,
+    "png_signature_verified": true,
+    "portrait_ratio_verified": true,
+    "prompt_files_exist": true,
+    "reference_files_exist": true,
+    "source_copy_identical": true
+  }
+}

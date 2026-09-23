@@ -1,0 +1,10 @@
+Use case: illustration-story
+Asset type: 日本の少年漫画の人物設定画。横長、高精細、白地。
+Input images: Image 1 is manga/00-character-sheet.png, the authoritative identity and wardrobe reference. Image 2 is manga/pages/01-REQ-01.png, linework and screentone style reference only. These are references, not edit targets. Preserve the specified person's exact identity.
+Style: 日本の少年漫画。明瞭な白黒線画、繊細なスクリーントーン、自然な成人の身体。全員成人。特定の既存作品・作家を模倣しない。カラー禁止。
+Composition: One person only, repeated in a professional wide character model sheet. Left half: THREE full body orthographic views at equal scale, front, true profile, rear, aligned feet, head to shoes fully visible. Right half: SIX clearly separated head-and-shoulder portraits arranged 3 columns x 2 rows, in order neutral / troubled / serious / smiling / frustrated / relieved. Lower right: separate closeups of the listed belongings. Keep generous whitespace and readable detail. No extra portraits.
+Text: Only the single Japanese full name at top and any specifically permitted surname on the existing uniform badge. No other text: no English, digits, panel labels, expression captions, measurements, logos, watermarks, signatures, text on prop screens or papers. All papers and screens blank.
+Constraints: All views and expressions have the exact same face, hair, clothing and identifying details. Express setbacks without malice, mockery, intimidating villain faces, glowing glasses, monstrous distortions, infantilization or sexualization. Natural hands and functional modest work clothes.
+
+Subject and identity: Image 1 TOP ROW SECOND. Tall slim adult man late thirties, 182 cm. Elongated oval face with a narrow rounded chin, calm almond eyes, thin nearly straight eyebrows. Side-parted black hair with slightly long front fringe, thin RECTANGULAR glasses. White open-collar shirt sleeves rolled up, dark buttoned waistcoat, dark slacks, black dress shoes. No tie. Props: thin document file open to blank sheets, pen. Expression six: calm, hesitant hand near chin, attentive concentration, modest open smile, quietly rueful frustration, relieved softness. Never omniscient or ominous glasses.
+Text (verbatim): "藤堂直人"

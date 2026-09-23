@@ -1,0 +1,397 @@
+{
+  "owner": "characters",
+  "document": "docs/art/characters.md",
+  "generation_method": "組み込み image_gen。画像加工なし。出力元から原寸コピー。",
+  "authority": [
+    "README.md",
+    "docs/story-bible.md",
+    "docs/character-design.md",
+    "manga/00-character-sheet.png",
+    "manga/pages/01-REQ-01.png"
+  ],
+  "image_count": 12,
+  "total_generation_calls": 17,
+  "total_regenerations": 5,
+  "max_regenerations_per_image": 2,
+  "status": "completed",
+  "image_text_policy": "氏名のみ。店長名札は設定画では姓のみを表示し、漫画本文では既存設定の店長名札に従う。",
+  "scope_note": "担当文書・画像・ログと、共通ルールで指定された担当画像のプロンプトのみ作成。",
+  "records": [
+    {
+      "image": "art/characters/00-height-lineup.png",
+      "tool": "image_gen",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/00-height-lineup.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-048290bc-ddc5-4373-a87d-80b5651b0d99.png",
+          "visual_review": "10人・名前・床線は確認。遥のピンの左右が逆。",
+          "selected": false
+        },
+        {
+          "attempt": 1,
+          "prompt": "art/prompts/00-height-lineup-retry-1.txt",
+          "reference_images": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-048290bc-ddc5-4373-a87d-80b5651b0d99.png",
+            "manga/00-character-sheet.png",
+            "art/characters/01-aoi-haruka.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-efc63d88-4ea0-4a2a-8a1e-588fb20e6c99.png",
+          "visual_review": "10人、順序、氏名、全身、床線、遥の右こめかみのピンを確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-efc63d88-4ea0-4a2a-8a1e-588fb20e6c99.png",
+      "visual_review_completed": true,
+      "remaining_issues": [
+        "細かな身長差は近似。特に1〜数cmの差は本文の身長表を優先する。"
+      ],
+      "notes": [],
+      "dimensions": {
+        "width": 2100,
+        "height": 749
+      }
+    },
+    {
+      "image": "art/characters/00-color-reference.png",
+      "tool": "image_gen",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/00-color-reference.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-004e77d2-35b8-4733-935e-e9517b877927.png",
+          "visual_review": "10人と衣装色は確認。遥のピンの位置と小野寺の髪色にずれ。",
+          "selected": false
+        },
+        {
+          "attempt": 1,
+          "prompt": "art/prompts/00-color-reference-retry-1.txt",
+          "reference_images": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-004e77d2-35b8-4733-935e-e9517b877927.png",
+            "manga/00-character-sheet.png",
+            "art/characters/01-aoi-haruka.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-f44d4001-5ca5-4e2f-93e4-c8968ee00504.png",
+          "visual_review": "遥の右こめかみの白いピン2本、小野寺の黒髪、両店長の濃紺、遥の生成り、森の赤ペンを確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-f44d4001-5ca5-4e2f-93e4-c8968ee00504.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/01-aoi-haruka.png",
+      "tool": "image_gen",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/01-aoi-haruka.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-7055002d-cacf-4472-b185-16352d56f375.png",
+          "visual_review": "一部の正面顔・表情で白いピン2本が本人の左こめかみに逆転。",
+          "selected": false
+        },
+        {
+          "attempt": 1,
+          "prompt": "art/prompts/01-aoi-haruka-retry-1.txt",
+          "reference_images": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-7055002d-cacf-4472-b185-16352d56f375.png",
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-3a2cf087-18b4-4c64-a02e-43abbf7f3084.png",
+          "visual_review": "正面全身・6表情のピンが本人の右こめかみ。三面図・表情6種・小道具を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-3a2cf087-18b4-4c64-a02e-43abbf7f3084.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/02-todo-naoto.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/02-todo-naoto.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-226851e3-041c-43c0-acc2-5421c2ff46e8.png",
+          "visual_review": "三面図・表情6種・小道具。細い長方形眼鏡、横分け、袖まくりとベスト、穏やかな成人の顔を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-226851e3-041c-43c0-acc2-5421c2ff46e8.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/03-mizuno-maki.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/03-mizuno-maki.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-960fd1b9-97f0-49a5-852d-b6e68b58bcbe.png",
+          "visual_review": "三面図・表情6種・小道具。長いポニーテール、明色ジャケット、黒いインナー、眼鏡なしを確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-960fd1b9-97f0-49a5-852d-b6e68b58bcbe.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/04-mori-risa.png",
+      "tool": "image_gen",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/04-mori-risa.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-674689cd-38cd-44d3-9e1c-f18f0c66e38b.png",
+          "visual_review": "暗い背景で名前が読みにくい。試験札が白い。",
+          "selected": false
+        },
+        {
+          "attempt": 1,
+          "prompt": "art/prompts/04-mori-risa-retry-1.txt",
+          "reference_images": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-674689cd-38cd-44d3-9e1c-f18f0c66e38b.png",
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-928bed94-57c1-4660-a6a4-874196af6b83.png",
+          "visual_review": "白地に修正。丸眼鏡、直線ボブ、6表情、白帯2本のペン、トーンの札を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-928bed94-57c1-4660-a6a4-874196af6b83.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/05-aihara-kenta.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/05-aihara-kenta.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-7326c0e8-62b2-4c90-8e19-02e64a127f3f.png",
+          "visual_review": "三面図・表情6種・小道具。広い肩、パーカー、短髪、薄い無精髭を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-7326c0e8-62b2-4c90-8e19-02e64a127f3f.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/06-onodera-megumi.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/06-onodera-megumi.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-729f2b64-e7da-41c3-b83d-4d13bdb84a5c.png",
+          "visual_review": "三面図・表情6種・小道具。低いシニヨン、丸い耳飾り、濃い膝丈スーツと白ブラウスを確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-729f2b64-e7da-41c3-b83d-4d13bdb84a5c.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/07-sakamoto-makoto.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/07-sakamoto-makoto.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-725acc28-a2be-4c7a-9af3-0adba7680c6b.png",
+          "visual_review": "三面図・表情6種・小道具。角刈り、大きい肩と腕、白ポロ、暗い胸当てエプロン、左胸の坂本名札、厚い古台帳を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-725acc28-a2be-4c7a-9af3-0adba7680c6b.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/08-saeki-maho.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/08-saeki-maho.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-d40f67c8-4561-466f-b169-cb1787311f41.png",
+          "visual_review": "三面図・表情6種・小道具。肩までの髪、膝下スカート、肩掛けバッグ、左手の時計、拡大時計の12:20を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-d40f67c8-4561-466f-b169-cb1787311f41.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/09-mashiba-ren.png",
+      "tool": "image_gen",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/09-mashiba-ren.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-10cab150-2d2c-4032-ba70-368367bcd8d2.png",
+          "visual_review": "三面図・表情6種・小道具。明るい束状短髪、黒い丸首Tシャツと開いた白シャツ、PC・試験札・湯飲みを確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-10cab150-2d2c-4032-ba70-368367bcd8d2.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [
+        "携行PCには参照画像由来の小さなリンゴ状のマークが残る。拡大小道具のPCは無地。"
+      ],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "image": "art/characters/10-tachibana-chinatsu.png",
+      "tool": "image_gen",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 0,
+          "prompt": "art/prompts/10-tachibana-chinatsu.txt",
+          "reference_images": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-4a5a7f24-22ef-4479-b3cc-bd083b407219.png",
+          "visual_review": "暗い背景で名前が読みにくい。",
+          "selected": false
+        },
+        {
+          "attempt": 1,
+          "prompt": "art/prompts/10-tachibana-chinatsu-retry-1.txt",
+          "reference_images": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-4a5a7f24-22ef-4479-b3cc-bd083b407219.png",
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-00875535-fe6e-4493-aa7d-c8e2f2bf2b06.png",
+          "visual_review": "白地に修正。短髪、結び布、共通制服、名札、三面図・6表情・小道具を確認。",
+          "selected": true
+        }
+      ],
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a71-7e43-b6ff-220146fa3a7d/exec-00875535-fe6e-4493-aa7d-c8e2f2bf2b06.png",
+      "visual_review_completed": true,
+      "remaining_issues": [],
+      "notes": [],
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    }
+  ]
+}

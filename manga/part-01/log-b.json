@@ -1,0 +1,245 @@
+{
+  "scope": "第1部005〜008（担当B）",
+  "tool": "built-in image_gen",
+  "date": "2026-09-23",
+  "rules": {
+    "image_processing": "なし。生成PNGのコピーと寸法確認のみ",
+    "git_commit": false,
+    "max_regenerations_per_page": 3,
+    "reference_limit": 5
+  },
+  "reference_strategy": "個人設定画を目視確認し、実画像入力は共通人物設定・既存漫画・art/characters集合設定・該当背景・小道具の5枚。上限内で全出演者を含む。",
+  "tool_errors": [
+    {
+      "episode": "005-PRO-20",
+      "stage": "before_generation",
+      "error": "referenced_image_paths must contain at most 5 paths",
+      "resolution": "8枚から5枚へ整理。生成なし、再生成回数に含めない。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "005-PRO-20",
+      "name": "manga/part-01/names/005-PRO-20.md",
+      "adopted": "manga/part-01/005-PRO-20.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+        "/home/t-tsuji/project/KoharuKitchen/manga/pages/01-REQ-01.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/03-aoba-kitchen.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+      ],
+      "regenerations": 1,
+      "attempts": [
+        {
+          "prompt": "manga/part-01/prompts/005-PRO-20.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-1dd19fac-45a1-4799-a385-fb37be664ac2.png",
+          "adopted": false,
+          "inspection": "コマ5で台帳二冊、コマ1で前話のメモと新図が一体化。再生成。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/005-PRO-20-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-44811cd6-c8d4-4601-aa2e-16853d7ef70b.png",
+          "adopted": true,
+          "inspection": "人物4人の顔・衣装・遥の白ピン、右→左の5コマ、全台詞可読、番号なし一枚札、同じ容器、最終コマの台帳一冊を目視確認。悪役演出なし。時計は画角外。"
+        }
+      ],
+      "script_adjustments": "5コマ維持。長台詞をネームで分割。",
+      "remaining_issues": [
+        "コマ1・3・4・5の一部で、指定した短い吹き出しが連結または一つにまとまり約15字を超える。文字は可読。",
+        "コマ5の小野寺は画角外。台詞・図と札・台帳の受渡しは保持。",
+        "コマ4で遥の白ピン2本が本人の左側に見える（正面基準の左右差）。"
+      ],
+      "dimensions": [
+        1052,
+        1494
+      ],
+      "sha256": "be031d18f6af7928e617f51b3b217d92321e39a7fb1455e8adee829c6741f637"
+    },
+    {
+      "id": "006-ECO-05",
+      "name": "manga/part-01/names/006-ECO-05.md",
+      "adopted": "manga/part-01/006-ECO-05.png",
+      "dimensions": [
+        1052,
+        1494
+      ],
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+        "/home/t-tsuji/project/KoharuKitchen/manga/pages/01-REQ-01.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+      ],
+      "regenerations": 2,
+      "attempts": [
+        {
+          "prompt": "manga/part-01/prompts/006-ECO-05.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-096fc8b3-9c75-4788-9d00-6266ce075df9.png",
+          "adopted": false,
+          "inspection": "コマ1の図が欠落、弁当が棚とカウンターに二箱。再生成。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/006-ECO-05-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-6a2a2b7c-dcbe-47f1-ae26-b66cd4318df0.png",
+          "adopted": false,
+          "inspection": "図と一箱に修正。コマ5の控えが資料に届かず、コマ1の白札が立て看板状。対象編集へ。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/006-ECO-05-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-2ea5d4de-11c5-4f3d-8de9-5f88f9201a71.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-6a2a2b7c-dcbe-47f1-ae26-b66cd4318df0.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+          ],
+          "adopted": true,
+          "inspection": "人物同一性・5コマの右→左・主要台詞可読・最後の一箱・白い受話器・控えを資料に差し込む動作・机に残る台帳一冊を確認。休日表を指す手と和やかな表情、時刻数値追加なし。"
+        }
+      ],
+      "script_adjustments": "5コマ維持。長台詞をネームで分割。常連の無名の外見を補完。",
+      "remaining_issues": [
+        "コマ2・4・5の一部で短い吹き出しの分割指定が一つにまとまり約15字を超えるが、台詞は可読。",
+        "コマ1・3の背景は厨房口・事務口の位置を同時に確認できる構図になっていない。",
+        "コマ5の資料フォルダが設定より厚めに見える。机の擦れた台帳とは別物として描かれている。"
+      ],
+      "sha256": "b3874db004a16934f5680f07e803ac574b3617d943f4b34fc79c3cb30dfb4be4"
+    },
+    {
+      "id": "007-ECO-06",
+      "name": "manga/part-01/names/007-ECO-06.md",
+      "adopted": "manga/part-01/007-ECO-06.png",
+      "dimensions": [
+        1052,
+        1495
+      ],
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+        "/home/t-tsuji/project/KoharuKitchen/manga/pages/01-REQ-01.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/06-honbu-meeting.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/props/02-bento-and-uniform.png"
+      ],
+      "regenerations": 2,
+      "attempts": [
+        {
+          "prompt": "manga/part-01/prompts/007-ECO-06.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-3221fd9f-de96-4e7d-9b6d-c7592ea6c14a.png",
+          "adopted": false,
+          "inspection": "人物・3箱・目標の変更は良好。コマ4で余分な閉じたPC一台。コマ5の紙をノートへ挟む形も修正対象。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/007-ECO-06-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-ee556039-a233-4844-8fb5-d5aeb0005c28.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-3221fd9f-de96-4e7d-9b6d-c7592ea6c14a.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/06-honbu-meeting.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/02-bento-and-uniform.png"
+          ],
+          "adopted": false,
+          "inspection": "PC重複とノートを修正したが、コマ2の削除前の「受付無制限」が消えたため再修正。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/007-ECO-06-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-62f67971-d516-45e7-9c7a-efcd67145b0e.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-ee556039-a233-4844-8fb5-d5aeb0005c28.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/06-honbu-meeting.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/02-bento-and-uniform.png"
+          ],
+          "adopted": true,
+          "inspection": "5コマ右→左。3人の顔と衣装、2本のピン、エプロンなしの遥、調査控え、受付無制限の削除前後、3箱の昼食、囲んだ渡す場所の紙と観察ノート、箸の受渡しを確認。悪役演出なし。"
+        }
+      ],
+      "script_adjustments": "5コマ維持。台詞の分割と利益の発言の同義短縮。",
+      "remaining_issues": [
+        "コマ1・3・5の一部で短い吹き出し分割がまとまり、約15字を超える。文字は可読。",
+        "コマ3で「予約件数を倍に」の取消線が、台本のコマ4より一コマ早く描かれている。",
+        "コマ5の中央の魚弁当は切り身の輪郭がやや丸魚に近い。献立は台本では未指定。",
+        "コマ4・5で遥の白ピン2本が本人の左側に見える（正面基準の左右差）。"
+      ],
+      "sha256": "66f36ad8a3ff4b63b691eb27c2a8a6c786bda197798e4ea3c76f05c0ae738480"
+    },
+    {
+      "id": "008-ENG-08",
+      "name": "manga/part-01/names/008-ENG-08.md",
+      "adopted": "manga/part-01/008-ENG-08.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+        "/home/t-tsuji/project/KoharuKitchen/manga/pages/01-REQ-01.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/characters/00-height-lineup.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/02-aoba-counter.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+      ],
+      "regenerations": 3,
+      "attempts": [
+        {
+          "prompt": "manga/part-01/prompts/008-ENG-08.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-e598760f-22e9-4874-b7e9-914864bf45e4.png",
+          "adopted": false,
+          "inspection": "6コマ・三本と四本の指・資料束は良好。コマ1・2の森に白ピン混入、コマ3の筆記具がペン状、コマ4のメモに未指定記述。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/008-ENG-08-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-a2e28959-17b3-4778-8ca8-9b48bc081592.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-e598760f-22e9-4874-b7e9-914864bf45e4.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+          ],
+          "adopted": false,
+          "inspection": "森の白ピンと記録文を修正。遥のコマ3・4でもピンが消えたため復元を指示。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/008-ENG-08-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-12337806-1566-461b-8448-cbbc257bc39b.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-a2e28959-17b3-4778-8ca8-9b48bc081592.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+          ],
+          "adopted": false,
+          "inspection": "遥のピンが復元されたが左右が逆。横顔では正しい右側が隠れることを踏まえ再修正。黒鉛筆の木の先端は改善。"
+        },
+        {
+          "prompt": "manga/part-01/prompts/008-ENG-08-rev3.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-dca70954-3104-4007-8b38-7567e39062d6.png",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce47-896c-7383-af4e-db95ad1786dc/exec-12337806-1566-461b-8448-cbbc257bc39b.png",
+            "/home/t-tsuji/project/KoharuKitchen/manga/00-character-sheet.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/props/01-props-sheet.png"
+          ],
+          "adopted": true,
+          "inspection": "森はヘアピンなし・丸眼鏡・濃色服。横顔の遥は右側のピンが隠れる形、コマ5の正面ピンは読者から左へ修正。コマ4は左右差が残る。6コマ右→左→横長2段、台詞可読、3時刻の観察メモ、三本指と四本指、クリップで束ねる資料、黒鉛筆、床テープと本番端末なし、悪役演出なしを確認。ユーザー指定の再生成上限3回で終了。"
+        }
+      ],
+      "script_adjustments": "6コマ維持、4段組へ配置。台詞を分割、一部を同義短縮。時刻12:05・12:12・12:18は台本未指定部分の昼の作画補完。",
+      "remaining_issues": [
+        "コマ4の遥の白ピン2本は本人の左側に見える。コマ5は修正済み。",
+        "コマ1・2の森の見学証の会社名・役割の細字に字形の揺れが残る。",
+        "コマ1・2・4・5・6の一部で台詞の分割指定が一つにまとまり、約15字を超えるが主要台詞は可読。",
+        "コマ6で三種の見出しが資料束の表紙にまとめて表示され、個々の紙の見出しをずらして見せる構図とは差がある。紙束と一個のクリップは明瞭。",
+        "コマ6では三人の顔全体より手元を大きく見せる構図になった。"
+      ],
+      "dimensions": [
+        1052,
+        1495
+      ],
+      "sha256": "4f8559beae027179d03f0ff38bd352edd2413ef559438071b1a1677e079cd411"
+    }
+  ],
+  "status": "completed_with_documented_minor_issues",
+  "verification": "採用4枚はPNGシグネチャ・寸法・生成元とのバイト一致・全プロンプトと参照画像の存在・再生成上限を確認。画像の再エンコードなし。"
+}

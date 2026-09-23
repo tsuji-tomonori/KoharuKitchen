@@ -1,0 +1,231 @@
+{
+  "担当": "world",
+  "date": "2026-09-23",
+  "tool": "built-in image_gen",
+  "source_directory": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33",
+  "policy": {
+    "image_processing": "image_genのみで描画と修正。生成元をそのままコピー。外部ツールによる描画・合成・文字追加・色変換・リサイズなし。",
+    "verification": "全試行の生成画像を表示して目視。PNGヘッダーから寸法確認、コピーのバイト一致、相対リンクとJSONを検査。ピクセル色値の測定や印刷実寸の校正は行っていない。",
+    "max_regenerations_per_image": 2,
+    "git_commit": false
+  },
+  "sources": [
+    "README.md",
+    "docs/story-bible.md",
+    "docs/character-design.md",
+    "script/README.md",
+    "docs/writing-plan.md",
+    "manga/00-character-sheet.png",
+    "manga/pages/01-REQ-01.png",
+    "manga/README.md",
+    "script/part-01.md",
+    "script/part-02.md",
+    "script/part-04.md",
+    "script/part-08.md",
+    "script/part-12.md"
+  ],
+  "art_supplements": [
+    "暦月は1か月目=4月の美術補足。台本の経過月を優先し、西暦・曜日は固定しない。",
+    "札の枠、店の補助配色、献立例、包装意匠は美術補足。人物の正本は変更しない。",
+    "キービジュアルの作品タイトルは依頼指定による短いラベル制限の例外。"
+  ],
+  "documents": [
+    "docs/art/world.md",
+    "docs/art/props.md",
+    "docs/art/style-guide.md"
+  ],
+  "assets": [
+    {
+      "path": "art/props/01-props-sheet.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "regenerations": 2,
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-edf61b3d-d0fc-4a0e-a09e-36adaf8704f5.png",
+      "copy_verified_identical": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "regeneration": 0,
+          "prompt": "art/prompts/01-props-sheet.txt",
+          "references": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-bdfcb693-c5ce-4458-a3b8-fe292ea8514c.png",
+          "selected": false,
+          "visual_review": "初回を目視。白帯が3本に見えるため不採用。床テープの幅、帳面の微細文字、名札も修正対象。"
+        },
+        {
+          "attempt": 2,
+          "regeneration": 1,
+          "prompt": "art/prompts/01-props-sheet-revision1.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-bdfcb693-c5ce-4458-a3b8-fe292ea8514c.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-9c07988b-e98f-4890-b84a-554b036da28b.png",
+          "selected": false,
+          "visual_review": "修正1を目視。白帯2本、12:20、空袋と一箱入り、台帳の使用と保管、椅子2種、白黒の素材差を確認。"
+        },
+        {
+          "attempt": 3,
+          "regeneration": 2,
+          "prompt": "art/prompts/01-props-sheet-revision2.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-9c07988b-e98f-4890-b84a-554b036da28b.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-edf61b3d-d0fc-4a0e-a09e-36adaf8704f5.png",
+          "selected": true,
+          "visual_review": "修正2を目視。電話ボタンの数字状模様を除去。白帯2本・12:20・袋の中身・ラベルと白黒の構成を再確認。"
+        }
+      ],
+      "remaining_issues": [
+        "弁当の魚は小道具図では頭付きの姿、弁当・制服図では切り身と、形の統一に揺れが残る。今後の焼き魚の形は弁当・制服図とprops.mdのフィレを基準にする。",
+        "トーン濃度は目視の近似であり、文書の目標値を厳密に再現した測定資料ではない。"
+      ]
+    },
+    {
+      "path": "art/props/02-bento-and-uniform.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "regenerations": 2,
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-5f818491-0686-4bcd-a374-544df66c71b4.png",
+      "copy_verified_identical": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "regeneration": 0,
+          "prompt": "art/prompts/02-bento-and-uniform.txt",
+          "references": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-62bbfcd1-08b3-49a8-9013-c34ef1692a87.png",
+          "selected": false,
+          "visual_review": "初回を目視。食品に着色が混入、店長名札の役職欠落、遥の髪留め左右が設定と逆。"
+        },
+        {
+          "attempt": 2,
+          "regeneration": 1,
+          "prompt": "art/prompts/02-bento-and-uniform-revision1.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-62bbfcd1-08b3-49a8-9013-c34ef1692a87.png",
+            "manga/00-character-sheet.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-638237ff-32ac-4708-af80-a1abc338c3a7.png",
+          "selected": false,
+          "visual_review": "修正1を目視。白黒と名札の役職は改善。遥の髪留めが逆側のまま、名札が縦寄りのため再修正。"
+        },
+        {
+          "attempt": 3,
+          "regeneration": 2,
+          "prompt": "art/prompts/02-bento-and-uniform-revision2.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-638237ff-32ac-4708-af80-a1abc338c3a7.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-5f818491-0686-4bcd-a374-544df66c71b4.png",
+          "selected": true,
+          "visual_review": "修正2を目視。髪留めは本人右の2本、名札は横長で役職と姓が判読可。全3人は成人で体格・制服を識別。包装は一袋一箱。"
+        }
+      ],
+      "remaining_issues": [
+        "包装の小さな屋号は縮小時に判読しにくい。献立と紙帯・箸袋の意匠は今回の作画例で、全話に固定しない。"
+      ]
+    },
+    {
+      "path": "art/key-visual/01-key-visual-color.png",
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "regenerations": 1,
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-52a6aaf8-d943-4c2b-b03c-ef4d4fd8dc60.png",
+      "copy_verified_identical": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "regeneration": 0,
+          "prompt": "art/prompts/01-key-visual-color.txt",
+          "references": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-2b3b2730-d644-442e-a4ef-5b3905e79c1b.png",
+          "selected": false,
+          "visual_review": "初回を目視。10人の識別、タイトル、12:20は確認。遥に余分な髪留め、見学証の表記違い、店長名札の役職欠落を修正対象。"
+        },
+        {
+          "attempt": 2,
+          "regeneration": 1,
+          "prompt": "art/prompts/01-key-visual-color-revision1.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-2b3b2730-d644-442e-a4ef-5b3905e79c1b.png",
+            "manga/00-character-sheet.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-52a6aaf8-d943-4c2b-b03c-ef4d4fd8dc60.png",
+          "selected": true,
+          "visual_review": "修正1を目視。主要10人の顔・髪・体格と服を照合、遥の白ピン2本と見学証、店長名札、時計、佐伯の左腕時計、一箱入り袋、作品タイトルを確認。"
+        }
+      ],
+      "remaining_issues": [
+        "店長名札は役職と姓を二段組にした小さな矩形。制服設定画の横一行とは文字組が異なる。",
+        "背景・二枚葉の意匠の細部には設定画との揺れがある。集合した宣伝用構図であり、特定話の出演を追加するものではない。"
+      ]
+    },
+    {
+      "path": "art/key-visual/02-seasons.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "regenerations": 1,
+      "selected_source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-a76844c7-13b8-47e5-ab70-546edfcc25ca.png",
+      "copy_verified_identical": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "regeneration": 0,
+          "prompt": "art/prompts/02-seasons.txt",
+          "references": [
+            "manga/00-character-sheet.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-d2dc4d89-84de-4bbe-8740-e916d078287e.png",
+          "selected": false,
+          "visual_review": "初回を目視。人物が大きく駅前店スタッフの取り違え、オフィス6席、未設定の駅名などがあるため不採用。"
+        },
+        {
+          "attempt": 2,
+          "regeneration": 1,
+          "prompt": "art/prompts/02-seasons-revision1.txt",
+          "references": [
+            "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-d2dc4d89-84de-4bbe-8740-e916d078287e.png",
+            "manga/pages/01-REQ-01.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a3e-7c10-8fcf-420ad14b2a33/exec-a76844c7-13b8-47e5-ab70-546edfcc25ca.png",
+          "selected": true,
+          "visual_review": "修正1を目視。人物は遠景の成人シルエット。春の青葉店→秋の駅前店→冬の灯台ソフト→翌年晩夏の青葉店の順。オフィスは5人分の作業席。未設定駅名を除去。"
+        }
+      ],
+      "remaining_issues": [
+        "人物は小さくなったが、プロンプトの各コマ高さ10%以下という目安より大きいものがある。人物の個体識別には用いない。",
+        "二つの青葉店のガラス区画・植木等に細部の揺れがあり、同一間取りの精密図としては使わない。",
+        "四場面は十八か月から選んだ代表景。抜ける季節はworld.mdの全12部対応表で補う。"
+      ]
+    }
+  ],
+  "initial_generations": 4,
+  "regenerations_total": 6,
+  "total_imagegen_calls": 10,
+  "validation": {
+    "relative_links_checked": 30,
+    "broken_local_file_links": 0,
+    "selected_png_copies_identical": 4,
+    "prompt_files_for_this_task": 10,
+    "all_images_visually_reviewed": true,
+    "max_regenerations_per_image_observed": 2
+  }
+}

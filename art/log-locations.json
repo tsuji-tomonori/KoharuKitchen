@@ -1,0 +1,337 @@
+{
+  "task": "locations",
+  "tool": "built-in image_gen",
+  "document": "docs/art/locations.md",
+  "style": "日本の少年漫画・白黒線画＋スクリーントーン",
+  "people": "全画像人物なし",
+  "reference_files": [
+    "README.md",
+    "docs/story-bible.md",
+    "docs/character-design.md",
+    "manga/00-character-sheet.png",
+    "manga/pages/01-REQ-01.png",
+    "script/README.md",
+    "script/part-01.md",
+    "script/part-02.md",
+    "script/part-03.md",
+    "script/part-04.md",
+    "script/part-05.md",
+    "script/part-06.md",
+    "script/part-07.md",
+    "script/part-08.md",
+    "script/part-09.md",
+    "script/part-10.md",
+    "script/part-11.md",
+    "script/part-12.md",
+    "script/part-13.md"
+  ],
+  "image_processing": "image_genで生成・編集。生成元からコピー。プログラムによる描画・合成・画像加工なし。寸法はPNGヘッダのみ読み取り。",
+  "scope_note": "共通ルールに従い担当画像のプロンプトのみart/promptsへ保存。他担当ファイル・art/generation-log.json・gitは変更しない。",
+  "temporary_branch_names": [
+    "桜丘店",
+    "ひばり店",
+    "川辺店",
+    "西町店",
+    "南町店",
+    "橋本店"
+  ],
+  "summary": {
+    "final_images": 10,
+    "initial_generations": 10,
+    "regenerations": 5,
+    "total_image_tool_calls": 15,
+    "max_regenerations_per_image": 2,
+    "remaining_major_issues": [],
+    "usage_limits": [
+      "画像は各節に記した基準時期の背景。別時刻・導入段階には再生成が必要。",
+      "方角・建物配置・6店の仮名は美術補完。中央調理拠点の現地登場話は未設定。"
+    ]
+  },
+  "images": [
+    {
+      "id": "00-town-map",
+      "output_file": "art/backgrounds/00-town-map.png",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/00-town-map.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-16a7769b-2efd-42cc-b092-43d30da98aff.png",
+          "selected": false
+        },
+        {
+          "attempt": 2,
+          "kind": "image_gen_edit",
+          "prompt_file": "art/prompts/00-town-map-retry-01.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-2f3066f4-408b-4238-af96-2df2db258068.png",
+          "selected": true,
+          "reason": "周辺の暗いグラデーションと英字Nが条件不適合",
+          "referenced_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-16a7769b-2efd-42cc-b092-43d30da98aff.png"
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "8店と本部・灯台ソフト・中央調理拠点・駅の12ラベルを目視確認。初回の暗い周縁と英字方位表示を修正。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "01-aoba-exterior",
+      "output_file": "art/backgrounds/01-aoba-exterior.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/01-aoba-exterior.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-9c879cfb-e75e-4e44-a573-54ba6040de65.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。左入口、右窓、こはるキッチン／青葉店の看板、葉の印、昼の商店街を確認。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "02-aoba-counter",
+      "output_file": "art/backgrounds/02-aoba-counter.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/02-aoba-counter.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-ab042543-5f5f-4284-97d9-b3b172db57da.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。厨房口→受取棚→時計→事務口の配置、12:20、予約札・レジ・台帳・電話を確認。初月につきテープと本番予約端末なし。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "03-aoba-kitchen",
+      "output_file": "art/backgrounds/03-aoba-kitchen.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/03-aoba-kitchen.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-9af3cd92-8c8a-4c57-aaa4-67465004170c.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。左洗い場、中央仕込み台、奥加熱設備、右冷蔵庫、空容器とスタッフ通路を確認。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "04-aoba-back-office",
+      "output_file": "art/backgrounds/04-aoba-back-office.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/04-aoba-back-office.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-01ddd780-7891-49ff-ad09-fa4fe666d6d0.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。左電話、中央台帳、右伝票、椅子、保管棚を確認。台帳はカウンター画と同じ一冊の別場面。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "05-ekimae",
+      "output_file": "art/backgrounds/05-ekimae.png",
+      "regeneration_count": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/05-ekimae.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-2e81d09e-8760-4f20-9f61-244e5714895a.png",
+          "selected": false
+        },
+        {
+          "attempt": 2,
+          "kind": "image_gen_edit",
+          "prompt_file": "art/prompts/05-ekimae-retry-01.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-5124be54-71f1-4dcf-8960-8f63ef73b62e.png",
+          "selected": false,
+          "reason": "空に青み、時計数字、受取棚配置を修正",
+          "referenced_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-2e81d09e-8760-4f20-9f61-244e5714895a.png"
+        },
+        {
+          "attempt": 3,
+          "kind": "image_gen_edit",
+          "prompt_file": "art/prompts/05-ekimae-retry-02.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-d830d313-71bb-4f02-8505-845c415357de.png",
+          "selected": true,
+          "reason": "初回修正で残った時計数字を除去",
+          "referenced_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-5124be54-71f1-4dcf-8960-8f63ef73b62e.png"
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。二分構図で駅脇の狭い店と左客通路・右カウンターを確認。青い空と時計数字を修正、2回目で無数字の8時を確認。受取棚はレジのすぐ奥の右壁。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "06-honbu-meeting",
+      "output_file": "art/backgrounds/06-honbu-meeting.png",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/06-honbu-meeting.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-bfeea388-39cd-41c1-893a-15dcb1aeef61.png",
+          "selected": false
+        },
+        {
+          "attempt": 2,
+          "kind": "image_gen_edit",
+          "prompt_file": "art/prompts/06-honbu-meeting-retry-01.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-1a0b87d9-ded3-417f-aa6c-7dab1a5c9160.png",
+          "selected": true,
+          "reason": "空の青み、時計数字、椅子数9→8を修正",
+          "referenced_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-bfeea388-39cd-41c1-893a-15dcb1aeef61.png"
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。本部ラベル、白板、机・窓・電話を確認。空の色と時計数字、9脚だった椅子を修正。採用画像は8脚・14時。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "07-chuo-chori",
+      "output_file": "art/backgrounds/07-chuo-chori.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/07-chuo-chori.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-b348966c-783f-4a8e-bbf1-de5f9e170574.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。中央調理拠点・搬入・出荷の短いラベル、仕切り、調理・包装設備を確認。本番ソフト連携機器は描かない。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "08-todai-office",
+      "output_file": "art/backgrounds/08-todai-office.png",
+      "regeneration_count": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/08-todai-office.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-7501017e-db0a-4017-8fcb-6a2db11678e9.png",
+          "selected": true
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。中央4席と東壁運用席、別の共有机、白板と試験札を確認。常勤6人目の席を作っていない。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "09-todai-operations",
+      "output_file": "art/backgrounds/09-todai-operations.png",
+      "regeneration_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "image_gen_generate",
+          "prompt_file": "art/prompts/09-todai-operations.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-2915b479-be5c-435b-bf8b-9fec29b28aaa.png",
+          "selected": false
+        },
+        {
+          "attempt": 2,
+          "kind": "image_gen_edit",
+          "prompt_file": "art/prompts/09-todai-operations-retry-01.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-c784a0c1-98cd-44bf-8fda-4a7cb9e4e66d.png",
+          "selected": true,
+          "reason": "空の青み、グラフ細字、店舗表示枠12→8を修正",
+          "referenced_image": "/home/t-tsuji/.codex/generated_images/01a0ce28-5a68-7c52-8a01-d60859373178/exec-2915b479-be5c-435b-bf8b-9fec29b28aaa.png"
+        }
+      ],
+      "inspection": {
+        "method": "生成結果を画像として全件目視確認",
+        "status": "accepted",
+        "notes": "人物なし。相原の席、左電話・補助席、右手順ファイル、正午の時計を確認。空の色・画面細字・12枠を修正し、採用画像は各画面4枠で計8枠。",
+        "remaining_issues": []
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    }
+  ]
+}

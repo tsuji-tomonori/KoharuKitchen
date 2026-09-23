@@ -1,5 +1,8 @@
 # 代表場面の漫画（フェーズ3）
 
+- [第1部 連載版](part-01/README.md)：扉と全8話を順に読む。
+- [美術設定](../docs/art/README.md)：人物・舞台・小道具・画風の資料。
+
 主要10人の設定画1枚と、物語の転換点を選んだ漫画8ページ。すべて組み込み `image_gen` で生成し、同ツールによる修正後のPNGを `~/.codex/generated_images/` からコピーした。外部描画・文字の後付け・画像合成は行っていない。
 
 人物設定は [character-design.md](../docs/character-design.md)。各ページの初回生成・修正の両方に設定画を参照画像として渡した。原作は [README](../README.md)、[story-bible](../docs/story-bible.md) と完成台本。開始時は `script/chunks/` を参照し、統合後に該当する `script/part-*.md` の漫画本文を再確認した。`script/` は編集していない。

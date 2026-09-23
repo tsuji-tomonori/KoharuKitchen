@@ -1,0 +1,5 @@
+Use case: identity-preserve. Image 1 is the color cast board edit target. Image 2 is original identity reference, Image 3 is Haruka corrected black-and-white sheet for hairpin placement only. Preserve the entire two-row layout, all ten distinct adult people, all names, all outfits and other colors.
+Make two targeted corrections:
+1) Top left Haruka: exactly TWO parallel WHITE hairpins on VIEWER LEFT side of her forehead/temple (HER ANATOMICAL RIGHT), matching Image 3. Remove every white pin from viewer-right temple. Same face and short nape ponytail.
+2) Bottom left Onodera: hair should be natural BLACK #252426 with neutral black/gray highlights, not brown. Preserve low round chignon and side swept bangs, earrings and face.
+Keep Mori's visible pen RED with clip and exactly TWO small WHITE shaft bands. Keep Sakamoto gray temples, both managers' matching dark NAVY aprons #202E46. Do not change any other identity, face, skin, clothes, props, names or layout. White background and crisp manga ink with flat color fills. Only existing Japanese names, no new text.
