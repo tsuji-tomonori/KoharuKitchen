@@ -1,0 +1,537 @@
+{
+  "task": "連載版第1話 P38〜P46 作画",
+  "generator": "built-in image_gen",
+  "image_processing": "生成画像の無加工コピーのみ。描画・合成・文字後付け・リサイズなし。",
+  "limits": "初回を含め1ページ最大3回として運用",
+  "total_pages": 9,
+  "total_generations": 23,
+  "total_regenerations": 14,
+  "inspection": "全候補の生成PNGを画面で目視確認。印刷実寸校正は未実施。条件付き採用は残る不具合を明記。",
+  "pages": {
+    "P38": {
+      "adopted": "P38.txt",
+      "regenerations": 0,
+      "checks": {
+        "expression": "合格：閉口して味わう安堵。汗・赤面なし。",
+        "characters": "合格：佐伯の内巻き髪・衣装。左腕は奥で時計の確認不可。",
+        "layout": "合格：上下2コマ、下段大アップ。上段は指定30%よりやや大きい約35%。",
+        "text": "合格：無言、追加台詞なし。",
+        "style": "条件付き合格：白場・線・黒ベタを保持。細い髪の白線と背景の細密ハッチングが残る。",
+        "props": "合格：12:22に対応する2針、両足接地、残るから揚げ弁当。下段に時計なし。"
+      },
+      "remaining_issues": [
+        "上段の高さが目安30%より約5ポイント大きい。",
+        "髪の細い白線と背景ハッチングがやや多い。"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-4ca9c936-7e02-4276-a207-57a75b60b4a1.png",
+      "output": "manga/serial/ch01/pages/P38.png",
+      "generation_count": 1,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/08-saeki-maho.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "P38",
+          "prompt": "manga/serial/ch01/prompts/P38.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-4ca9c936-7e02-4276-a207-57a75b60b4a1.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "34119ff01616277ef87e9f05d940b0dc0cb34afd6bc5f31d14ad8b957e1ca3df",
+      "byte_identical_to_source": true
+    },
+    "P39": {
+      "adopted": "P39-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-78f52384-82a4-4e8d-9784-724e07dabf87.png",
+      "checks": {
+        "expression": "合格：遥の歯を見せる歓喜、上段の集中を分離。坂本は休日表へ視線。",
+        "characters": "合格：遥の右ピン2本、白エプロン、坂本の左胸名札。",
+        "layout": "条件付き合格：2コマ、下段約70%で指定75%より小さいが笑顔が最大。",
+        "text": "合格：指定台詞2つ、尾の話者、パサ。",
+        "style": "条件付き合格：太細・黒ベタ・白場。髪の細い白線が残る。",
+        "props": "合格：13:00の2針、翌日札と束、休日表。"
+      },
+      "remaining_issues": [
+        "上段約30%で目安25%との差が残る。",
+        "坂本の下段の小さな笑みが弱い。",
+        "髪の細い白線が残る。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P39.txt",
+          "reason": "頬の赤面線、上段過大、坂本が頭ごと休日表を向く。"
+        },
+        {
+          "prompt": "P39-rev1.txt",
+          "reason": "上段遥のピンの左右とコマ比率が不適合。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P39.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "P39",
+          "prompt": "manga/serial/ch01/prompts/P39.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-c0d0a4c8-0081-46e5-99a9-ed3fd0f37ee3.png",
+          "selected": false
+        },
+        {
+          "version": "P39-rev1",
+          "prompt": "manga/serial/ch01/prompts/P39-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-d9ad95b1-df29-4cfe-a59e-1202278f7c35.png",
+          "selected": false
+        },
+        {
+          "version": "P39-rev2",
+          "prompt": "manga/serial/ch01/prompts/P39-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-78f52384-82a4-4e8d-9784-724e07dabf87.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "0369caf5c87ce639541058845c7a334251f6630343f8d80d290f8bd82976c240",
+      "byte_identical_to_source": true
+    },
+    "P40": {
+      "adopted": "P40-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-3dba9c16-542f-4d82-8515-c98085c16f4c.png",
+      "checks": {
+        "expression": "合格：遥の内眉と非笑顔、坂本の静かな閉口。",
+        "characters": "合格：ピンの左右を修正、白エプロンと坂本名札。名札は小さめ。",
+        "layout": "条件付き合格：上下2コマ、上約29%・下約71%。",
+        "text": "合格：3台詞を正しい話者と読む順で配置。",
+        "style": "条件付き合格：Eの線と白場。遥の薄い頬線が残る。",
+        "props": "合格：日曜決勝の案内を折らず壁へ戻す。時計なし。"
+      },
+      "remaining_issues": [
+        "上段が目安25%より約4ポイント大きい。",
+        "遥の薄い頬線が残る。",
+        "事務机周辺の配置が参照より簡略化されている。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P40.txt",
+          "reason": "遥のピン左右逆。"
+        },
+        {
+          "prompt": "P40-rev1.txt",
+          "reason": "13:00以降の場面に12時台の時計を追加。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P40.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "P40",
+          "prompt": "manga/serial/ch01/prompts/P40.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-b762ed33-7da6-4c9a-90b2-649e10f09d3c.png",
+          "selected": false
+        },
+        {
+          "version": "P40-rev1",
+          "prompt": "manga/serial/ch01/prompts/P40-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-7b543389-5a59-4c4d-93e9-d759dd3f1659.png",
+          "selected": false
+        },
+        {
+          "version": "P40-rev2",
+          "prompt": "manga/serial/ch01/prompts/P40-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-3dba9c16-542f-4d82-8515-c98085c16f4c.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "c4733fbad7c18e5c6a5fb04a315dcb4f2c4a3a360b95f84675b32c4ec73a4d8d",
+      "byte_identical_to_source": true
+    },
+    "P41": {
+      "adopted": "P41-rev1.txt",
+      "regenerations": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-9c58ce58-2c9f-4e3f-a45a-732c7a5f5c94.png",
+      "checks": {
+        "expression": "合格：安堵、食事の膨らむ頬、乾いた冗談、接続後の集中。",
+        "characters": "合格：ピンと名札、衣装、画面内水野。",
+        "layout": "合格：4コマ、上・中右・中左・下の読み順。最終コマの左右を修正。",
+        "text": "合格：4台詞、ささやきと通話縁、ピ。",
+        "style": "条件付き合格：黒ベタと線。上段の薄い頬線と髪の白線が残る。",
+        "props": "条件付き合格：弁当・余り紙・鞄・通話先のお茶。接続する手でなく顎に手を添える姿に変化。"
+      },
+      "remaining_issues": [
+        "最終コマは接続操作でなく顎に手を添える姿。",
+        "遥のエプロン胸に指定外の筆記具状の線が残る。",
+        "薄い頬線・髪の白線が一部残る。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P41.txt",
+          "reason": "ピン左右、最終コマ左右、茶が通話画面外。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P41.png",
+      "generation_count": 2,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/03-mizuno-maki.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png"
+      ],
+      "attempts": [
+        {
+          "version": "P41",
+          "prompt": "manga/serial/ch01/prompts/P41.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-979eebec-d980-4978-af55-093e8aeb8168.png",
+          "selected": false
+        },
+        {
+          "version": "P41-rev1",
+          "prompt": "manga/serial/ch01/prompts/P41-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-9c58ce58-2c9f-4e3f-a45a-732c7a5f5c94.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "f0bcce047179ad7e6c1c1b67e9a27212a5eb4d88960d406ff7015ffaa37c7e31",
+      "byte_identical_to_source": true
+    },
+    "P42": {
+      "adopted": "P42-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-25baa5d5-2e1b-4fa4-8305-3b5d5d9a40e7.png",
+      "checks": {
+        "expression": "合格：小野寺・担当・水野の驚き、遥の閉口した悔しさ。",
+        "characters": "合格：水野の衣装混同を解消。蓮の顔なし。小野寺年齢感は控えめ。",
+        "layout": "合格：4段6コマ、3段右の受取→左の三十分を修正。",
+        "text": "合格：台詞4つ、指定UI文字、ピ。紹介の吹き出し二重縁は省略。",
+        "style": "合格：Eの線、白場、限定網点。",
+        "props": "条件付き合格：架空注文札、二端末、お茶、時計は部分のみ。最下段の札の傾き弱め。"
+      },
+      "remaining_issues": [
+        "遥の札の傾きが弱い。",
+        "紹介の通話吹き出しは通常縁。",
+        "端末の見え方・形状がコマ間で若干変化。",
+        "小野寺の40代らしさは控えめ。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P42.txt",
+          "reason": "3段目左右が逆、蓮の頭部露出、遥の札へ架空注文と誤記。"
+        },
+        {
+          "prompt": "P42-rev1.txt",
+          "reason": "3段左の水野へ遥のピンと衣装が混入、指定UI文字欠落。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P42.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/06-onodera-megumi.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/03-mizuno-maki.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/05-honbu-meeting.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png"
+      ],
+      "attempts": [
+        {
+          "version": "P42",
+          "prompt": "manga/serial/ch01/prompts/P42.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-ce4ea1ed-1540-4934-ae63-c6ff1ccd03f4.png",
+          "selected": false
+        },
+        {
+          "version": "P42-rev1",
+          "prompt": "manga/serial/ch01/prompts/P42-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-8ec798cd-da6a-4578-8775-5492601dd9ad.png",
+          "selected": false
+        },
+        {
+          "version": "P42-rev2",
+          "prompt": "manga/serial/ch01/prompts/P42-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-25baa5d5-2e1b-4fa4-8305-3b5d5d9a40e7.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "880b58fbd8823f498fa6524b2a272328289ee3c8380e97971004b233bd6f86c0",
+      "byte_identical_to_source": true
+    },
+    "P43": {
+      "adopted": "P43-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-a46fe1c2-a26b-482c-a396-436183d04f1a.png",
+      "checks": {
+        "expression": "合格：水野の集中、遥の競争心ある片口角。",
+        "characters": "合格：遥の右ピン2本、白エプロン。蓮は手のみ。",
+        "layout": "条件付き合格：縦3コマ、上段約35%で目安25%より大きい。",
+        "text": "合格：3台詞、2か月目・第1週、拡張予定。",
+        "style": "条件付き合格：Eの白場・黒ベタ、PC天板に薄い階調が残る。",
+        "props": "条件付き合格：二端末間の拡張予定、鞄から自作、脇に札。PCは指定の左手でなく右手で取り出す。"
+      },
+      "remaining_issues": [
+        "コマ高は約35%・22%・43%で指定25%・30%・45%との差。",
+        "自作PCを取り出す手が左手指定に対して右手。",
+        "PC天板に薄い灰色階調が残る。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P43.txt",
+          "reason": "蓮の頭部、12時台の時計、札へ指定外番号。"
+        },
+        {
+          "prompt": "P43-rev1.txt",
+          "reason": "遥のピン左右逆、坂本の不要な通話映像。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P43.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/03-mizuno-maki.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/09-mashiba-ren.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/05-honbu-meeting.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png"
+      ],
+      "attempts": [
+        {
+          "version": "P43",
+          "prompt": "manga/serial/ch01/prompts/P43.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-105bfca2-9a4f-4f4a-8fa5-59f5f03aa5a3.png",
+          "selected": false
+        },
+        {
+          "version": "P43-rev1",
+          "prompt": "manga/serial/ch01/prompts/P43-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-5fe0a270-6503-4b82-930d-7f3d2bb934a4.png",
+          "selected": false
+        },
+        {
+          "version": "P43-rev2",
+          "prompt": "manga/serial/ch01/prompts/P43-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-a46fe1c2-a26b-482c-a396-436183d04f1a.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "461a76a11dd7f4b416510ec8926c57d02c73b3743fb3dbd0a9138be0e31dc733",
+      "byte_identical_to_source": true
+    },
+    "P44": {
+      "adopted": "P44-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-393d09b3-f8f2-44dc-b696-086f57947368.png",
+      "checks": {
+        "expression": "合格：遥の閉口・前傾の集中。蓮は指と手のみ。",
+        "characters": "合格：遥の右ピン、衣装。蓮の顔・反射なし。",
+        "layout": "条件付き合格：縦3コマ、下段が指定45%より大きい約56%。",
+        "text": "合格：2台詞、コト・ズッ、依頼票の指定一行。",
+        "style": "条件付き合格：ペン線・白場。机上の細密ハッチと反射状の線が残る。",
+        "props": "合格：別案件依頼票、茶、通話端末、椅子を握る右手と接地した足。左手は体の奥で不可視。"
+      },
+      "remaining_issues": [
+        "コマ高が約25%・19%・56%で指定30%・25%・45%と差。",
+        "机上と床の細密ハッチングが多め。",
+        "椅子を握る左手は体に隠れる。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P44.txt",
+          "reason": "遥側が本部会議室、12:20時計、ピン左右。"
+        },
+        {
+          "prompt": "P44-rev1.txt",
+          "reason": "依頼票に指定外文、遥の手が机上。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P44.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/09-mashiba-ren.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/05-honbu-meeting.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "P44",
+          "prompt": "manga/serial/ch01/prompts/P44.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-13499129-3ad1-40aa-b673-83bc4c0a42fc.png",
+          "selected": false
+        },
+        {
+          "version": "P44-rev1",
+          "prompt": "manga/serial/ch01/prompts/P44-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-a39c0ba5-a138-48ee-898a-84878e50d563.png",
+          "selected": false
+        },
+        {
+          "version": "P44-rev2",
+          "prompt": "manga/serial/ch01/prompts/P44-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-393d09b3-f8f2-44dc-b696-086f57947368.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "2caecf6dfcaf006db4c6b23004394839d04dea264ffcd762bbaa7bc7f9b8c5bd",
+      "byte_identical_to_source": true
+    },
+    "P45": {
+      "adopted": "P45-rev2.txt",
+      "regenerations": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-c0b73937-4537-43e4-9be3-9a1cec949eb5.png",
+      "checks": {
+        "expression": "条件付き合格：蓮の自信ある笑みと鋭い目。片眉上げは控えめ。本部3人の視線集中は弱い。",
+        "characters": "合格：蓮の明髪網点・白シャツ黒T、3人と通話遥を識別。",
+        "layout": "合格：全身の断ち切り1コマ、前傾、足元、二端末。",
+        "text": "条件付き合格：台詞と人物名・所属は正しい。吹き出し尾がほぼなく話者は配置で示す。",
+        "style": "条件付き合格：Fの全身面積、効果線なし。床に帯状の薄い陰影が残る。",
+        "props": "合格：試作PC2台と通話端末1台。時計なし。"
+      },
+      "remaining_issues": [
+        "本部3人の目線が蓮より読者側に見える。",
+        "蓮の片眉上げは控えめ。",
+        "吹き出しの尾が不明瞭。",
+        "机・床に薄い帯状陰影が残る。",
+        "通話の遥は輪郭指定より顔が詳しい。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P45.txt",
+          "reason": "不要な12時台時計と過剰なPC。"
+        },
+        {
+          "prompt": "P45-rev1.txt",
+          "reason": "通話画面内の遥のピン左右逆。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P45.png",
+      "generation_count": 3,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/09-mashiba-ren.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/06-onodera-megumi.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-lineup.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/05-honbu-meeting.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png"
+      ],
+      "attempts": [
+        {
+          "version": "P45",
+          "prompt": "manga/serial/ch01/prompts/P45.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-bd1fe150-1313-41dc-92c6-7277ec68b111.png",
+          "selected": false
+        },
+        {
+          "version": "P45-rev1",
+          "prompt": "manga/serial/ch01/prompts/P45-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-61c6b698-ee41-40fb-9626-bf6fd276c34b.png",
+          "selected": false
+        },
+        {
+          "version": "P45-rev2",
+          "prompt": "manga/serial/ch01/prompts/P45-rev2.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-c0b73937-4537-43e4-9be3-9a1cec949eb5.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "85824cf0b4119343af78a5974d7a2c0c327ebe8a89164285792cc41961434d7a",
+      "byte_identical_to_source": true
+    },
+    "P46": {
+      "adopted": "P46-rev1.txt",
+      "regenerations": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-78123a31-0dee-4946-b950-71124b858f03.png",
+      "checks": {
+        "expression": "合格：両者が笑みを保ち、遥が端末を握り続ける。",
+        "characters": "合格：蓮の明髪と衣装、遥の白エプロン・2本ピン。左向き側面は個人設定の側面図と対応。",
+        "layout": "合格：上約23%下約77%、下段の同寸顔の対置と通話枠。目線高に微差。",
+        "text": "合格：2台詞と各話者の尾、受け渡しの返答を追加せず。",
+        "style": "合格：E標準、黒ベタと白場、PC天板紙白。",
+        "props": "合格：通話用と自作の区別、蓮は自機を脇へ、空いた位置を指す、遥の手に自作が残る。"
+      },
+      "remaining_issues": [
+        "下段の目線高に約30px程度の差が残る（1536px高画像）。",
+        "蓮の片眉上げが控えめ。",
+        "中央の通話枠により下段が2コマ状にも見える。"
+      ],
+      "rejected": [
+        {
+          "prompt": "P46.txt",
+          "reason": "上段が約39%と過大、二人の目線高・顔寸法のずれ。"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P46.png",
+      "generation_count": 2,
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/09-mashiba-ren.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "P46",
+          "prompt": "manga/serial/ch01/prompts/P46.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-fed90fb0-da3e-45b3-8d4c-0fd861278fd8.png",
+          "selected": false
+        },
+        {
+          "version": "P46-rev1",
+          "prompt": "manga/serial/ch01/prompts/P46-rev1.txt",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d7-7c13-8f88-7963ac3cf12c/exec-78123a31-0dee-4946-b950-71124b858f03.png",
+          "selected": true
+        }
+      ],
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "sha256": "3b7051743a9c4a3f9bfdc4d28036c87c6b54ad8873cadbd7b9d7917a5d6faae5",
+      "byte_identical_to_source": true
+    }
+  }
+}

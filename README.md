@@ -305,11 +305,17 @@ Japanese title:
 
 - `data/`：Excelから抽出した中間データ、全458話の索引、部ごとのファイル分割計画。
 - `art/`：人物・背景・小道具・キービジュアルの美術設定画像。
+- [art/v2/](art/v2/)：連載版の画風による人物・背景の美術設定画像。
 - `docs/`：ストーリーバイブル、台本の書式規約、執筆計画、出典と整合性の確認記録。
+- [docs/craft/](docs/craft/)：物語づくり・漫画技法・画風の調査。
+- [docs/serial/](docs/serial/)：週刊連載版の方向性・全体構成・第1〜3話シナリオ・査読記録。
 - `docs/art/`：[美術設定の目次](docs/art/README.md)と、世界観・人物・舞台・小道具・画風の設定文書。
+- [docs/art/v2-style.md](docs/art/v2-style.md)：連載版の画風・作画仕様。
 - `script/`：全458話の台本本体。フェーズ2bで統合した13部のファイルを正本とします。
-- `manga/`：漫画画像。フェーズ3で制作します。
-- `manga/part-01/`：第1部「腹ぺこの約束」の扉・本文8ページ・ネーム・制作記録。[連載版を読む](manga/part-01/README.md)。
+- `manga/`：漫画画像と[読むための目次](manga/README.md)。
+- [manga/serial/ch01/](manga/serial/ch01/)：連載版第1話「その一食を、取り戻せ」全46ページ。[連載版第1話を読む](manga/serial/ch01/README.md)。
+- `manga/part-01/`：旧画風の試作。第1部「腹ぺこの約束」の扉・本文8ページ・ネーム・制作記録。[試作を読む](manga/part-01/README.md)。
+- [manga/pages/](manga/pages/)：旧画風の試作。代表場面の漫画8ページ。
 - `tools/`：Excel抽出、台本の統合・検証・目次生成スクリプト。
 - `.workspace/`：入力のExcelと参照PDF。Git管理の対象外です。
 

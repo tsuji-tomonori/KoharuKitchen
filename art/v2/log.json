@@ -1,0 +1,984 @@
+{
+  "schema_version": 1,
+  "status": "completed_with_documented_limitations",
+  "created_date": "2026-09-24",
+  "timezone": "Asia/Tokyo",
+  "tool": "built-in image_gen",
+  "scope": [
+    "art/v2/",
+    "docs/art/v2-style.md"
+  ],
+  "image_postprocessing": "none; generated PNG bytes copied unchanged; no Pillow, compositing, drawing, cropping, resizing, or recoloring",
+  "git_commit": false,
+  "source_documents": [
+    "docs/craft/art-style-round2.md",
+    "art/style-tests/round2/final-style-prompt.txt",
+    "docs/character-design.md",
+    "docs/art/characters.md",
+    "docs/art/locations.md",
+    "docs/serial/direction.md"
+  ],
+  "viewed_style_references": [
+    "art/style-tests/round2/E-1.png",
+    "art/style-tests/round2/E-2.png",
+    "art/style-tests/round2/E-3.png",
+    "art/style-tests/round2/F-1.png",
+    "art/style-tests/round2/F-2.png",
+    "art/style-tests/round2/F-3.png"
+  ],
+  "reference_policy": "Only round2 E/F images and images generated for this v2 task, including generated originals. No old character/background/manga images opened or supplied.",
+  "counts": {
+    "deliverables": 17,
+    "individual_characters": 10,
+    "lineup": 1,
+    "expression_guide": 1,
+    "backgrounds": 5,
+    "successful_generations": 29,
+    "regenerations": 12,
+    "failed_before_generation": 1,
+    "total_tool_calls": 30
+  },
+  "attempts": [
+    {
+      "id": "01-aoi-haruka",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-027bac60-bad8-4ec3-87df-66c5417019dd.png",
+      "prompt": "art/v2/prompts/01-aoi-haruka.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "accepted": false,
+      "review": "横顔の白ピン欠落。森専用の白帯ペン混入。頬線過多。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2203487
+      },
+      "sha256": "563a3729cebcae8b1f595a1e17de381bff48ba359558599a9ec69f5eb8a3bf3a"
+    },
+    {
+      "id": "01-aoi-haruka",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-5909ccf0-30bf-48b4-9f01-63d06cf17c7b.png",
+      "prompt": "art/v2/prompts/01-aoi-haruka-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "accepted": true,
+      "review": "全身三面・表情8種、右こめかみの白ピン2本を正面・右側面・8表情で確認。誤ったペンは解消。短い白抜き毛束と薄い頬線は残る。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2134081
+      },
+      "sha256": "053040d0de7a7f82d3437827f72c0c6bedff6385113e06a03200018c565636cc",
+      "destination": "art/v2/characters/01-aoi-haruka.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "07-sakamoto-makoto",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-b5f1686c-2b34-43d4-8a95-074ef111d16d.png",
+      "prompt": "art/v2/prompts/07-sakamoto-makoto.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、太い腕と首、角刈りの白髪、本人左胸の店長 坂本を確認。黒ベタ主体、CG階調なし。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2247614
+      },
+      "sha256": "db4b981fb6967024b3638716c7b472b70a796e29fcca1a60885e78077b8c9770",
+      "destination": "art/v2/characters/07-sakamoto-makoto.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "02-todo-naoto",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-e65fedd5-34a6-4e85-bd03-c33646c6d6d3.png",
+      "prompt": "art/v2/prompts/02-todo-naoto.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、細い長方形眼鏡、長身細身、開襟シャツ・ベストを確認。薄いファイルの中の図は閉じた状態では見えない。髪と靴に細い白抜き線が残る。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2139874
+      },
+      "sha256": "4bfe10463a40376f4808ee9fcea0f54c6a61ec7c7250a1132bc52af3828b9b02",
+      "destination": "art/v2/characters/02-todo-naoto.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "03-mizuno-maki",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-81589447-0b08-45fe-86e8-3b5818c43938.png",
+      "prompt": "art/v2/prompts/03-mizuno-maki.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、長いポニーテール、明るいジャケットと黒インナー、眼鏡・ピンなしを確認。頬線と若めの目の表現が残る。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2356248
+      },
+      "sha256": "631cef4917b32065e56bda9e77bfffd40255bfd4c008d47d4e6cca85254b9735",
+      "destination": "art/v2/characters/03-mizuno-maki.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "04-mori-risa",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-a60a1c64-ef42-4b3c-ad97-6c8e14b20cf6.png",
+      "prompt": "art/v2/prompts/04-mori-risa.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": false,
+      "review": "8表情とペン白帯2本は成立。前髪が分かれており、通常の目が丸すぎるため再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2162482
+      },
+      "sha256": "bf105a896e4c158bb3c907043cd867414940cec012a63b25f40a24a50288ecce"
+    },
+    {
+      "id": "05-aihara-kenta",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-37b1a128-6d7a-4be6-bf23-a57db5251673.png",
+      "prompt": "art/v2/prompts/05-aihara-kenta.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、肩幅、パーカー、顎髭、半開きの通常目を確認。真剣顔の開眼は控えめ。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2464183
+      },
+      "sha256": "a46857d070248d451cdcb8a62d5b5e74c37d605ae8d57e41289c417f14c15dcb",
+      "destination": "art/v2/characters/05-aihara-kenta.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "04-mori-risa",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-78fab27d-7b3e-470c-94eb-64547f0c4e2a.png",
+      "prompt": "art/v2/prompts/04-mori-risa-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "前髪と顎までのボブを直線寄りへ修正。三面・8表情、丸眼鏡、白帯2本とクリップ付きペン、第1話の黒鉛筆を確認。通常目はまだ丸め。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2132676
+      },
+      "sha256": "daf1ec280c99e8094efd397e68732eed056b155041e6dc6a7663074fe8cd0ac3",
+      "destination": "art/v2/characters/04-mori-risa.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "06-onodera-megumi",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-cea6b455-9ccb-4fba-b965-1564475ecdbe.png",
+      "prompt": "art/v2/prompts/06-onodera-megumi.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": false,
+      "review": "年齢感が若すぎ、指定外の事務職表記と恵の印面、比較資料欠落。再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2334343
+      },
+      "sha256": "0524d666c60b59618e891a7ae8752aa14f0474e4c9ef3d32cf88fc22477ac548"
+    },
+    {
+      "id": "08-saeki-maho",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-dcadbb48-d123-47e2-898d-ef095725ab6b.png",
+      "prompt": "art/v2/prompts/08-saeki-maho.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": false,
+      "review": "正面・背面の左腕時計は正しいが、右側面で手前の右腕に時計。拡大時計も12:20ではない。再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2308784
+      },
+      "sha256": "d7b47ec9217175e7206ce8d053bd32f9627ba9d7f5543ee9ef7b619e54827622"
+    },
+    {
+      "id": "09-mashiba-ren",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-66b24e2e-ca84-46e0-9a96-d8ccd902fdc0.png",
+      "prompt": "art/v2/prompts/09-mashiba-ren.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、明るいトーン髪と短い跳ね、白シャツ黒T、無地PC・札・お茶を確認。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2303506
+      },
+      "sha256": "1344286521b9104cc796f0f180366652a9eafc982b506a65d87706cd50ec7c03",
+      "destination": "art/v2/characters/09-mashiba-ren.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "10-tachibana-chinatsu",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-95ed32b5-9a2c-4f4b-ab62-d9f6fe3194be.png",
+      "prompt": "art/v2/prompts/10-tachibana-chinatsu.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、短いピクシー、結び布、店長 立花、制服と細い腕を確認。耳の見える範囲は表情角度で変わる。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2258838
+      },
+      "sha256": "4105cea51b7539134dc6194455973867d5eb2edaad04f1a2d0c47440d34b0963",
+      "destination": "art/v2/characters/10-tachibana-chinatsu.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "06-onodera-megumi",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-2045abb3-1b64-4cef-848d-35be7a62a8fe.png",
+      "prompt": "art/v2/prompts/06-onodera-megumi-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-cea6b455-9ccb-4fba-b965-1564475ecdbe.png"
+      ],
+      "accepted": false,
+      "review": "役職と比較ファイルは修正。年齢差が依然弱く再生成2回目へ。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2294715
+      },
+      "sha256": "3e4832f363402556aec6bf5d4b500feb792e0cd98cdb4d1b66a8f1416a14b369"
+    },
+    {
+      "id": "08-saeki-maho",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-123c526e-bc5b-426a-bf68-cb14c8b9a34e.png",
+      "prompt": "art/v2/prompts/08-saeki-maho-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-dcadbb48-d123-47e2-898d-ef095725ab6b.png"
+      ],
+      "accepted": false,
+      "review": "横図の誤った右腕時計と拡大時計は修正されたが、正面図の左腕時計も消えた。再生成2回目へ。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2264081
+      },
+      "sha256": "9489d6d455c5241770ea4f1a56898b004a721290d1e5d5dd8473cfc5971d3515"
+    },
+    {
+      "id": "01-aoba-exterior",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-0ff97dd4-ebca-4e7a-a319-a86d4729fa31.png",
+      "prompt": "art/v2/prompts/bg-01-aoba-exterior.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": true,
+      "review": "看板と店名・のれん、左入口・右窓、立て看板と鉢、上階手すり、無人を確認。線は人物より整っているが白場と線・網点の仕上げ。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2447643
+      },
+      "sha256": "cc88aa88a7b34b81dbf655d3b392b1bfaf23a4f8a892508acbc72acdd9c9f77a",
+      "destination": "art/v2/backgrounds/01-aoba-exterior.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "02-aoba-counter",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-18c525b8-3b9f-4c72-b4f2-53e9877ba570.png",
+      "prompt": "art/v2/prompts/bg-02-aoba-counter.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": false,
+      "review": "開口・棚・時計・レジの並びは成立。時計の長短針が逆、電話が有線親機、棚の灰色が広いため再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2302204
+      },
+      "sha256": "dd5a183279cd8e05442689661791ccf7753f7dfc2deffe913e3d29c424155aec"
+    },
+    {
+      "id": "06-onodera-megumi",
+      "attempt": 3,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-f4ff8ee7-bf87-4160-b5ed-1e700f78a241.png",
+      "prompt": "art/v2/prompts/06-onodera-megumi-r2.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、低いシニヨン、丸い耳飾り、膝丈スーツ、役職、比較資料と印を確認。通常目と輪郭は成熟寄りに改善、40代の年齢差はまだ控えめ。再生成上限2回到達。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2321768
+      },
+      "sha256": "b27a819aae0781c05f18bbb84d3a76a8325e891fd5ddae6cc542de8221606e51",
+      "destination": "art/v2/characters/06-onodera-megumi.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "08-saeki-maho",
+      "attempt": 3,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-6154d4dd-c17f-4163-9708-e4595ed84cbd.png",
+      "prompt": "art/v2/prompts/08-saeki-maho-r2.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-123c526e-bc5b-426a-bf68-cb14c8b9a34e.png"
+      ],
+      "accepted": true,
+      "review": "三面・8表情、内巻き髪と膝下スカート、正面と背面の左腕時計・右側面の時計非表示、拡大12:20を確認。正面の肩バッグが不鮮明で側面・背面を優先。再生成上限2回到達。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2169758
+      },
+      "sha256": "5f4529e89f64290b8a7ebc11492c8357e80cabd3142f6a0b881597947ac9cef0",
+      "destination": "art/v2/characters/08-saeki-maho.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "02-aoba-counter",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-62d70263-3e43-4b45-9029-7559cef9d605.png",
+      "prompt": "art/v2/prompts/bg-02-aoba-counter-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": false,
+      "review": "時計12:20とコードレス子機、台帳1冊を修正。厨房口が窓になったため床まで開いた入口へ再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1972395
+      },
+      "sha256": "2c06fd14005f1c46e8ee8cac5d268d7df27a2b6d50e37b6e0baee7afc36cefd3"
+    },
+    {
+      "id": "03-aoba-kitchen",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-386d06f8-a82e-4af1-b251-61b05dd17ab9.png",
+      "prompt": "art/v2/prompts/bg-03-aoba-kitchen.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": false,
+      "review": "北加熱・西洗い場・東冷蔵庫と容器棚・中央台・東手前通路は成立。金属の帯状反射が強いため再生成。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 3156691
+      },
+      "sha256": "389b154aaad71e6469ee7e863323411b3ccddf3a9240143c75ce06612bf8a163"
+    },
+    {
+      "id": "04-aoba-back-office",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-d789322d-d1a0-4a71-86fc-44bb86516347.png",
+      "prompt": "art/v2/prompts/bg-04-aoba-back-office.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": true,
+      "review": "北窓下の机、左親機・中央台帳・右トレー、南へ引ける椅子と予備椅子、東棚・勤務表、西通路、無人を確認。台帳の紙見出しは弱い。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2694526
+      },
+      "sha256": "67dec8079d426196288ad2a93897afb34e72fed92aac95be13df30f8067efed1",
+      "destination": "art/v2/backgrounds/04-aoba-back-office.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "05-honbu-meeting",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-7c82023d-b5d9-437f-aa58-a7377ce05404.png",
+      "prompt": "art/v2/prompts/bg-05-honbu-meeting.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": true,
+      "review": "8椅子、南北机、北白板、東窓収納、西棚電話時計、南西入口を確認。無人、線と網点、PC無地。時計15:00はこの基準画像だけの仮時刻。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2305100
+      },
+      "sha256": "debe4b80583acf08f8ad6b1523e9d8cf958cc6acefb6e4e78b1a0284c9ab91b2",
+      "destination": "art/v2/backgrounds/05-honbu-meeting.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "00-expression-guide",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-600da28e-5568-45db-96c3-aa9b07c6a585.png",
+      "prompt": "art/v2/prompts/00-expression-guide.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-3.png"
+      ],
+      "accepted": true,
+      "review": "8感情×遥坂本の計16顔、右白ピン2本・角刈り白髪、眉目口汗青線怒り記号と注釈を確認。焦りとギャグの遥は似ているが白目と効果線強度は区別。人物名ラベルは衣装の名札とは別。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2165862
+      },
+      "sha256": "f29ea366be4d328dc52f40928f069a7b69c05e28bc447cb9ba2eb23a255882e2",
+      "destination": "art/v2/characters/00-expression-guide.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "02-aoba-counter",
+      "attempt": 3,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-c3c34ba1-41af-4bbc-8098-d06db285b413.png",
+      "prompt": "art/v2/prompts/bg-02-aoba-counter-r2.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": true,
+      "review": "厨房口が床まで開く配置に修正、空棚と2開口、コードレス子機・1冊台帳・レジを確認。時計は4方向の分針に加えて上向きの線が2本あり短針角度も大きめ。12:20決めゴマ用の時計正本にはしない。再生成上限2回到達。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1881363
+      },
+      "sha256": "f2b5aee45fbaef43ce9270ce6405fa7a89ec1f7ff6bd13a4f3acb54df87522cb",
+      "destination": "art/v2/backgrounds/02-aoba-counter.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "03-aoba-kitchen",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-bf162628-a0d2-4ea0-a573-e4b0401bd8d3.png",
+      "prompt": "art/v2/prompts/bg-03-aoba-kitchen-r1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": false,
+      "review": "配置と白い天板は改善。ボウルと収納容器の帯状反射がまだ強く、再生成2回目へ。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2368603
+      },
+      "sha256": "280eb49b3411a122894b97e33cf528c1c58cc9c4f5e0982b81c85604dae750fd"
+    },
+    {
+      "id": "00-lineup",
+      "attempt": 1,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-e3e048e2-678e-4e09-823a-b59ce7876459.png",
+      "prompt": "art/v2/prompts/00-lineup-v1.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/04-mori-risa.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/06-onodera-megumi.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/08-saeki-maho.png"
+      ],
+      "accepted": false,
+      "review": "10人と名前ラベル成立。身長差が誇張、背景目盛りと身体の縮尺が不整合。藤堂の眼鏡が丸め、立花の結び布が太め。再生成。",
+      "png": {
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2065444
+      },
+      "sha256": "168493e61192c325d8b94eb324041662c4a54caf38d469f3a2768bacab75e170"
+    },
+    {
+      "id": "03-aoba-kitchen",
+      "attempt": 3,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-fffb10d5-4886-4750-83b6-4a292b97b7b2.png",
+      "prompt": "art/v2/prompts/bg-03-aoba-kitchen-r2.txt",
+      "references": [
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-bf162628-a0d2-4ea0-a573-e4b0401bd8d3.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-2.png"
+      ],
+      "accepted": true,
+      "review": "間取りを保持し金属の帯状反射を解消。白い天板・ボウル・鍋と少量の均一網点に修正。無人、両側動線、東手前通路を確認。",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1926504
+      },
+      "sha256": "6e45a60b4fdf3252a861bd9bd0de9061a9b73f8cf3e281c9c5f88b7d32c4a0f2",
+      "destination": "art/v2/backgrounds/03-aoba-kitchen.png",
+      "copy_sha256_verified": true
+    },
+    {
+      "id": "00-lineup",
+      "attempt": 2,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-6faf8549-277a-41a0-a753-d82be82de577.png",
+      "prompt": "art/v2/prompts/00-lineup-r1.txt",
+      "references": [
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-e3e048e2-678e-4e09-823a-b59ce7876459.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/02-todo-naoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/10-tachibana-chinatsu.png"
+      ],
+      "accepted": false,
+      "review": "目盛りを除去し差を縮小。遥・森・佐伯の頭頂がほぼ同じで身長順位が弱い。再生成2回目へ。",
+      "png": {
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2050041
+      },
+      "sha256": "69686504b22a814efc4aabadb62a0e0b9ff83e9dc7adff6c3e024c967d80a9ed"
+    },
+    {
+      "id": "00-lineup",
+      "attempt": 3,
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-9e0446cf-e9a1-4960-a260-b40c59196631.png",
+      "prompt": "art/v2/prompts/00-lineup-r2.txt",
+      "references": [
+        "/home/t-tsuji/.codex/generated_images/01a0cee1-3e68-7563-a213-15f7319d8722/exec-6faf8549-277a-41a0-a753-d82be82de577.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/02-todo-naoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/10-tachibana-chinatsu.png"
+      ],
+      "accepted": true,
+      "review": "10人の氏名・身長ラベル、同一床線、遥白ピン・店長名札・眼鏡・衣装を確認。身長差は改善したが遥と佐伯、相原と坂本など数cmの相対差は不正確。立花の結び布は個人画より太め、小野寺の年齢感も個人画を優先。上限2回到達。",
+      "png": {
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1920735
+      },
+      "sha256": "95370af3ba4009a28c9d5cd25d1927e15701c6137a554113412d5c66a57d2049",
+      "destination": "art/v2/characters/00-lineup.png",
+      "copy_sha256_verified": true
+    }
+  ],
+  "tool_errors": [
+    {
+      "id": "00-lineup",
+      "prompt": "art/v2/prompts/00-lineup.txt",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/02-todo-naoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/03-mizuno-maki.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/04-mori-risa.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/05-aihara-kenta.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/06-onodera-megumi.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/08-saeki-maho.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/09-mashiba-ren.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/10-tachibana-chinatsu.png"
+      ],
+      "error": "referenced_image_paths must contain at most 5 paths",
+      "image_generated": false,
+      "counts_as_regeneration": false
+    }
+  ],
+  "limitations": [
+    "カウンター最終画像の時計に余分な上向きの線と短針角度のずれ。間取り参照に限定し、12:20の決めゴマには時計を修正して生成する。",
+    "集合画は正確な測尺図ではない。数cmの相対差と立花の結び布、小野寺の顔は数値設定・個人設定画を優先する。",
+    "小野寺の40代の年齢感は再生成2回後も控えめ。森の通常目も丸め。",
+    "髪の短い白抜き線、薄い頬線、靴の小さい反射が一部に残る。",
+    "佐伯の正面バッグ、事務机の台帳見出しの視認性は弱い。",
+    "全画像は目視確認。印刷校正と本文ページでの実寸可読性検証は未実施。"
+  ],
+  "deliverables": [
+    {
+      "id": "01-aoi-haruka",
+      "path": "art/v2/characters/01-aoi-haruka.png",
+      "selected_attempt": 2,
+      "regenerations": 1,
+      "sha256": "053040d0de7a7f82d3437827f72c0c6bedff6385113e06a03200018c565636cc",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2134081
+      },
+      "review": "全身三面・表情8種、右こめかみの白ピン2本を正面・右側面・8表情で確認。誤ったペンは解消。短い白抜き毛束と薄い頬線は残る。"
+    },
+    {
+      "id": "07-sakamoto-makoto",
+      "path": "art/v2/characters/07-sakamoto-makoto.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "db4b981fb6967024b3638716c7b472b70a796e29fcca1a60885e78077b8c9770",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2247614
+      },
+      "review": "三面・8表情、太い腕と首、角刈りの白髪、本人左胸の店長 坂本を確認。黒ベタ主体、CG階調なし。"
+    },
+    {
+      "id": "02-todo-naoto",
+      "path": "art/v2/characters/02-todo-naoto.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "4bfe10463a40376f4808ee9fcea0f54c6a61ec7c7250a1132bc52af3828b9b02",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2139874
+      },
+      "review": "三面・8表情、細い長方形眼鏡、長身細身、開襟シャツ・ベストを確認。薄いファイルの中の図は閉じた状態では見えない。髪と靴に細い白抜き線が残る。"
+    },
+    {
+      "id": "03-mizuno-maki",
+      "path": "art/v2/characters/03-mizuno-maki.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "631cef4917b32065e56bda9e77bfffd40255bfd4c008d47d4e6cca85254b9735",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2356248
+      },
+      "review": "三面・8表情、長いポニーテール、明るいジャケットと黒インナー、眼鏡・ピンなしを確認。頬線と若めの目の表現が残る。"
+    },
+    {
+      "id": "05-aihara-kenta",
+      "path": "art/v2/characters/05-aihara-kenta.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "a46857d070248d451cdcb8a62d5b5e74c37d605ae8d57e41289c417f14c15dcb",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2464183
+      },
+      "review": "三面・8表情、肩幅、パーカー、顎髭、半開きの通常目を確認。真剣顔の開眼は控えめ。"
+    },
+    {
+      "id": "04-mori-risa",
+      "path": "art/v2/characters/04-mori-risa.png",
+      "selected_attempt": 2,
+      "regenerations": 1,
+      "sha256": "daf1ec280c99e8094efd397e68732eed056b155041e6dc6a7663074fe8cd0ac3",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2132676
+      },
+      "review": "前髪と顎までのボブを直線寄りへ修正。三面・8表情、丸眼鏡、白帯2本とクリップ付きペン、第1話の黒鉛筆を確認。通常目はまだ丸め。"
+    },
+    {
+      "id": "09-mashiba-ren",
+      "path": "art/v2/characters/09-mashiba-ren.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "1344286521b9104cc796f0f180366652a9eafc982b506a65d87706cd50ec7c03",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2303506
+      },
+      "review": "三面・8表情、明るいトーン髪と短い跳ね、白シャツ黒T、無地PC・札・お茶を確認。"
+    },
+    {
+      "id": "10-tachibana-chinatsu",
+      "path": "art/v2/characters/10-tachibana-chinatsu.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "4105cea51b7539134dc6194455973867d5eb2edaad04f1a2d0c47440d34b0963",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2258838
+      },
+      "review": "三面・8表情、短いピクシー、結び布、店長 立花、制服と細い腕を確認。耳の見える範囲は表情角度で変わる。"
+    },
+    {
+      "id": "01-aoba-exterior",
+      "path": "art/v2/backgrounds/01-aoba-exterior.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "cc88aa88a7b34b81dbf655d3b392b1bfaf23a4f8a892508acbc72acdd9c9f77a",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2447643
+      },
+      "review": "看板と店名・のれん、左入口・右窓、立て看板と鉢、上階手すり、無人を確認。線は人物より整っているが白場と線・網点の仕上げ。"
+    },
+    {
+      "id": "06-onodera-megumi",
+      "path": "art/v2/characters/06-onodera-megumi.png",
+      "selected_attempt": 3,
+      "regenerations": 2,
+      "sha256": "b27a819aae0781c05f18bbb84d3a76a8325e891fd5ddae6cc542de8221606e51",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2321768
+      },
+      "review": "三面・8表情、低いシニヨン、丸い耳飾り、膝丈スーツ、役職、比較資料と印を確認。通常目と輪郭は成熟寄りに改善、40代の年齢差はまだ控えめ。再生成上限2回到達。"
+    },
+    {
+      "id": "08-saeki-maho",
+      "path": "art/v2/characters/08-saeki-maho.png",
+      "selected_attempt": 3,
+      "regenerations": 2,
+      "sha256": "5f4529e89f64290b8a7ebc11492c8357e80cabd3142f6a0b881597947ac9cef0",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2169758
+      },
+      "review": "三面・8表情、内巻き髪と膝下スカート、正面と背面の左腕時計・右側面の時計非表示、拡大12:20を確認。正面の肩バッグが不鮮明で側面・背面を優先。再生成上限2回到達。"
+    },
+    {
+      "id": "04-aoba-back-office",
+      "path": "art/v2/backgrounds/04-aoba-back-office.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "67dec8079d426196288ad2a93897afb34e72fed92aac95be13df30f8067efed1",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2694526
+      },
+      "review": "北窓下の机、左親機・中央台帳・右トレー、南へ引ける椅子と予備椅子、東棚・勤務表、西通路、無人を確認。台帳の紙見出しは弱い。"
+    },
+    {
+      "id": "05-honbu-meeting",
+      "path": "art/v2/backgrounds/05-honbu-meeting.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "debe4b80583acf08f8ad6b1523e9d8cf958cc6acefb6e4e78b1a0284c9ab91b2",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2305100
+      },
+      "review": "8椅子、南北机、北白板、東窓収納、西棚電話時計、南西入口を確認。無人、線と網点、PC無地。時計15:00はこの基準画像だけの仮時刻。"
+    },
+    {
+      "id": "00-expression-guide",
+      "path": "art/v2/characters/00-expression-guide.png",
+      "selected_attempt": 1,
+      "regenerations": 0,
+      "sha256": "f29ea366be4d328dc52f40928f069a7b69c05e28bc447cb9ba2eb23a255882e2",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 2165862
+      },
+      "review": "8感情×遥坂本の計16顔、右白ピン2本・角刈り白髪、眉目口汗青線怒り記号と注釈を確認。焦りとギャグの遥は似ているが白目と効果線強度は区別。人物名ラベルは衣装の名札とは別。"
+    },
+    {
+      "id": "02-aoba-counter",
+      "path": "art/v2/backgrounds/02-aoba-counter.png",
+      "selected_attempt": 3,
+      "regenerations": 2,
+      "sha256": "f2b5aee45fbaef43ce9270ce6405fa7a89ec1f7ff6bd13a4f3acb54df87522cb",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1881363
+      },
+      "review": "厨房口が床まで開く配置に修正、空棚と2開口、コードレス子機・1冊台帳・レジを確認。時計は4方向の分針に加えて上向きの線が2本あり短針角度も大きめ。12:20決めゴマ用の時計正本にはしない。再生成上限2回到達。"
+    },
+    {
+      "id": "03-aoba-kitchen",
+      "path": "art/v2/backgrounds/03-aoba-kitchen.png",
+      "selected_attempt": 3,
+      "regenerations": 2,
+      "sha256": "6e45a60b4fdf3252a861bd9bd0de9061a9b73f8cf3e281c9c5f88b7d32c4a0f2",
+      "png": {
+        "width": 1536,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1926504
+      },
+      "review": "間取りを保持し金属の帯状反射を解消。白い天板・ボウル・鍋と少量の均一網点に修正。無人、両側動線、東手前通路を確認。"
+    },
+    {
+      "id": "00-lineup",
+      "path": "art/v2/characters/00-lineup.png",
+      "selected_attempt": 3,
+      "regenerations": 2,
+      "sha256": "95370af3ba4009a28c9d5cd25d1927e15701c6137a554113412d5c66a57d2049",
+      "png": {
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "color_type": 2,
+        "bytes": 1920735
+      },
+      "review": "10人の氏名・身長ラベル、同一床線、遥白ピン・店長名札・眼鏡・衣装を確認。身長差は改善したが遥と佐伯、相原と坂本など数cmの相対差は不正確。立花の結び布は個人画より太め、小野寺の年齢感も個人画を優先。上限2回到達。"
+    }
+  ],
+  "verification": {
+    "png_count": 17,
+    "all_adopted_source_hashes_match": true,
+    "all_attempt_sources_exist": true,
+    "all_prompts_exist": true,
+    "all_references_allowed": true,
+    "regeneration_limit_per_image": 2,
+    "all_outputs_visually_reviewed": true
+  }
+}

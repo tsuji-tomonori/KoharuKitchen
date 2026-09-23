@@ -1,0 +1,1918 @@
+{
+  "schema_version": 1,
+  "task": "連載版第1話の横断検品と仕上げ",
+  "date": "2026-09-24",
+  "status": "completed_with_known_issues",
+  "chapter": "第1話「その一食を、取り戻せ」",
+  "review_method": "全44画像をP01からP46まで順にview_imageで目視。全ネーム、log-a〜f、v2仕様、人物設定画全12枚、review-r6のP44指摘と照合。表情・同一性・時刻・小道具・画風の五軸で確認。再生成18稿も各出力を目視。画像認識は人手相当の目視で、OCR検査や完全一致保証ではない。",
+  "read_inputs": [
+    "names/",
+    "log-a.json",
+    "log-b.json",
+    "log-c.json",
+    "log-d.json",
+    "log-e.json",
+    "log-f.json",
+    "../../../docs/art/v2-style.md",
+    "../../../art/v2/characters/",
+    "../../../docs/serial/review-r6.md",
+    "../../../docs/serial/ch01.md"
+  ],
+  "generation_policy": {
+    "tool": "image_gen.imagegen",
+    "references_only": [
+      "art/v2/",
+      "art/style-tests/round2/"
+    ],
+    "existing_manga_pages_used_as_generation_references": false,
+    "postprocessing": "なし。生成PNGのバイト列をshutil.copyfileで採用先へコピー。描画・加工・合成・リサイズなし。",
+    "attempt_limit_per_image_this_qa": 3,
+    "page_limit_interpretation": "最大10ページを保守的に物理ページ数として数えた。見開きP23-24は2ページ、画像は1枚。",
+    "image_count_limit": 10,
+    "redrawn_image_count": 9,
+    "redrawn_physical_page_count": 10,
+    "generation_calls_completed": 18,
+    "pre_generation_validation_errors": 1,
+    "validation_error_note": "P44第3稿の最初の呼び出しは参照パスが相対パスで入力検証エラー。生成は始まらず、絶対パスで送信して1稿を生成。",
+    "prior_artist_generations": "log-a〜fに保存。今回の各頁最大3回とは別の既存工程。"
+  },
+  "priority_order": [
+    "P45",
+    "P44",
+    "P29",
+    "P22",
+    "P23-24",
+    "P28",
+    "P05",
+    "P16",
+    "P18"
+  ],
+  "chronology_review": {
+    "day1": "P01約11:20（指定11:58との差）→P02 12:00〜12:20→P07 12:23〜12:25→P08 12:26→P13 12:34→P14約12:45→P16 13:05→P21 21:10〜21:40",
+    "day2": "P22正午直前→P23-24 12:00→P25約12:04→P26約12:11→P28 12:15〜12:16→P29 12:17→P30約12:18→P32 12:18→P33約12:20→P34 12:20→P38約12:22→P39 13:00→午後の通話",
+    "fixed_reversal": "P29の早いコマの12:20前後から12:17へ戻る読みを時刻枠12:17のみへ置換。",
+    "caveat": "小さいアナログ針は目視概算。厳密な時刻・二針の正確さはK06に残す。予約時刻・携帯の出発予定・再現ノートの過去時刻を現在時刻と混同しない。"
+  },
+  "pages": [
+    {
+      "inspection_order": 1,
+      "page": "P01",
+      "physical_pages": [
+        1
+      ],
+      "image": "pages/P01.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "自信から店内への驚きが読める。",
+        "identity": "正面の白ピンは画面左。幼く見える顔の圧縮は軽微。",
+        "clock": "冒頭時計は指定11:58より早い約11:20に見える。次の12:00へ逆行なし。",
+        "prop_continuity": "PCと鞄を携える。指定の着席動作が弱い。",
+        "drawing_style": "床の反射と細い髪の白線が残る。"
+      },
+      "before_sha256": "179aebe431b56fd3f1c9d1af1248ef3428502f457f7ba2f4027c97d7cd49f7b7",
+      "after_sha256": "179aebe431b56fd3f1c9d1af1248ef3428502f457f7ba2f4027c97d7cd49f7b7",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 2,
+      "page": "P02",
+      "physical_pages": [
+        2
+      ],
+      "image": "pages/P02.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "忙しい坂本と待つ客の焦りは一致。",
+        "identity": "坂本の体格・名札は維持。",
+        "clock": "12:00→12:19前後→12:20。短針の進み方が不正確。",
+        "prop_continuity": "通話中に台側にも受話器が見える。最後のから揚げと袋の流れは読める。",
+        "drawing_style": "手の動きは読める。細い髪線が多い。"
+      },
+      "before_sha256": "ee285904f0300dac661d18a26e16c97601023f5859a0b0f1430d01213e1533e3",
+      "after_sha256": "ee285904f0300dac661d18a26e16c97601023f5859a0b0f1430d01213e1533e3",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K02",
+        "K06",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 3,
+      "page": "P03",
+      "physical_pages": [
+        3
+      ],
+      "image": "pages/P03.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "謝罪と遥の傷つきは場面に合う。客を笑わせていない。",
+        "identity": "遥のピンは正面左。佐伯の時計の形が次頁と違う。",
+        "clock": "腕時計以外に新しい時刻進行なし。",
+        "prop_continuity": "予約品がない状態とPCの無力さが続く。",
+        "drawing_style": "棚の陰影がやや柔らかい。"
+      },
+      "before_sha256": "ada5efbda7b4de9dc19acf9632ef43c8d4453963f9989647c008a1720ac18525",
+      "after_sha256": "ada5efbda7b4de9dc19acf9632ef43c8d4453963f9989647c008a1720ac18525",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 4,
+      "page": "P04",
+      "physical_pages": [
+        4
+      ],
+      "image": "pages/P04.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "遥の凍った顔から行動への切り替えが読める。",
+        "identity": "主要な顔と服は連続。",
+        "clock": "12:20として読め、前後との逆行なし。",
+        "prop_continuity": "PCを閉じ袋へ手を伸ばす流れがP05につながる。",
+        "drawing_style": "カーディガンの装飾的な網点がやや多い。"
+      },
+      "before_sha256": "81a8c0ca134e3e578ddb6ff17e9b31e9c32575f10c56e9c5369f09c3f42ea1d3",
+      "after_sha256": "81a8c0ca134e3e578ddb6ff17e9b31e9c32575f10c56e9c5369f09c3f42ea1d3",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 5,
+      "page": "P05",
+      "physical_pages": [
+        5
+      ],
+      "image": "pages/P05.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "佐伯の控えめな依頼、遥の集中、受け渡し時の小さな笑みが読める。",
+        "identity": "再作画で白ピンは画面左に統一。見学証・エプロンなし。佐伯の時計は右腕に見える。",
+        "clock": "時計の文字盤時刻は読めず、新しい進行なし。",
+        "prop_continuity": "空袋→閉じた黒い一箱→客への袋の順を維持。",
+        "drawing_style": "太い輪郭は改善。透明蓋の反射と細い髪線が残る。"
+      },
+      "before_sha256": "9663e02a60d00c9ba7eae9d3a43fb8b5680f769ac2abb061cae83437e87387e1",
+      "after_sha256": "0d7446fdf06a403cd07fd0d38b10800aa619004ec563745c0b78be9b9d643b78",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 7,
+      "initial_problem": "遥の正面の白ピンが本人左側に反転していた。",
+      "change": "正面で画面左の二本へ修正。袋詰めと手渡しの三段階も明確化。",
+      "selected_attempt": 1,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P05-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/characters/08-saeki-maho.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-9a23cc99-64fb-4e90-85ad-da5d984c767a.png",
+          "adopted": true,
+          "review": "正面ピンと袋の三段階を確認して採用。佐伯の腕時計の側と蓋の光沢は残差。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "27076aba79450bacfce762d33f6e730e36735340bf83d83fadbe0dd92a41e481"
+        }
+      ]
+    },
+    {
+      "inspection_order": 6,
+      "page": "P06",
+      "physical_pages": [
+        6
+      ],
+      "image": "pages/P06.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "謝罪と生姜味への小さな好意を区別。",
+        "identity": "佐伯の時計が省略されるコマあり。遥の横顔のピンは角度依存。",
+        "clock": "翌日の12:20は台帳の予約時刻。現在時刻の逆行ではない。",
+        "prop_continuity": "会計後の袋、閉じたPC、翌日の予約記入が連続。",
+        "drawing_style": "頬・髪の細線に軽微な揺れ。"
+      },
+      "before_sha256": "3754abaeb62d26636ebfa4d1717cb50835a69a953c8d99e8a4bcd92dac62df95",
+      "after_sha256": "3754abaeb62d26636ebfa4d1717cb50835a69a953c8d99e8a4bcd92dac62df95",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 7,
+      "page": "P07",
+      "physical_pages": [
+        7
+      ],
+      "image": "pages/P07.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "座れず食事を中断する損失が静かに読める。",
+        "identity": "佐伯の髪型・服・肩掛け鞄を維持。",
+        "clock": "12:23→12:25の表示は順行。アナログ短針の角度にずれ。",
+        "prop_continuity": "P05の黒い弁当容器が白く見える。半分残す食事は連続。",
+        "drawing_style": "静かな二段構成は適切。机・容器の陰影は柔らかめ。"
+      },
+      "before_sha256": "6449486ec67899049ce16829aad6819633bf967424334235335e9bdd7a5c9629",
+      "after_sha256": "6449486ec67899049ce16829aad6819633bf967424334235335e9bdd7a5c9629",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K07",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 8,
+      "page": "P08",
+      "physical_pages": [
+        8
+      ],
+      "image": "pages/P08.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "悔しさから観察の決意へ移る。",
+        "identity": "遥の見学中の外見を概ね維持。",
+        "clock": "12:26表示。時計に余分な針状の線があり厳密な二針ではない。",
+        "prop_continuity": "PCをしまいノートへ移る。小さな天板記号と手の左右差あり。",
+        "drawing_style": "髪の白線とPCの淡い陰影が残る。"
+      },
+      "before_sha256": "cf1c8f78c9e091ba261d114266c2367c6a3a931bb926b8fd901ff1c7aec954e2",
+      "after_sha256": "cf1c8f78c9e091ba261d114266c2367c6a3a931bb926b8fd901ff1c7aec954e2",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 9,
+      "page": "P09",
+      "physical_pages": [
+        9
+      ],
+      "image": "pages/P09.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "遥の集中と三つなら追えるという自信、森の観察が合う。",
+        "identity": "森の眼鏡・顔は設定に沿う。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "電話・台帳・袋の三つをノートへ記録する流れは読める。",
+        "drawing_style": "Eの静かな線。細部の髪線は多め。"
+      },
+      "before_sha256": "8c74779f85f9f0d2d9875aee63ef9c2a46d7b228e8a798101145f40cb3f0bbc5",
+      "after_sha256": "8c74779f85f9f0d2d9875aee63ef9c2a46d7b228e8a798101145f40cb3f0bbc5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 10,
+      "page": "P10",
+      "physical_pages": [
+        10
+      ],
+      "image": "pages/P10.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "坂本の余裕と遥の挑戦心が読める。",
+        "identity": "遥の胸元が早くも白いエプロン状に見える。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "電話へ伸ばす手とノートを構える手は連続。ノートが図より文字寄り。",
+        "drawing_style": "あおりの坂本は有効。黒ベタ内の白線が多め。"
+      },
+      "before_sha256": "ef73956070c7771bf2d4c04b9d0cc60a5d39a1e3fd718c986b1b5947b7356fff",
+      "after_sha256": "ef73956070c7771bf2d4c04b9d0cc60a5d39a1e3fd718c986b1b5947b7356fff",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K03",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 11,
+      "page": "P11",
+      "physical_pages": [
+        11
+      ],
+      "image": "pages/P11.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "熟練の忙しさと追い切れない遥の反応が一致。",
+        "identity": "遥の見学証とエプロン状の白帯が混在。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "最終部に受話器の重複が残る。一箱を追う演出がやや弱い。",
+        "drawing_style": "手のF強調は有効。動線を追う情報量は多い。"
+      },
+      "before_sha256": "c2e1d14ad7e1d5fcb019e8d4d0fc6e11fde3efe3a12ac5f8662b5260cae2e4ec",
+      "after_sha256": "c2e1d14ad7e1d5fcb019e8d4d0fc6e11fde3efe3a12ac5f8662b5260cae2e4ec",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K02",
+        "K03",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 12,
+      "page": "P12",
+      "physical_pages": [
+        12
+      ],
+      "image": "pages/P12.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "ギャグから観察へ戻る表情が適切。",
+        "identity": "遥のエプロン状の白帯が見学時期と不一致。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "袋は坂本側に保持。ノート三枠の矢印方向が前の動作と一致しにくい。",
+        "drawing_style": "指定のギャグ強調と通常顔の切り替えは読める。"
+      },
+      "before_sha256": "a4557c57999479f27ac5606122d004e2b77ad02b76fe2c8ad62a87636558dc1f",
+      "after_sha256": "a4557c57999479f27ac5606122d004e2b77ad02b76fe2c8ad62a87636558dc1f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K03",
+        "K08",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 13,
+      "page": "P13",
+      "physical_pages": [
+        13
+      ],
+      "image": "pages/P13.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "誠実な礼と森の四本指の笑いを区別。",
+        "identity": "森の名札が省略される。遥の見学中の白帯に揺れ。",
+        "clock": "12:34表示で順行。短針が12寄りに固定される。",
+        "prop_continuity": "ノートを介した観察の連続性は読める。",
+        "drawing_style": "床の光沢・反射が強め。"
+      },
+      "before_sha256": "818442b70e78377c609ececcdecdcb3a02a1c651394d555229ddaa0562335d04",
+      "after_sha256": "818442b70e78377c609ececcdecdcb3a02a1c651394d555229ddaa0562335d04",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K03",
+        "K06",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 14,
+      "page": "P14",
+      "physical_pages": [
+        14
+      ],
+      "image": "pages/P14.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "観察する真剣さを維持。",
+        "identity": "人物の顔の識別は保たれる。",
+        "clock": "針は12:45前後、指定12:47とのずれ。前頁12:34より後。",
+        "prop_continuity": "電話の位置・向きに揺れ。箱への札の関係と障害物の読ませ方が弱い。",
+        "drawing_style": "白い蓋の光沢が強い。"
+      },
+      "before_sha256": "bf0c9263296b9de28ace05a11352fea0bf6c0c9281c2541cd78f512f990cdcce",
+      "after_sha256": "bf0c9263296b9de28ace05a11352fea0bf6c0c9281c2541cd78f512f990cdcce",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K07",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 15,
+      "page": "P15",
+      "physical_pages": [
+        15
+      ],
+      "image": "pages/P15.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "小さな違和感に気づく集中が合う。",
+        "identity": "遥の識別は概ね維持。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "札を取り出して一箱を動かす。札の氏名・品名・受取時刻の値が薄い／空欄。",
+        "drawing_style": "ネームより上下の面積配分が均等。紙白は保つ。"
+      },
+      "before_sha256": "a6ffe00e6855439e802e58165d92568b83e778e15ef5c846eae463b78a0d0272",
+      "after_sha256": "a6ffe00e6855439e802e58165d92568b83e778e15ef5c846eae463b78a0d0272",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K08",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 16,
+      "page": "P16",
+      "physical_pages": [
+        16
+      ],
+      "image": "pages/P16.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "再現の申し出と証言への驚きが合う。2稿目で水野と遥の吹き出しを分離。",
+        "identity": "白ピンを正面左へ修正。遥は見学証・エプロンなし。補助店員の顔・名札には他頁との差。",
+        "clock": "13:05を時刻枠で明示。前の昼営業から順行。",
+        "prop_continuity": "空の白い再現容器一つ、二枚の伝票、別の再現札を明確化。",
+        "drawing_style": "輪郭と紙白は改善。上段が指定45%より大きい。"
+      },
+      "before_sha256": "1eef7a8dd27cd363222cbb4957b500381dfe8bdbca6bccb22e37c70d2723ceee",
+      "after_sha256": "799cf12065829e54f5e19d286f87f87bc94e6a495aafc198cc8a649da1b87575",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K08",
+        "K09",
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 8,
+      "initial_problem": "遥のピン反転と再現容器の違いが人物・小道具の連続性を崩した。",
+      "change": "白ピン、空の白い容器、二枚の伝票、話者別の吹き出しを整理。",
+      "selected_attempt": 2,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P16-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/03-mizuno-maki.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-8350ee93-d733-4cdb-a346-1c723dd86b41.png",
+          "adopted": false,
+          "review": "容器とピンは改善したが水野と遥の吹き出しが連結し話者を誤読するため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "72fa144e8f4a6f00839e5961999dae59104b294ddb8fb6335b4a93a7c5f241eb"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P16-qa2.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/03-mizuno-maki.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-6a22ed2f-d72d-418d-86b0-ad33c0f28c3f.png",
+          "adopted": true,
+          "review": "二つの吹き出しを分け、ピン・見学服・空容器・二伝票を確認して採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "fb0d9b12d8b9e51093ab00b65cba27aaeaacc921c1ea9f021be5b662b3b65372"
+        }
+      ]
+    },
+    {
+      "inspection_order": 17,
+      "page": "P17",
+      "physical_pages": [
+        17
+      ],
+      "image": "pages/P17.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "仮説が崩れる戸惑いが読める。",
+        "identity": "遥の白帯がエプロン状。補助店員の顔に揺れ。",
+        "clock": "ノートの12:47は過去の記録で逆行ではない。",
+        "prop_continuity": "空容器と二枚の伝票の照合。P16を白い空容器へ直し色の断絶を緩和。",
+        "drawing_style": "ノートの図が指定の隅より大きい。髪線に細密さ。"
+      },
+      "before_sha256": "108c669314d60db2830293dc037b92b866334da524b113ee2effaa377714c939",
+      "after_sha256": "108c669314d60db2830293dc037b92b866334da524b113ee2effaa377714c939",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K03",
+        "K08",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 18,
+      "page": "P18",
+      "physical_pages": [
+        18
+      ],
+      "image": "pages/P18.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "言い切る遥と責任を問う坂本の真剣さを維持。",
+        "identity": "3稿目で二つの顔ともピンを画面左へ統一。見学証・エプロンなし。",
+        "clock": "12:47はノートの過去時刻、12:20は翌日の予約で逆行ではない。",
+        "prop_continuity": "空容器を維持し、確認待ち札を立てる→持ち上げる流れを明確化。ノートは途中で閉じる。",
+        "drawing_style": "太線と黒ベタを保つ。下段は正面寄りで姿勢が硬い。"
+      },
+      "before_sha256": "57dba37aea20b0bc5daa2ae4a69e4473e0afee6bd7aa3aeb2f1404639c96fb30",
+      "after_sha256": "880b50253e8b3f597562cad1b664571c5a05fc87db966dfcc185d85d58de89f6",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K08",
+        "K09",
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 9,
+      "initial_problem": "正面の白ピン反転と再現容器が実物の閉じた予約品に見える問題があった。",
+      "change": "ピン・見学服を統一し、空容器・翌日札・同じ確認待ち札を維持。",
+      "selected_attempt": 3,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P18-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-2d3441a3-cd1a-415b-940d-acf92796f192.png",
+          "adopted": false,
+          "review": "中段のピン反転とエプロンの早期登場が残ったため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "63b0b960ef37680f94ed49614915ddea41ab5780d6ae60e94bb43b4e4f7114c6"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P18-qa2.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-2311bc64-3d1f-435e-b0ee-9c0023f3aef7.png",
+          "adopted": false,
+          "review": "エプロンは除けたが下段のピンが反転し不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "d9a361ad99b01accd3b51e7547774d616d845e5b3d97f78076f8a48214f5f8a9"
+        },
+        {
+          "attempt": 3,
+          "prompt": "prompts/P18-qa3.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-c886b927-59c7-4bf3-8e0f-c9fc034da5eb.png",
+          "adopted": true,
+          "review": "中下段を正面寄りに固定、二本とも正しい側。見学服と空容器を確認して採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "8333b123b96d8c6308f307f0401da717cc5b39006b1af27e2e1ef57f8ea6263b"
+        }
+      ]
+    },
+    {
+      "inspection_order": 19,
+      "page": "P19",
+      "physical_pages": [
+        19
+      ],
+      "image": "pages/P19.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "提案と条件を確かめる真剣さが合う。",
+        "identity": "主要人物の顔・衣装は概ね連続。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "置き場が平らな紙よりトレーに見える。札の追加文字に揺れ。",
+        "drawing_style": "説明の紙面密度が高めだが視線と手は読める。"
+      },
+      "before_sha256": "bff3f48293e128ccdc64b34407540ddc8b353342817147db0afbee97f8784001",
+      "after_sha256": "bff3f48293e128ccdc64b34407540ddc8b353342817147db0afbee97f8784001",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K07",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 20,
+      "page": "P20",
+      "physical_pages": [
+        20
+      ],
+      "image": "pages/P20.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "坂本の個人的な願いと遥の小さな反応が読める。",
+        "identity": "遥の斜め顔のピンが逆側に見えるコマあり。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "野球の予定と店を預ける願いは連続。",
+        "drawing_style": "上下比率・人物の身長差が軽微に揺れる。"
+      },
+      "before_sha256": "74eba902ff27da462067caf92a73127974065cb9cf5faa8a9b660a7b290a23c4",
+      "after_sha256": "74eba902ff27da462067caf92a73127974065cb9cf5faa8a9b660a7b290a23c4",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K04",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 21,
+      "page": "P21",
+      "physical_pages": [
+        21
+      ],
+      "image": "pages/P21.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "工作の集中、腹の音、眠りの緩急が合う。",
+        "identity": "自宅では見学証なし。ピンが隠れるコマあり。",
+        "clock": "21:10→21:40で順行。",
+        "prop_continuity": "紙札を作り過ぎる流れはP41の食事へつながる。",
+        "drawing_style": "静とギャグの切り替えは保つ。"
+      },
+      "before_sha256": "bb97731b07ca718a77fc1dac1a4498c1bdfcc6b8bfde735f3d440f903a86f0ce",
+      "after_sha256": "bb97731b07ca718a77fc1dac1a4498c1bdfcc6b8bfde735f3d440f903a86f0ce",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 22,
+      "page": "P22",
+      "physical_pages": [
+        22
+      ],
+      "image": "pages/P22.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "予行の集中→身支度→緊張→来客への反応を区別。",
+        "identity": "上三コマは見学中、4コマ目から白エプロン。3コマ目で見学証が見えない。正面ピンは左。",
+        "clock": "正午直前を示すが、11:59の時計は余分な針状線・短針の角度に誤差。次の12:00へ逆行なし。",
+        "prop_continuity": "練習箱一つ、平らな確認待ち・確保済み、移す札一枚へ整理。片付け後の電話も一台。",
+        "drawing_style": "表情と動く手は改善。髪の白線は残る。"
+      },
+      "before_sha256": "0791df58d03032391cd79969bd36e6fb81ed622690445a837ff1137f4ce3bd00",
+      "after_sha256": "12c05a379f8d1211ed5970a19cca9a615e82f71d1ec6551e75745d704cbac3a6",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K09",
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 4,
+      "initial_problem": "練習箱と札置き場が混同され、着用時点と緊張の演技が不明瞭だった。",
+      "change": "空の練習箱一つ、紙の二領域、一枚の札、4コマ目からの着用に整理。",
+      "selected_attempt": 1,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P22-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-588164a5-8ed1-45ab-a923-8740a30a7089.png",
+          "adopted": true,
+          "review": "箱一つと紙の二領域、衣装切り替えは改善。時計の針の残差を記録して採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "c5b09c3b36063ad05d271301e19144d608b3e2d754421a8cf1b0a0b718873182"
+        }
+      ]
+    },
+    {
+      "inspection_order": 23,
+      "page": "P23-24",
+      "physical_pages": [
+        23,
+        24
+      ],
+      "image": "pages/P23-24.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "昼の忙しさは手元で読める。Fの強度は指定より控えめ。",
+        "identity": "遥のピンは正面左、白エプロン。坂本・二係の帽子とエプロンを区別。",
+        "clock": "12:00の時刻枠で明示。P22翌朝から順行。",
+        "prop_continuity": "2稿目を採用。一続きのカウンターと客／店員の区分を改善。袋を受け取る向きはやや曖昧。",
+        "drawing_style": "坂本の顔・袋が中央のノドにかかる。3稿目は腕の破綻で不採用。印刷用には未解決。"
+      },
+      "before_sha256": "5c21d15d86b63f560262552633c2900b758fd298a6ea6ec23249b0b22b7225c4",
+      "after_sha256": "5870064b6cc20e80f74aaa3dfd9949d6f11d0b9025a1a8b7e2338aeb639ae568",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "remaining_issue_ids": [
+        "K01",
+        "K09",
+        "K14",
+        "K16"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 5,
+      "initial_problem": "昼ピークでカウンターが分断され、店員と客の動線・遥の役割が読みづらかった。",
+      "change": "一続きのカウンター、帽子とエプロンによる担当区別、動く手へ整理。ただしノド問題は残留。",
+      "selected_attempt": 2,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P23-24-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/F-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-cf95bb36-0e6a-4c0a-8fb9-90b19016a9e6.png",
+          "adopted": false,
+          "review": "L字状カウンターになり店員側のつながりが曖昧なため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "9f009e31add7c774863afd1cbe1f0a19fd257ba7cd467071a82cd9232119971f"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P23-24-qa2.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/style-tests/round2/E-3.png",
+            "art/style-tests/round2/F-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-f9775259-2934-42a2-9a70-2850d0c4b281.png",
+          "adopted": true,
+          "review": "直線カウンター・人物・手の形を優先して採用。ただし坂本の顔がノドにかかる。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "a9c73004ab5d5971da2fab93a448f276620b3eaa4da6dabfcb728bf05236c768"
+        },
+        {
+          "attempt": 3,
+          "prompt": "prompts/P23-24-qa3.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/style-tests/round2/E-3.png",
+            "art/style-tests/round2/F-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-f0573458-6eb7-4aab-9068-58759f71bab3.png",
+          "adopted": false,
+          "review": "ノドの空間は確保したが坂本に余分な手・腕の接続破綻が出たため不採用。上限により2稿目へ戻した。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "734a424888fe5b6fba2506fd651eefe21524a299160f3cfef6b33e8f6d056ddf"
+        }
+      ]
+    },
+    {
+      "inspection_order": 24,
+      "page": "P25",
+      "physical_pages": [
+        25
+      ],
+      "image": "pages/P25.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "一つできた手応えから次の電話へ移る。",
+        "identity": "人物・エプロンは概ね連続。",
+        "clock": "12:04前後で順行。",
+        "prop_continuity": "確認待ちの見出しが見えず、確保済みが立札状。別注文の箱のため容器差自体は即矛盾でない。",
+        "drawing_style": "余白は保つが札と棚の細線が多い。"
+      },
+      "before_sha256": "73da308485027146cd061bdf5d9f11e4f2aef7d56c9d8fa864d54e432ca9b0a0",
+      "after_sha256": "73da308485027146cd061bdf5d9f11e4f2aef7d56c9d8fa864d54e432ca9b0a0",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K07",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 25,
+      "page": "P26",
+      "physical_pages": [
+        26
+      ],
+      "image": "pages/P26.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "二件が重なって焦る反応は適切。",
+        "identity": "主要な識別点を概ね維持。",
+        "clock": "12:11前後で順行。",
+        "prop_continuity": "二箱・二枚の札を示す。電話が有線型に変わり、置き場の境界越えが読みにくい。",
+        "drawing_style": "手のF強調は有効。線密度は高め。"
+      },
+      "before_sha256": "e7233d2f325c914bd213995b884b2379d5864414db7e409a9adf8f819f80ef97",
+      "after_sha256": "e7233d2f325c914bd213995b884b2379d5864414db7e409a9adf8f819f80ef97",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K07",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 26,
+      "page": "P27",
+      "physical_pages": [
+        27
+      ],
+      "image": "pages/P27.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "焦りを抑えて確認し直す集中が合う。",
+        "identity": "遥の服・髪は概ね連続。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "二枚を戻して一件ずつ確認する。平らな紙の置き場として読める。",
+        "drawing_style": "上下比率がネームとずれるが読み順は維持。"
+      },
+      "before_sha256": "d4953c6e752a66059706c3cb8c053d48384df48c561d0374eb57e11372a543bf",
+      "after_sha256": "d4953c6e752a66059706c3cb8c053d48384df48c561d0374eb57e11372a543bf",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 27,
+      "page": "P28",
+      "physical_pages": [
+        28
+      ],
+      "image": "pages/P28.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "配送客の待つ気持ちと遥の注視が読める。",
+        "identity": "遥の正面ピンを左へ修正。中村の眉がP29以降より太く、係の髪も揺れる。",
+        "clock": "12:15→12:16を時刻枠で明示。携帯12:30は出発予定。",
+        "prop_continuity": "確保済み二枚と別注文二箱を維持。佐伯の確認待ち札と最後の一箱を区別。背景二箱の上下／横並びは変わる。",
+        "drawing_style": "棚と手渡しの道筋が明瞭。透明蓋の細い光沢線は残る。"
+      },
+      "before_sha256": "b2f60865495c6d5fcf5ba4827ef5346da615a408a9251eaa5ed0cbb31b11b555",
+      "after_sha256": "60006e17083490992b87b5eb9132ab4f9cdcfafee5272c2479151a3ac0b6a17c",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K07",
+        "K09",
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 6,
+      "initial_problem": "確保済み札・箱の数と、佐伯の未確認の最後の一箱の関係が曖昧だった。",
+      "change": "別注文二箱と二枚、佐伯の確認待ち札、最後の一箱を分離し12:15→12:16を明示。",
+      "selected_attempt": 1,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P28-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-aa6a9f18-53db-4c49-9e5c-1924a38a0458.png",
+          "adopted": true,
+          "review": "時刻・札枚数・二箱＋最後の一箱の区別が改善し採用。背景箱の並びと中村の眉は残差。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "7087c52a408e6c8caf5830733d65dd4e86e6bbc426005aa5a423224bd8a9df60"
+        }
+      ]
+    },
+    {
+      "inspection_order": 28,
+      "page": "P29",
+      "physical_pages": [
+        29
+      ],
+      "image": "pages/P29.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "呼びかけがかき消され、客の事情に言葉を止める遥が読める。",
+        "identity": "ピン・エプロンを維持。補助店員の顔は他頁と差がある。",
+        "clock": "旧稿の12:20前後→12:17の逆行を解消。時刻枠12:17のみ。",
+        "prop_continuity": "2稿目で受話器重複を除去、別注文二箱を棚に保持。同じ一箱が坂本の空袋へ向かう。",
+        "drawing_style": "紙白と太線は維持。下段の袋の折れが複雑。"
+      },
+      "before_sha256": "0bc8f94bcaa7b273be5f5d7043e0194f7d10cf77c6d7f6e17d80a3053332e1d0",
+      "after_sha256": "4bbbddc9e23de01c1b879016e8ad150c672cdd5c21e84bdb5c892c6caf772c5a",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K09",
+        "K14",
+        "K16"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 3,
+      "initial_problem": "12:20前後の時計から12:17へ戻って見え、最後の一箱の引き渡しを追いにくかった。",
+      "change": "12:17の時刻枠へ統一。棚の別注文二箱、同じ一箱、受話器一つを保持。",
+      "selected_attempt": 2,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P29-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-431d0394-c144-44c9-becd-5ae32d3b1b3f.png",
+          "adopted": false,
+          "review": "時刻は修正したが受話器重複と棚の二箱消失が出たため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "e36e47f46503d560ebc4088ed610bd57a6dd4ad8e0316936f216475cbeeec034"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P29-qa2.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/07-sakamoto-makoto.png",
+            "art/v2/backgrounds/02-aoba-counter.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-48dc82ff-6e47-4a67-80de-70eed939c43d.png",
+          "adopted": true,
+          "review": "電話台を画外にし二箱を棚に保持。同じ一箱を渡す流れを確認し採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "13376fd2dc0a270e734b2006d3aae0db6059e81722164058c89787f62038447d"
+        }
+      ]
+    },
+    {
+      "inspection_order": 29,
+      "page": "P30",
+      "physical_pages": [
+        30
+      ],
+      "image": "pages/P30.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "割り込んで止める決断と焦りが強く読める。",
+        "identity": "遥・坂本の顔の識別は維持。",
+        "clock": "時計は指定12:17より12:18寄り。修正後P29の12:17より後、P32の12:18まで逆行なし。",
+        "prop_continuity": "同じ一箱を止める。下段で蓋下の紙が見えなくなり、札の客向き表示がある。",
+        "drawing_style": "Fの決断強調は適切。細かな蓋の反射あり。"
+      },
+      "before_sha256": "5051afb8d6e1a8647106e4db88dce103008f546dd2a7da4c9e0f932376087eba",
+      "after_sha256": "5051afb8d6e1a8647106e4db88dce103008f546dd2a7da4c9e0f932376087eba",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K07",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 30,
+      "page": "P31",
+      "physical_pages": [
+        31
+      ],
+      "image": "pages/P31.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "謝罪と客の困惑を嘲笑にしていない。",
+        "identity": "主要人物の外見は維持。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "佐伯12:20の照合が読める。一箱を戻し袋を畳む流れ。",
+        "drawing_style": "透明蓋の光沢が強い。"
+      },
+      "before_sha256": "1b914176522dd4ecd3f5f1befd2fcf346984d17e3ad79be881eeb7ea8e9c2aef",
+      "after_sha256": "1b914176522dd4ecd3f5f1befd2fcf346984d17e3ad79be881eeb7ea8e9c2aef",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 31,
+      "page": "P32",
+      "physical_pages": [
+        32
+      ],
+      "image": "pages/P32.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "待てない客と救えない遥の表情が合う。",
+        "identity": "中村の服・鍵・顔は概ね連続。",
+        "clock": "12:18。短針の進み過ぎがあるが前後の分表示は逆行しない。",
+        "prop_continuity": "財布をしまい予約品を引く。一箱を増やさず客の手は空く。",
+        "drawing_style": "白場は保つ。床と箱に淡い陰影。"
+      },
+      "before_sha256": "9909e17d750fe3f9f810b783081fa6f157e776e8f779d249c9bf490947ed3f9b",
+      "after_sha256": "9909e17d750fe3f9f810b783081fa6f157e776e8f779d249c9bf490947ed3f9b",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 32,
+      "page": "P33",
+      "physical_pages": [
+        33
+      ],
+      "image": "pages/P33.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "食事を得ず出る背中が苦い余韻を作る。",
+        "identity": "中村の鍵を持つ手がコマ間で左右交替。",
+        "clock": "指定12:19に対し針は12:20寄り。次頁12:20との逆行は認めない。",
+        "prop_continuity": "客は弁当を持たず退出。鍵の持ち替え動作は省略。",
+        "drawing_style": "床の反射が強め。"
+      },
+      "before_sha256": "f759921da967bf40dbb5419c2c2b92d418fe66a0bcae5ec9147b39014a21ca02",
+      "after_sha256": "f759921da967bf40dbb5419c2c2b92d418fe66a0bcae5ec9147b39014a21ca02",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K06",
+        "K10",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 33,
+      "page": "P34",
+      "physical_pages": [
+        34
+      ],
+      "image": "pages/P34.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "受け渡しへ向かう小さな笑顔は読めるが、確認前の笑みは少し早い。",
+        "identity": "佐伯の時計が隠れる。遥のピンの横向きは角度依存。",
+        "clock": "12:20として読める。",
+        "prop_continuity": "止めた一箱を確認して袋へ入れる。P05との反復を維持。",
+        "drawing_style": "手元は読みやすい。髪・カーディガンの細線が多い。"
+      },
+      "before_sha256": "f4fbb65b1e58529d17817b900bd9ecd4f89e261b4581c2238d668b24ae58d2c2",
+      "after_sha256": "f4fbb65b1e58529d17817b900bd9ecd4f89e261b4581c2238d668b24ae58d2c2",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K12",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 34,
+      "page": "P35-36",
+      "physical_pages": [
+        35,
+        36
+      ],
+      "image": "pages/P35-36.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "双方の肩と目が緩む静かな達成が合う。",
+        "identity": "佐伯の左腕時計、遥の白エプロンを維持。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "同じ袋の持ち手を四つの手で受け渡す。",
+        "drawing_style": "ノドを避けた静かな見開き。服の装飾トーン・髪線は細密。"
+      },
+      "before_sha256": "2a22ef4341460cd66bbefd3bccfe2373711d5b6849498bdf20eab4988136635f",
+      "after_sha256": "2a22ef4341460cd66bbefd3bccfe2373711d5b6849498bdf20eab4988136635f",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 35,
+      "page": "P37",
+      "physical_pages": [
+        37
+      ],
+      "image": "pages/P37.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "喜びかけて次の仕事へ戻る笑いが合う。",
+        "identity": "後ろ姿のピン・佐伯の腕時計の左右は判別しにくい。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "次の札と電話へ進む。佐伯の退出口が厨房口のようにも見える。",
+        "drawing_style": "動きは読めるが背景の入口区別が弱い。"
+      },
+      "before_sha256": "c8afd8543fc0f3f4de0218613e61a46b82b566d5ce4a608cf18de5270bda6a28",
+      "after_sha256": "c8afd8543fc0f3f4de0218613e61a46b82b566d5ce4a608cf18de5270bda6a28",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K05",
+        "K11",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 36,
+      "page": "P38",
+      "physical_pages": [
+        38
+      ],
+      "image": "pages/P38.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "落ち着いて一口食べる静かな報酬が合う。",
+        "identity": "佐伯の髪・服を維持。時計は隠れる。",
+        "clock": "12:22前後で順行。",
+        "prop_continuity": "今度は座って同じから揚げを食べる。P07の中断と対照。",
+        "drawing_style": "床の反射と淡いハッチングが残る。"
+      },
+      "before_sha256": "34119ff01616277ef87e9f05d940b0dc0cb34afd6bc5f31d14ad8b957e1ca3df",
+      "after_sha256": "34119ff01616277ef87e9f05d940b0dc0cb34afd6bc5f31d14ad8b957e1ca3df",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 37,
+      "page": "P39",
+      "physical_pages": [
+        39
+      ],
+      "image": "pages/P39.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "明日の役を得た大きな喜びが合う。",
+        "identity": "遥・坂本の識別点を概ね維持。",
+        "clock": "13:00で順行。",
+        "prop_continuity": "翌日の札を渡す。勤務表へ視線を向ける流れは読める。",
+        "drawing_style": "大ゴマ比率が指定より少し小さい。髪の細線が残る。"
+      },
+      "before_sha256": "0369caf5c87ce639541058845c7a334251f6630343f8d80d290f8bd82976c240",
+      "after_sha256": "0369caf5c87ce639541058845c7a334251f6630343f8d80d290f8bd82976c240",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 38,
+      "page": "P40",
+      "physical_pages": [
+        40
+      ],
+      "image": "pages/P40.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "自信のなさと坂本への思いやりが同居。",
+        "identity": "人物は概ね連続。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "野球の掲示写真がP20と変わる。願いの意味は保つ。",
+        "drawing_style": "頬の装飾線がわずかに残る。"
+      },
+      "before_sha256": "c4733fbad7c18e5c6a5fb04a315dcb4f2c4a3a360b95f84675b32c4ec73a4d8d",
+      "after_sha256": "c4733fbad7c18e5c6a5fb04a315dcb4f2c4a3a360b95f84675b32c4ec73a4d8d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K12",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 39,
+      "page": "P41",
+      "physical_pages": [
+        41
+      ],
+      "image": "pages/P41.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "食事の軽口から着信への集中が合う。",
+        "identity": "エプロンのペンポケットなど細部が増える。",
+        "clock": "午後の場面。新たな確定時刻なし。",
+        "prop_continuity": "二つの弁当と余った紙、通話端末が接続。接続操作の手は弱い。",
+        "drawing_style": "黒髪の白線・机の陰影に細密さ。"
+      },
+      "before_sha256": "f0bcce047179ad7e6c1c1b67e9a27212a5eb4d88960d406ff7015ffaa37c7e31",
+      "after_sha256": "f0bcce047179ad7e6c1c1b67e9a27212a5eb4d88960d406ff7015ffaa37c7e31",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K12",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 40,
+      "page": "P42",
+      "physical_pages": [
+        42
+      ],
+      "image": "pages/P42.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "競争相手を知り笑みが消える遥が読める。",
+        "identity": "水野・小野寺は識別できるが小野寺の年齢感が若め。",
+        "clock": "時計の一部だけでは確定時刻を判読できない。逆行とは扱わない。",
+        "prop_continuity": "二台の実演PCと通話機を区別。紙を傾ける動作が弱い。",
+        "drawing_style": "通話の二重吹き出しの区別が弱い。"
+      },
+      "before_sha256": "880b58fbd8823f498fa6524b2a272328289ee3c8380e97971004b233bd6f86c0",
+      "after_sha256": "880b58fbd8823f498fa6524b2a272328289ee3c8380e97971004b233bd6f86c0",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K12",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 41,
+      "page": "P43",
+      "physical_pages": [
+        43
+      ],
+      "image": "pages/P43.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "自作を出す遥の対抗心が読める。",
+        "identity": "顔・ピン・白エプロンは概ね維持。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "鞄からPCを出す手の左右が指定と違う。紙の束は残る。",
+        "drawing_style": "PCの淡い面トーンと上段比率の増大がある。"
+      },
+      "before_sha256": "461a76a11dd7f4b416510ec8926c57d02c73b3743fb3dbd0a9138be0e31dc733",
+      "after_sha256": "461a76a11dd7f4b416510ec8926c57d02c73b3743fb3dbd0a9138be0e31dc733",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K12",
+        "K13",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    },
+    {
+      "inspection_order": 42,
+      "page": "P44",
+      "physical_pages": [
+        44
+      ],
+      "image": "pages/P44.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "自作を起動する集中→見比べて顔を上げる期待と緊張へ改稿。",
+        "identity": "正面ピンは左、右肩越しでは本人右側を維持。白エプロンあり。",
+        "clock": "時計は出さず、午後の通話を継続。",
+        "prop_continuity": "3稿目で自作PCの画面構造を修正。PCの動くUIと前方の通話機内二台を同時に示す。",
+        "drawing_style": "説明台詞を増やさず椅子と視線で進める。ピが小吹き出し状、細い髪線が残る。"
+      },
+      "before_sha256": "2caecf6dfcaf006db4c6b23004394839d04dea264ffcd762bbaa7bc7f9b8c5bd",
+      "after_sha256": "5e4edd94981a0f18aba73597e296890085eef0e03a77f2120ab56aed008d2923",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14",
+        "K15"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 2,
+      "initial_problem": "蓮の顔を隠す手元が続き、遥が自作を試される準備へ焦点が移っていなかった。",
+      "change": "review-r6に沿い起動する顔と手、前方の二端末、椅子を寄せて顔を上げる遥へ変更。",
+      "selected_attempt": 3,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P44-qa1.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/09-mashiba-ren.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-28f16918-fe09-4c4b-89a4-88abddc1f686.png",
+          "adopted": false,
+          "review": "自作PCのUIが外蓋に描かれ、通話機が背後に回ったため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "f082f6ba7a8184f38a0bfd431652cd89cf0f7186a13a5c0274d562564cff5f5d"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P44-qa2.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/09-mashiba-ren.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-d9895d0d-17dd-436c-9d55-791ebabd4f6a.png",
+          "adopted": false,
+          "review": "通話機を前方へ移せたがPC画面が外蓋の脇に飛び出す構造のため不採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "51d5dafde4d6e5b62feeffc556c64c46229cfb0e26952d45800f2ec7eaa9fcdd"
+        },
+        {
+          "attempt": 3,
+          "prompt": "prompts/P44-qa3.txt",
+          "references": [
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/v2/characters/09-mashiba-ren.png",
+            "art/v2/backgrounds/04-aoba-back-office.png",
+            "art/style-tests/round2/E-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-51460ece-a504-4868-a035-b719c99e0958.png",
+          "adopted": true,
+          "review": "右肩越しで正しい単一画面・ヒンジ・キーを描き、二端末と遥の反応が読めるため採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "fd93bddd7a12d1f21cfec5cd39b4d79f3169528a783442e7b306a926474cdb86"
+        }
+      ]
+    },
+    {
+      "inspection_order": 43,
+      "page": "P45",
+      "physical_pages": [
+        45
+      ],
+      "image": "pages/P45.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "自信と真剣さの蓮、息をのんで見上げる周囲で空気の変化を作る。通話内の遥も驚き、次のP46で対抗する笑みに戻る。",
+        "identity": "2稿目で通話内の遥のピン・白エプロンを修正。蓮は明るい髪、白シャツと黒T。",
+        "clock": "時刻表示を加えず同じ通話を継続。",
+        "prop_continuity": "二台を押し開く両腕と机上の通話機を明確化。水野はカップを手に止まる。意味のない机下の脚を除去。",
+        "drawing_style": "低い視点・斜めの前傾・非対称の腕と強い集中線でF強調。顔は正面寄り、悪役の威嚇にはしていない。"
+      },
+      "before_sha256": "85824cf0b4119343af78a5974d7a2c0c327ebe8a89164285792cc41961434d7a",
+      "after_sha256": "32c7540e9fbc458d553e5c8947e7be0491617f4f5474ac47cc5c198d30f1d47d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K14"
+      ],
+      "decision": "redrawn_with_recorded_reservations",
+      "priority_rank": 1,
+      "initial_problem": "正面棒立ち・左右対称・机下の脚が下半分を占め、Fの登場感と周囲の反応が弱かった。",
+      "change": "あおりと斜めの前傾、非対称の両腕、集中線、見上げる周囲へ変更。",
+      "selected_attempt": 2,
+      "generation_attempts": [
+        {
+          "attempt": 1,
+          "prompt": "prompts/P45-qa1.txt",
+          "references": [
+            "art/v2/characters/09-mashiba-ren.png",
+            "art/v2/characters/06-onodera-megumi.png",
+            "art/v2/characters/03-mizuno-maki.png",
+            "art/v2/backgrounds/05-honbu-meeting.png",
+            "art/style-tests/round2/F-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-745ae6ac-e383-4dc5-9019-3f4b75533fd8.png",
+          "adopted": false,
+          "review": "斜め構図とFは改善したが通話内の遥が水野に似てピンがなく、周囲が読者を見ていた。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "ce8fa9ab0203860766c2597f2c93cd0a5bbc1d4e8f603cfe69ef29fd4fff4f68"
+        },
+        {
+          "attempt": 2,
+          "prompt": "prompts/P45-qa2.txt",
+          "references": [
+            "art/v2/characters/09-mashiba-ren.png",
+            "art/v2/characters/06-onodera-megumi.png",
+            "art/v2/characters/03-mizuno-maki.png",
+            "art/v2/characters/01-aoi-haruka.png",
+            "art/style-tests/round2/F-3.png"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf95-6f9f-7c91-ad22-2ea1a196763a/exec-a0f26fba-4e60-423b-ab14-52337119026d.png",
+          "adopted": true,
+          "review": "通話内の遥の識別点と周囲が蓮を見る反応を修正し採用。",
+          "tool": "image_gen.imagegen",
+          "mode": "generate",
+          "viewed_after_generation": true,
+          "prompt_sha256": "8113d8372525d8070d5505fde28a7169db7241f5af3b4708a1ef2d25eca007f6"
+        }
+      ]
+    },
+    {
+      "inspection_order": 44,
+      "page": "P46",
+      "physical_pages": [
+        46
+      ],
+      "image": "pages/P46.png",
+      "viewed_original_in_sequence": true,
+      "checks": {
+        "emotion": "二人の負けず嫌いと試用要求の緊張が読める。",
+        "identity": "遥と蓮を髪色・服・顔で区別。",
+        "clock": "新たな時計表示なし。",
+        "prop_continuity": "遥の自作PCと遠隔の蓮を対置。試される答えは出さない。",
+        "drawing_style": "目の高さに小差。中央の線で三分割にも見える。"
+      },
+      "before_sha256": "3b7051743a9c4a3f9bfdc4d28036c87c6b54ad8873cadbd7b9d7917a5d6faae5",
+      "after_sha256": "3b7051743a9c4a3f9bfdc4d28036c87c6b54ad8873cadbd7b9d7917a5d6faae5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "remaining_issue_ids": [
+        "K12",
+        "K14"
+      ],
+      "decision": "retained_with_recorded_observations",
+      "generation_attempts": []
+    }
+  ],
+  "known_issues": [
+    {
+      "id": "K01",
+      "severity": "major_print",
+      "pages": [
+        "P23-24"
+      ],
+      "issue": "採用2稿目で坂本の顔と袋がノドにかかる。画面での通読は可能だが、紙の見開き用としては未解決。Fの動勢も控えめ。",
+      "reason_retained": "3稿目に腕の破綻が出たため2稿目を採用。1画像3回の上限に達した。"
+    },
+    {
+      "id": "K02",
+      "severity": "moderate",
+      "pages": [
+        "P02",
+        "P11"
+      ],
+      "issue": "通話中の受話器と台側の受話器が重複して見える。",
+      "reason_retained": "対決導入・逆行・予約品の連続性・識別点を優先し、今回の9画像の選外。"
+    },
+    {
+      "id": "K03",
+      "severity": "moderate",
+      "pages": [
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P17"
+      ],
+      "issue": "P22の着用前なのに遥の胸元・白帯がエプロン状に見えるコマがある。",
+      "reason_retained": "連続性の既知差として記録。再作画対象のP16・P18では除いた。"
+    },
+    {
+      "id": "K04",
+      "severity": "moderate",
+      "pages": [
+        "P20"
+      ],
+      "issue": "遥の斜め顔の白ピンが本人左側に見えるコマが残る。",
+      "reason_retained": "今回対象の正面反転を優先し、この斜め顔は保留。"
+    },
+    {
+      "id": "K05",
+      "severity": "minor",
+      "pages": [
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P34",
+        "P37"
+      ],
+      "issue": "佐伯の腕時計の形・装着側・省略に揺れ。P05再作画でも右腕に見える。",
+      "reason_retained": "人物識別と受け渡しは読めるため記録に留める。"
+    },
+    {
+      "id": "K06",
+      "severity": "moderate",
+      "pages": [
+        "P01",
+        "P02",
+        "P07",
+        "P08",
+        "P13",
+        "P14",
+        "P22",
+        "P25",
+        "P26",
+        "P30",
+        "P32",
+        "P33"
+      ],
+      "issue": "アナログ時計の短針・余分な線・指定時刻との分差が残る。P01は11:58指定に対し約11:20、P14は12:47指定に対し約12:45、P30は12:17指定に対し約12:18、P33は12:19指定に対し約12:20。P22の11:59も針が不正確。",
+      "reason_retained": "明確な頁内逆行のあったP29を優先修正。これらは現在の連続した時刻順では逆行を確認せず、厳密な時計作画の残差として保持。"
+    },
+    {
+      "id": "K07",
+      "severity": "moderate",
+      "pages": [
+        "P07",
+        "P14",
+        "P19",
+        "P25",
+        "P26",
+        "P28",
+        "P30"
+      ],
+      "issue": "容器・電話・札置き場の形が揺れる。P05→P07で容器が黒から白へ、P19/P25で置き場が立体状、P25は確認待ち見出しが見えず、P26で電話が有線型、P28で背景二箱の置き方が変化、P30で蓋下の札が一時見えない。",
+      "reason_retained": "予約の最後の一箱の受け渡しは追える。P28/P29では札の枚数・箱数を優先して改善。"
+    },
+    {
+      "id": "K08",
+      "severity": "minor",
+      "pages": [
+        "P12",
+        "P15",
+        "P16",
+        "P17",
+        "P18"
+      ],
+      "issue": "ノートの矢印方向・図の位置／大きさ、札の細字、容器の縦横比が変わる。P18では途中でノートが閉じる。",
+      "reason_retained": "台詞と行為の要点は読める。初日の原因を確定した証拠とは扱わない。"
+    },
+    {
+      "id": "K09",
+      "severity": "minor",
+      "pages": [
+        "P16",
+        "P18",
+        "P22",
+        "P23-24",
+        "P28",
+        "P29"
+      ],
+      "issue": "厨房係・店頭係の顔、分け目、名札有無に揺れ。P28の中村の眉はP29以降より太い。P22の予行3コマ目で見学証が見えない。",
+      "reason_retained": "帽子・エプロン・役割で人物は判別できる。"
+    },
+    {
+      "id": "K10",
+      "severity": "minor",
+      "pages": [
+        "P33"
+      ],
+      "issue": "鍵を持つ手がコマ間で左右交替し、持ち替えが描かれない。",
+      "reason_retained": "弁当を得られなかった空の手と退出の意味は維持。"
+    },
+    {
+      "id": "K11",
+      "severity": "moderate",
+      "pages": [
+        "P37"
+      ],
+      "issue": "佐伯の退出口が厨房口のようにも見え、南西入口への動線が曖昧。",
+      "reason_retained": "退出と次の仕事への切り替え自体は読める。"
+    },
+    {
+      "id": "K12",
+      "severity": "minor",
+      "pages": [
+        "P34",
+        "P40",
+        "P41",
+        "P42",
+        "P43",
+        "P46"
+      ],
+      "issue": "確認前の小さな笑み、野球掲示の写真差、ペンポケット、通話吹き出しの縁、PCを出す手の左右、対置の目の高さ・分割線に軽微な差。",
+      "reason_retained": "物語の因果と台詞を変えないため記録に留める。"
+    },
+    {
+      "id": "K13",
+      "severity": "minor_style",
+      "pages": [
+        "P01",
+        "P07",
+        "P08",
+        "P13",
+        "P14",
+        "P31",
+        "P33",
+        "P38",
+        "P43"
+      ],
+      "issue": "床・蓋・PCに滑らかな陰影や反射が残る。",
+      "reason_retained": "全体の漫画表現を失うほどではなく、因果・識別・構図を優先。"
+    },
+    {
+      "id": "K14",
+      "severity": "minor_style",
+      "pages": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P21",
+        "P22",
+        "P23-24",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29",
+        "P30",
+        "P31",
+        "P32",
+        "P33",
+        "P34",
+        "P35-36",
+        "P37",
+        "P38",
+        "P39",
+        "P40",
+        "P41",
+        "P42",
+        "P43",
+        "P44",
+        "P45",
+        "P46"
+      ],
+      "issue": "複数頁に細い髪の白線、服の装飾トーン、指定コマ比率からのずれが残る。全頁で同じ程度・同じ種類という意味ではない。",
+      "reason_retained": "軽微な画風揺れは一律再生成せず各頁の所見に記録。"
+    },
+    {
+      "id": "K15",
+      "severity": "minor",
+      "pages": [
+        "P44"
+      ],
+      "issue": "操作音ピが小吹き出し状。下段の視線は二画面を見比べ終えた一瞬として読む構図で、視線移動そのものの連続カットではない。",
+      "reason_retained": "自作の起動、二画面、椅子を寄せて顔を上げる焦点移動を優先。3回上限。"
+    },
+    {
+      "id": "K16",
+      "severity": "minor",
+      "pages": [
+        "P23-24",
+        "P29"
+      ],
+      "issue": "見開きの袋を受け取る向き、P29下段の袋の折れがやや曖昧。",
+      "reason_retained": "箱・袋の個数と担当者の位置を優先。"
+    }
+  ],
+  "verification": {
+    "image_count": 44,
+    "physical_page_count": 46,
+    "no_commit": true,
+    "readme_embeds_all_44_in_order": true,
+    "adopted_png_bytes_equal_generator_originals": true,
+    "max_completed_generations_per_image": 3,
+    "changed_image_count": 9,
+    "local_markdown_link_targets_exist": true,
+    "unmodified_images_retained_by_sha256": 35,
+    "readme_image_duplicates": 0
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "task": "連載版第1話 P23-24・P25〜P30 作画",
+  "date": "2026-09-24",
+  "status": "completed_with_remaining_issues",
+  "tool": "built-in image_gen",
+  "output_policy": "生成PNGを無加工コピー。描画・文字追加・合成・画像加工なし。git commitなし。",
+  "generation_limit_interpretation": "1ページ最大3回を初回を含む総生成3回として運用。",
+  "generation_count": 19,
+  "adopted_file_count": 7,
+  "covered_page_count": 8,
+  "regeneration_count": 12,
+  "pages": {
+    "P23-24": {
+      "adopted": "rev1",
+      "regenerations": 2,
+      "checks": {
+        "expression": "合格：真剣な作業顔、客は通常。",
+        "identity": "要修正：遥の白ピンが両側に見え、店頭係エプロンが濃い。",
+        "layout": "要修正：中央通路と1コマは成立。カウンターが分離し全員の足元が見えない。",
+        "text": "軽微：指定4音は判読可。「パサ」が「パサッ」。名札は判読可。",
+        "style": "概ね合格：太細の墨線と網点。Fの手の動線は弱い。",
+        "props": "要修正：12:00は概ね正しい。ケース重複と建具配置差が残る。"
+      },
+      "remaining_issues": [
+        "遥の白ピンが両側に見える。",
+        "カウンター分離・ケース重複・建具配置のずれ。",
+        "坂本と店頭係の足元が隠れる。",
+        "擬音の末尾とF強調量に差。"
+      ],
+      "reason": "rev1は表情・中心の床・厨房から棚への動作が最も明確。rev2は靴が見える一方、予約棚が客側に見え、人物の表情が読めず不採用。",
+      "output_file": "manga/serial/ch01/pages/P23-24.png",
+      "style": "F",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P23-24.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-25e6ea6f-fa4a-4e2d-9991-da9ac100c5dd.png",
+          "selected": false,
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "sha256": "9024ba151ce582e3fddd237f6960210120fa7699933b37feb059b35e5fc6b887",
+          "prompt_sha256": "8b32c56981828938b964b4d36d3ec632e5652728f959b833c95736e4b4ea880d"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P23-24-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-3a22b117-a40d-4e68-98cc-3e1a67225cea.png",
+          "selected": true,
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "sha256": "5c21d15d86b63f560262552633c2900b758fd298a6ea6ec23249b0b22b7225c4",
+          "prompt_sha256": "889028a2ca58e6bec9894f29176a250bf048d506a587ea753b781c7fcbce93e8"
+        },
+        {
+          "version": "rev2",
+          "prompt_file": "manga/serial/ch01/prompts/P23-24-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-f85640f8-d4a3-4984-aa66-1d9197cc8485.png",
+          "selected": false,
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "sha256": "faf7570bebd84a7797beb1ff3efe6792ef79c8b799ed90c24f66bf13ecaa7a26",
+          "prompt_sha256": "609f10910f1785cc6dd0ef0ef35a1b7cd7d4ddb31bd800428681d58aaab17ee2"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5c21d15d86b63f560262552633c2900b758fd298a6ea6ec23249b0b22b7225c4",
+      "byte_identical_to_source": true
+    },
+    "P25": {
+      "adopted": "rev2",
+      "regenerations": 2,
+      "checks": {
+        "expression": "合格：照合の集中→小さな笑み→驚き。",
+        "identity": "合格：本人右の白ピン2本、白エプロン、坂本名札。",
+        "layout": "概ね合格：5コマ右→左。上段が指定25%より高い。",
+        "text": "概ね合格：台詞2つと擬音を判読。パサに小さいッが追加。",
+        "style": "合格：Gペン的強弱、黒ベタと網点。",
+        "props": "要修正：12:04に近い2針。コマ1の確認待ち見出しが欠落。確保済みの札が客向きに見える。"
+      },
+      "remaining_issues": [
+        "上段の高さが指定より大きい。",
+        "確認待ち見出し欠落、確保済み札の向き。",
+        "パサに小さいッ。"
+      ],
+      "reason": "rev2でピン左右、横顔の向き、自然な成功の笑みが改善。",
+      "output_file": "manga/serial/ch01/pages/P25.png",
+      "style": "E",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P25.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-731b0e7f-a8df-424c-ac4b-aa801db6ecf7.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "6a4885685cbca372cb6d8dadf7ebbd8ec8915c26f3d051be9d6bcc3f69bb4a18",
+          "prompt_sha256": "8a432d409391a0d6aa0820339b441190d9a03f16b919bfff559ac8b3a67e735f"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P25-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-c28556f4-6437-412a-8b4c-735c802417b4.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "d65c2d85a06c1798df4cb3c3cff288f06db1cbf3e693a18ec58ac00247eb7c4a",
+          "prompt_sha256": "65cc16a6f31e1a18fa4ec4c34a73b0d01078f9067009a88ae0e5affa0f852451"
+        },
+        {
+          "version": "rev2",
+          "prompt_file": "manga/serial/ch01/prompts/P25-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-6fdf785d-5764-4663-ad0e-74ebced1ca9a.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "73da308485027146cd061bdf5d9f11e4f2aef7d56c9d8fa864d54e432ca9b0a0",
+          "prompt_sha256": "99ecf4eb76a52bcd435c8c896a9a8c80c2c459fc818ae0344ce040bfea5d5517"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "73da308485027146cd061bdf5d9f11e4f2aef7d56c9d8fa864d54e432ca9b0a0",
+      "byte_identical_to_source": true
+    },
+    "P26": {
+      "adopted": "rev1",
+      "regenerations": 1,
+      "checks": {
+        "expression": "合格：瞳を残した困惑・焦り。笑顔なし。",
+        "identity": "合格：遥と坂本の識別、名札、白エプロン。",
+        "layout": "概ね合格：6コマ右→左、札の停止へ誘導。コマ4も傾斜。",
+        "text": "合格：全台詞を判読、内語は尾なし。電話吹き出しは単線。",
+        "style": "合格：墨線と白場、手元のF効果。",
+        "props": "合格：12:11に近い2針、二箱・二札、境界を越えかける札。"
+      },
+      "remaining_issues": [
+        "客に指定外の汗一粒。",
+        "コマ4も傾斜し、電話吹き出しが単線。",
+        "札は下端のみよりやや広く境界を越える。"
+      ],
+      "reason": "再生成で架空の顧客名と個数を除去し、区分と札を明確化。",
+      "output_file": "manga/serial/ch01/pages/P26.png",
+      "style": "F",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P26.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-9da89c2f-694e-4591-9806-c4b659602ab0.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "5a09946544ca220419f37067dffcae07c614fdef4326946235d0af82197db43c",
+          "prompt_sha256": "123ad8f06e174fc8ffa5ce241fe83b464d59ee3381e42e9f719644592f01894d"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P26-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-195a0e14-0423-4ec1-bf04-2460485fbcc9.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "e7233d2f325c914bd213995b884b2379d5864414db7e409a9adf8f819f80ef97",
+          "prompt_sha256": "80c78957523c2687b155a2ad16f8629075577bb98cd231835178f210a8dd19f2"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "e7233d2f325c914bd213995b884b2379d5864414db7e409a9adf8f819f80ef97",
+      "byte_identical_to_source": true
+    },
+    "P27": {
+      "adopted": "rev1",
+      "regenerations": 1,
+      "checks": {
+        "expression": "合格：結んだ唇・低い眉から真剣な聞き直し。",
+        "identity": "合格：右ピン2本と白エプロン、帽子の厨房係。",
+        "layout": "概ね合格：2コマ。上段約60%で指定67%より小さい。",
+        "text": "合格：もう一度、お願いします／スッを判読、尾も遥へ。",
+        "style": "合格：Eの白場と静かな手元、過剰効果なし。",
+        "props": "合格：二枚とも確認待ちへ、平らな区分紙を維持。"
+      },
+      "remaining_issues": [
+        "上段約60%で指定の67%より小さい。",
+        "下段厨房係の目線がやや読者側。"
+      ],
+      "reason": "再生成でトレーを除去しP26の札と区分紙を接続。",
+      "output_file": "manga/serial/ch01/pages/P27.png",
+      "style": "E",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P27.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-31aeaee1-fd22-4b09-847e-675c1bce6215.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "33f073bdd4a5191ff08c7f85529181769f6bd56182827d9797ea8f0e3f0b7b12",
+          "prompt_sha256": "5953a129d222115dd9c4b132b7f7b8da7a1facd28c9a5831a522ce5e3ab37ef8"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P27-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-c323fd72-ec56-4b46-b68f-31a259c034ac.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "d4953c6e752a66059706c3cb8c053d48384df48c561d0374eb57e11372a543bf",
+          "prompt_sha256": "e41a96889290c29908cba4a8f0a18e44db4bdaa17116fd7598e897ffbfa5f471"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d4953c6e752a66059706c3cb8c053d48384df48c561d0374eb57e11372a543bf",
+      "byte_identical_to_source": true
+    },
+    "P28": {
+      "adopted": "rev2",
+      "regenerations": 2,
+      "checks": {
+        "expression": "合格：全員真剣、客中村は通常。",
+        "identity": "概ね合格：遥・帽子の厨房係・帽子なし店頭係を区別。中村の鍵は胸でなく袖。",
+        "layout": "概ね合格：4段と開いた棚への道、手渡しの流れ。段高に差。",
+        "text": "合格：台詞、佐伯12:20確認待ち、携帯12:30出発を判読。",
+        "style": "合格：黒ベタ・ペン線・網点。",
+        "props": "要修正：二箱と最後の一箱は成立。時計が12:15付近のまま。札は四枚に見える。"
+      },
+      "remaining_issues": [
+        "コマ2以降の時計が12:16に進まず12:15付近。",
+        "中村の鍵が袖ポケット位置。",
+        "冒頭の札が手の二枚と机の二枚で四枚に見える。",
+        "札の置き場が立札・トレーへ変わる。",
+        "蓋の紙片が中央寄りで、最後のコマでも見える。"
+      ],
+      "reason": "rev2は冒頭の箱数と帽子、同じ黒い一箱の移動が最も明確。",
+      "output_file": "manga/serial/ch01/pages/P28.png",
+      "style": "E",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P28.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-da2cfca1-5a97-49b9-8287-7744fed3d57c.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "4b4f46fd7aca3777e17a0d836d582c13e158931ab3454b094daf152fb4e06a7b",
+          "prompt_sha256": "79f47aa762586f6b490dd171d029e74028a76a0d015495e3d38954f3dd8ed092"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P28-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-15059c5b-3f88-4321-8283-7a1facf7c094.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "8a4eebfa7ef2082524e8146e396bbba13e5806c21291458f79cb23ba9a3eacf1",
+          "prompt_sha256": "a861b8596e732be7086918fb4cfd3dbdbc3980619795040a0f397362f9a4108e"
+        },
+        {
+          "version": "rev2",
+          "prompt_file": "manga/serial/ch01/prompts/P28-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-74794943-6b66-48bf-8264-cf0f129ad8da.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "b2f60865495c6d5fcf5ba4827ef5346da615a408a9251eaa5ed0cbb31b11b555",
+          "prompt_sha256": "16bf5ed8dd01ed7f90bf333a3ef97451f2e06dfae81b417ad46dcc45c89d0aaf"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "b2f60865495c6d5fcf5ba4827ef5346da615a408a9251eaa5ed0cbb31b11b555",
+      "byte_identical_to_source": true
+    },
+    "P29": {
+      "adopted": "rev2",
+      "regenerations": 2,
+      "checks": {
+        "expression": "合格：遥の困惑・焦り、店員の集中、中村の通常。",
+        "identity": "合格：ピン右側、厨房帽、店頭係中灰と坂本黒エプロン、名札。",
+        "layout": "概ね合格：5コマ右→左、箱の持ち替え。下段が指定20%より高く足元が画外。",
+        "text": "合格：全指定台詞、判読不能の墨線、尾を確認。",
+        "style": "合格：手描きの墨線、黒ベタと網点、Eの強度。",
+        "props": "概ね合格：同一の黒い一箱、空袋直上、通話。コマ4時計は12:17近似。"
+      },
+      "remaining_issues": [
+        "上段の時計は12:20に近く、後段12:17との時刻連続性に差。",
+        "中村の胸の鍵は不鮮明。",
+        "下段で坂本の移動を足元まで示せていない。",
+        "佐伯の紙片が蓋中央寄り。"
+      ],
+      "reason": "rev2で白ピンの左右とスタッフの衣装、袋への進路と焦りが改善。",
+      "output_file": "manga/serial/ch01/pages/P29.png",
+      "style": "E",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P29.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-5877c788-5783-491d-85b2-e8679b751618.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "8ffcbfd6149c072ccf4d7c730ff061c71554c44fa6d3d3dcccfa9b7445b977cf",
+          "prompt_sha256": "d95789f801308405054a900d22e9a68300529eb01973964b2286a437a4be630c"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P29-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-1a4fa93b-0959-41c2-bee3-941c70392dfc.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "e4f19d7004584af38cbfdeffd900f22d55b2fc1c5a42742d82e2ec8ded78219a",
+          "prompt_sha256": "29adf7683cc470f411b8c95abc56bef393ba04d0be10467fd1dd037185520d5a"
+        },
+        {
+          "version": "rev2",
+          "prompt_file": "manga/serial/ch01/prompts/P29-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-5ed336cc-81e2-4b0b-99fc-585fd4da4cc3.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "0bc8f94bcaa7b273be5f5d7043e0194f7d10cf77c6d7f6e17d80a3053332e1d0",
+          "prompt_sha256": "1ab997baf3f0eba9e29142942c64a5ad49a35897fcd19b06f3cd33aeb940b911"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "0bc8f94bcaa7b273be5f5d7043e0194f7d10cf77c6d7f6e17d80a3053332e1d0",
+      "byte_identical_to_source": true
+    },
+    "P30": {
+      "adopted": "rev2",
+      "regenerations": 2,
+      "checks": {
+        "expression": "合格：紙角への驚きから真剣な決意へ。遥の視線は坂本へ。",
+        "identity": "合格：右側面の白ピン2本、白エプロン、坂本の名札と子機。",
+        "layout": "概ね合格：上段約25%・下段約75%の2コマ。外側断ち切りではなく枠あり。",
+        "text": "合格：その一食、まだ渡せません／スッ／佐伯12:20確認待ちを判読。",
+        "style": "合格：Fの決め顔と手の速度線、白場と黒ベタ。",
+        "props": "要修正：一箱は空袋直上、紙角は無名。時計は12:18頃に近い。札が客側から読める向き。"
+      },
+      "remaining_issues": [
+        "時計の長針が12:17より約1〜2分進んで見える。",
+        "札の文字が客側から読める向き。",
+        "下段で蓋の紙角が見えなくなる。",
+        "下大コマの外側に枠が残る。"
+      ],
+      "reason": "rev2で坂本への視線、白ピン2本、肩の子機、決意の表情が両立。",
+      "output_file": "manga/serial/ch01/pages/P30.png",
+      "style": "F",
+      "review_method": "生成直後に組み込みツール表示を目視。6項目をネームと照合。",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/F-3.png"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt_file": "manga/serial/ch01/prompts/P30.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-00ad2357-a9a4-4db6-9570-f6fe71211264.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "ff13f6cfb619f6d82a7f87156b15111570f7cb38c391265dd86ae0326010569d",
+          "prompt_sha256": "8fc6ae2c3735d964d904ecfd97ea376826720b182f1da7bb04c86f5d5da466cd"
+        },
+        {
+          "version": "rev1",
+          "prompt_file": "manga/serial/ch01/prompts/P30-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-e744a27b-dbef-41a6-9e6a-beb7294e2a8d.png",
+          "selected": false,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "9cf2c7a73ad0569421992f6f825c9a2a5a9c3fe9588516b0f61ce92b847ce408",
+          "prompt_sha256": "eb314ae0d4435bf5026473a38123ab294febee88360acc74fbcca380699c3562"
+        },
+        {
+          "version": "rev2",
+          "prompt_file": "manga/serial/ch01/prompts/P30-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-31ae-73b0-84b4-421d13c6afd0/exec-8570d36d-cc0e-4c8c-acd5-dc94d99c9c37.png",
+          "selected": true,
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "sha256": "5051afb8d6e1a8647106e4db88dce103008f546dd2a7da4c9e0f932376087eba",
+          "prompt_sha256": "44e43276708c30fec23c22bb3b9452312a5b03f09e5a33a54a5f1683810efbc2"
+        }
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "5051afb8d6e1a8647106e4db88dce103008f546dd2a7da4c9e0f932376087eba",
+      "byte_identical_to_source": true
+    }
+  },
+  "verification": {
+    "all_adopted_pngs_byte_identical_to_generated_sources": true,
+    "all_19_saved_prompts_match_submitted_text": true,
+    "png_header_dimensions_checked": true,
+    "image_postprocessing": false,
+    "git_commit_performed": false
+  }
+}

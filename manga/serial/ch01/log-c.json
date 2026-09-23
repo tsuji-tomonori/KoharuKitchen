@@ -1,0 +1,488 @@
+{
+  "tool": "built-in image_gen",
+  "processing": "無加工コピー。描画・合成・文字入れ・リサイズなし。",
+  "generation_limit": "各ページ合計3稿まで",
+  "pages": [
+    {
+      "page": "P16",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P16-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-59c3f60f-372e-415b-983b-f62eab007836.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：集中から驚き、水野も微笑なし",
+        "characters": "要修正：下段の遥のピンが本人左側。衣装・見学証は改善",
+        "layout": "要修正：2コマ順は正しいが上約53%・下約47%（指定45/55）",
+        "text": "合格：全台詞が読め、尾も一致",
+        "style": "合格：太細のペン・黒ベタ・網点",
+        "props_time": "軽微：空容器・再現札・二伝票・台帳一冊は確認。時計13:05の短針がやや進み過ぎ"
+      },
+      "remaining_defects": [
+        "下段の遥の髪ピン左右",
+        "上下コマ面積のずれ",
+        "時計短針の進みがやや大きい"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "エプロン混入",
+            "下段ヘアピン両側",
+            "台帳二冊",
+            "コマ面積ずれ"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-ac4750e2-458a-4e18-9a2b-8e11d3a015f6.png",
+          "prompt": "manga/serial/ch01/prompts/P16.txt",
+          "prompt_sha256": "3db5f6870cf11f15a224601c00cf5bd56de1a72d30deefe52c953ea98404e21d"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "エプロン肩紐残存",
+            "メモの佐伯が男性風",
+            "上段が大きい"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-092045b3-5888-474c-a3f1-c61393f3c2b6.png",
+          "prompt": "manga/serial/ch01/prompts/P16-rev1.txt",
+          "prompt_sha256": "f3a988e0705574ad0ee6b982b4623b296499a7f1e5c03494fb9b2fc0c702ebad"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-59c3f60f-372e-415b-983b-f62eab007836.png",
+          "prompt": "manga/serial/ch01/prompts/P16-rev2.txt",
+          "prompt_sha256": "614cfa3d7939e42d1f59ba8b10ecd8a70f4f9916fbb1106334cdd995e951f141"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P16.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/03-mizuno-maki.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "1eef7a8dd27cd363222cbb4957b500381dfe8bdbca6bccb22e37c70d2723ceee",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P17",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P17-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-6adad196-1a70-4a8b-95c2-08df3316eb09.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：両係の困惑、遥の焦りから集中を確認",
+        "characters": "要修正：遥の胸に白い肩紐状の線が残る。店頭係の髪がP16より長め",
+        "layout": "軽微：5コマ・右左順一致。下段左右が約66/34（指定60/40）、上外余白不足",
+        "text": "合格：3台詞・未確認・12:47は可読、尾一致",
+        "style": "合格：黒ベタ・網点・強弱線",
+        "props_time": "要修正：封筒・二伝票・台帳一冊は改善。4コマ目のノート小図が見えず、5コマ目の図は紙角より大きく描かれる"
+      },
+      "remaining_defects": [
+        "遥の胸の白い肩紐状の線",
+        "店頭係の髪の長さの連続性",
+        "4コマ目の小図が見えない",
+        "下段比率・上外余白のずれ"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "エプロン混入",
+            "封筒が箱",
+            "紙角なし",
+            "指定外の疑問符"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-5661a475-e676-474b-b0ee-6fbe037ac0aa.png",
+          "prompt": "manga/serial/ch01/prompts/P17.txt",
+          "prompt_sha256": "b5853cef94851680a8d7aafae21202fdd3471bf4a98abfceaf4a3a8498d9e915"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "封筒が紙袋",
+            "両手停止が紙を持つ動作",
+            "下段面積ずれ"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-e4a18709-f145-4845-87f7-9e66d32dc3d8.png",
+          "prompt": "manga/serial/ch01/prompts/P17-rev1.txt",
+          "prompt_sha256": "48c52fb7d79bf9ed7c5e5b49fa47e3c730710674c0441a257bcd2d04b45467cf"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-6adad196-1a70-4a8b-95c2-08df3316eb09.png",
+          "prompt": "manga/serial/ch01/prompts/P17-rev2.txt",
+          "prompt_sha256": "5b6d710b8854f2fc7ca4fde50bea6d3d05588ce013c295d445d6b6db7ff79609"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P17.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "108c669314d60db2830293dc037b92b866334da524b113ee2effaa377714c939",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P18",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P18-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-804fd586-507e-4764-bfd2-625228659833.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：遥の真剣な提案、坂本の引き締まった確認",
+        "characters": "要修正：最終コマの遥のピンが本人左側。坂本の名札が下段のみ胸より低い",
+        "layout": "合格：3段約25/40/35、坂本の全身、同じ札の接点が明瞭",
+        "text": "合格：台詞全文と確認待ち・翌日佐伯12:20が可読",
+        "style": "合格：白場・ベタ・太細線",
+        "props_time": "軽微：ノートの紙片が箱の蓋から離れている。空容器が中段では閉蓋。受取口そのものは画外"
+      },
+      "remaining_defects": [
+        "下段の遥の髪ピン左右",
+        "下段の坂本名札が低い",
+        "ノートの紙角が箱から離れる",
+        "空容器の蓋の連続性"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "ノート絵が大量の札ケース",
+            "指定外時刻",
+            "坂本の全身がない"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-0cd59088-e906-44d3-85a1-47132bfb2964.png",
+          "prompt": "manga/serial/ch01/prompts/P18.txt",
+          "prompt_sha256": "79beed331ad7df8e06ec9a36e52b97a96893e00ce5e47c373dca784ce74d211d"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "指定外の料理名を追加",
+            "上段の箱が料理入り",
+            "下段面積不足"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-7ed540ca-dadf-4e9a-a286-20b70131c2d5.png",
+          "prompt": "manga/serial/ch01/prompts/P18-rev1.txt",
+          "prompt_sha256": "1b8a2965da4f66f5789d10642c6c63591d801c3f010e5767d7755eabbdc3f0a7"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-804fd586-507e-4764-bfd2-625228659833.png",
+          "prompt": "manga/serial/ch01/prompts/P18-rev2.txt",
+          "prompt_sha256": "d9d6cd93b999ed4993a2491e6651d19d89deca5b4828968341e47b55701582b1"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P18.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "57dba37aea20b0bc5daa2ae4a69e4473e0afee6bd7aa3aeb2f1404639c96fb30",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P19",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P19-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-9b554e1b-56b0-4261-ae33-208c22310888.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：最初だけ小さな笑み、拒否後は閉口、最後は真剣な発話",
+        "characters": "合格：髪ピン片側2本、見学証、エプロンなし、坂本名札",
+        "layout": "軽微：6コマ・右左順・大小関係一致。段比率約33/28/39、中段約62/38",
+        "text": "合格：台詞5つ・見出しが可読、尾一致",
+        "style": "合格：頬の装飾線を減らし白場と黒ベタ",
+        "props_time": "軽微：5コマ目に指定外の『札』文字。受取口の輪郭が不鮮明"
+      },
+      "remaining_defects": [
+        "5コマ目に指定外の『札』文字",
+        "コマ比率の小さなずれ",
+        "受取口の輪郭が弱い"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "エプロン肩紐",
+            "ピン左右",
+            "中段比率",
+            "最終コマ掌なし"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-5a859daa-1ddc-4686-9d81-23cca9854f73.png",
+          "prompt": "manga/serial/ch01/prompts/P19.txt",
+          "prompt_sha256": "b5ac8f1196b627aa4f3c5765497ae231eb8f17f05773221955a7f0cbb97d693b"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "頬の装飾線",
+            "コマ比率"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-89a92df5-8083-405c-a45b-a6efc5b294f8.png",
+          "prompt": "manga/serial/ch01/prompts/P19-rev1.txt",
+          "prompt_sha256": "97d9840061d143904d730bbffe3c3dfc473d1c2f6b4d0fe38870bd0f0fd4c910"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・軽微な残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-9b554e1b-56b0-4261-ae33-208c22310888.png",
+          "prompt": "manga/serial/ch01/prompts/P19-rev2.txt",
+          "prompt_sha256": "b82371b8d2b1934b1c908bfd06fcf92c218c207d6d0846f2e851c015b78ff7cf"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P19.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "bff3f48293e128ccdc64b34407540ddc8b353342817147db0afbee97f8784001",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P20",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P20-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-591690e7-457f-46cf-9023-626569844b99.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：上段で互いを見る真剣な表情、下段坂本の静かな微笑",
+        "characters": "軽微：遥のピンが上段で本人左側寄りに見える。衣装と名札は確認",
+        "layout": "要修正：2コマ順は一致、上下約60/40（指定67/33）。目線高にも小差",
+        "text": "合格：全3台詞の順と尾、日曜・決勝は可読",
+        "style": "合格：ペンの強弱、黒ベタ、白い頬",
+        "props_time": "合格：台帳一冊、指差し、握った指、休日表の下の写真と案内。余計な時計を除去"
+      },
+      "remaining_defects": [
+        "上下コマ比率約60/40",
+        "上段の髪ピンの左右が曖昧",
+        "目線高の小差、うなずきの動作は弱い"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "エプロン混入",
+            "遥が下段で微笑",
+            "指定外時計と看板"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-4e8ac9fe-9b4e-4def-b44a-43cab78d5178.png",
+          "prompt": "manga/serial/ch01/prompts/P20.txt",
+          "prompt_sha256": "8826808cd676095618b7355ab1a22cc574879da81a2a3e239a8d3c69231e58c7"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "二人の視線が合わない",
+            "目線高差",
+            "休日表と案内の上下配置"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-313698bd-4dc5-4a9d-8c41-45acf05c40a9.png",
+          "prompt": "manga/serial/ch01/prompts/P20-rev1.txt",
+          "prompt_sha256": "680e782c093e3c04cc6d9b7950ab51cb07c0917331b64f4fd8bdbbb8522d55ba"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-591690e7-457f-46cf-9023-626569844b99.png",
+          "prompt": "manga/serial/ch01/prompts/P20-rev2.txt",
+          "prompt_sha256": "ae9d662db129d8171d184d5ee6d458b98d844dc7dbcea5514c5993e0de1131be"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P20.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "74eba902ff27da462067caf92a73127974065cb9cf5faa8a9b660a7b290a23c4",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P21",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P21-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-56dd9fcd-7c0b-4978-b922-33ccb5be14aa.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：提案の笑い→腹が鳴る驚き→就寝の閉眼。驚きコマの瞳は弁当へ十分下がらない",
+        "characters": "軽微：3コマ目の遥のピンが髪に隠れて確認できない。店内見学証、自宅証なし、就寝室内着を確認",
+        "layout": "合格：6コマ・右左順・段構成一致。工作と消灯の幅は約56/44",
+        "text": "合格：全台詞、内語、21:10・21:40、両札見出しが可読",
+        "style": "合格：手描き線、白いPC天板、黒ベタ・限定網点",
+        "props_time": "合格：弁当2個はコマ2から、閉PCと鋏、鞄・スイッチ、胸の開いた手"
+      },
+      "remaining_defects": [
+        "3コマ目の瞳が弁当へ十分下がらない",
+        "3コマ目の髪ピンが確認できない",
+        "工作・消灯コマ幅の小差",
+        "紙を鞄へ入れた状態は外から見えない"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "見学証欠落",
+            "エプロン肩紐",
+            "就寝ピン両側",
+            "就寝の手が拳"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-01a57c30-eaab-484f-adf4-4ab76dba0091.png",
+          "prompt": "manga/serial/ch01/prompts/P21.txt",
+          "prompt_sha256": "ffb4d9c15e0b30bdd230d11ac2ade8374fb12b9bd99546c294b0df48562a2662"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "コマ1に弁当を先行表示",
+            "頬の装飾線",
+            "工作段の幅"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-ef126b09-9826-4b35-ab61-fb7948cefb14.png",
+          "prompt": "manga/serial/ch01/prompts/P21-rev1.txt",
+          "prompt_sha256": "cf28cf55a3c4a4dfc6e700a81f94c47a410a870a05c1c4f9b9af4a3c936ab5fd"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・軽微な残件あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-56dd9fcd-7c0b-4978-b922-33ccb5be14aa.png",
+          "prompt": "manga/serial/ch01/prompts/P21-rev2.txt",
+          "prompt_sha256": "4a896b33659ca1bb78afcf5a1703a6ee09cebba6a021f11288406c64679913ea"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P21.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "bb97731b07ca718a77fc1dac1a4498c1bdfcc6b8bfde735f3d440f903a86f0ce",
+        "identical_to_generated_source": true
+      }
+    },
+    {
+      "page": "P22",
+      "adopted_version": "rev2",
+      "prompt": "prompts/P22-rev2.txt",
+      "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-01b435ef-2da3-4652-8d50-a491ce55bad1.png",
+      "regeneration_count": 2,
+      "checks": {
+        "expression": "合格：集中→汗一粒と閉口の緊張→入口へ構える集中。笑顔なし",
+        "characters": "軽微：衣装切替（1〜3見学証・エプロンなし、4〜6エプロン・証なし）は改善。5コマ目のピン左右",
+        "layout": "軽微：6コマ・右左順一致、最終コマ左向き改善。上段全身指定は腰上、上下外余白不足",
+        "text": "合格：全3台詞・練習・確認待ち・確保済み・11:59・翌朝は可読、尾一致",
+        "style": "合格：強弱線・黒ベタ・網点、緊張を笑顔にしない",
+        "props_time": "不合格残存：3コマ目で練習容器が2個になり確保済みが容器側面の表示。5コマ目の手は掌を拭くより布を握る。時計の短針が12より右へ傾く"
+      },
+      "remaining_defects": [
+        "3コマ目の練習容器が2個に増加",
+        "確保済みの表示が容器側面となり札の移動が弱い",
+        "5コマ目は掌を拭くより布を握る動作",
+        "11:59の数字に対し時計短針が12より右",
+        "5コマ目の髪ピン左右",
+        "上段全身指定・外余白のずれ"
+      ],
+      "attempts": [
+        {
+          "version": "initial",
+          "verdict": "不合格",
+          "issues": [
+            "練習中のエプロン",
+            "時計時刻",
+            "腰紐の横結び",
+            "最後の視線が右"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-e0c3ecdb-353f-4a1e-afe2-a8bce688bef1.png",
+          "prompt": "manga/serial/ch01/prompts/P22.txt",
+          "prompt_sha256": "c37ce5b4af5cf7b3cd839058abc0bd2a1bd255b5ae9d184dc36510d971e7bd75"
+        },
+        {
+          "version": "rev1",
+          "verdict": "不合格",
+          "issues": [
+            "肩紐残存",
+            "手拭きでなく握る",
+            "最後の視線が右"
+          ],
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-6244d4ae-1a8d-408c-b5ea-780a1e1606b5.png",
+          "prompt": "manga/serial/ch01/prompts/P22-rev1.txt",
+          "prompt_sha256": "e882cc739bba4c412c5d964cc559770da5768f02e749d8b733470d16c3ba7e00"
+        },
+        {
+          "version": "rev2",
+          "verdict": "上限内の最良稿を採用・小道具など未合格項目あり",
+          "source": "/home/t-tsuji/.codex/generated_images/01a0cf72-1ab0-7f93-985b-ea90e72f0f0c/exec-01b435ef-2da3-4652-8d50-a491ce55bad1.png",
+          "prompt": "manga/serial/ch01/prompts/P22-rev2.txt",
+          "prompt_sha256": "350c3ae38a7aa90d29102387988813eb3e3933be13f0cd90ed2c5e9eb6061d8c"
+        }
+      ],
+      "output": "manga/serial/ch01/pages/P22.png",
+      "references": [
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/07-sakamoto-makoto.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/01-aoi-haruka.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/v2/characters/00-expression-guide.png",
+        "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "0791df58d03032391cd79969bd36e6fb81ed622690445a837ff1137f4ce3bd00",
+        "identical_to_generated_source": true
+      }
+    }
+  ],
+  "total_generations": 21,
+  "total_regenerations": 14,
+  "status": "7ページ納品・全ページ目視検品済み。再生成上限内で選定、残る不具合あり。完全合格ではない。"
+}

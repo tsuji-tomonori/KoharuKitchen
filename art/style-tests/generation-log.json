@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-23",
+  "timezone": "Asia/Tokyo",
+  "tool": "built-in image_gen",
+  "tool_arguments": [
+    "prompt"
+  ],
+  "model": "not exposed or selected",
+  "seed": "not exposed or selected",
+  "method": "four independent text-only calls; common prompt plus one variant block; no retries",
+  "files": [
+    {
+      "variant": "A",
+      "image": "art/style-tests/A.png",
+      "prompt": "art/style-tests/A.txt",
+      "source_path": "/home/t-tsuji/.codex/generated_images/01a0ceaa-3f4c-7de0-86c5-334c919e6723/exec-17f23f6b-ce23-4723-9094-8a733efcef57.png",
+      "width": 1536,
+      "height": 1024,
+      "png_bit_depth": 8,
+      "png_color_type": 2,
+      "sha256": "c42496a6ebf8d08c061c259a666df667713ef82819b9a669db73c6d5610a8155",
+      "prompt_sha256": "7035feefc45211a7a791397a3e771e318ec1b0a16c7c1ae6a9e621ad50a7695b",
+      "attempts": 1,
+      "references": [],
+      "postprocessing": "none; byte-identical copy"
+    },
+    {
+      "variant": "B",
+      "image": "art/style-tests/B.png",
+      "prompt": "art/style-tests/B.txt",
+      "source_path": "/home/t-tsuji/.codex/generated_images/01a0ceaa-3f4c-7de0-86c5-334c919e6723/exec-a0a8ce8d-e1a5-44f5-9cdd-0d970dae3027.png",
+      "width": 1536,
+      "height": 1024,
+      "png_bit_depth": 8,
+      "png_color_type": 2,
+      "sha256": "f38d2fcc58fcba6084c1d6b110ccbea5f8a9184e3b96cfed917d7aa7d2d08e7f",
+      "prompt_sha256": "7c79120e5fe0ce255c0dec73458207297d17a7bacb86d2653c134daeead5981e",
+      "attempts": 1,
+      "references": [],
+      "postprocessing": "none; byte-identical copy"
+    },
+    {
+      "variant": "C",
+      "image": "art/style-tests/C.png",
+      "prompt": "art/style-tests/C.txt",
+      "source_path": "/home/t-tsuji/.codex/generated_images/01a0ceaa-3f4c-7de0-86c5-334c919e6723/exec-71596cfc-a1de-4c6f-84fc-8f0c9481e1d3.png",
+      "width": 1536,
+      "height": 1024,
+      "png_bit_depth": 8,
+      "png_color_type": 2,
+      "sha256": "037bbb91f3cb5581f68c74e10eec354ce219e1ee650dce36add5d0b7cc6ae505",
+      "prompt_sha256": "a23b4b8bacc035cb957ebd5e7827a92c599cbbb769b3a1aa36d20b222ff5d7a6",
+      "attempts": 1,
+      "references": [],
+      "postprocessing": "none; byte-identical copy"
+    },
+    {
+      "variant": "D",
+      "image": "art/style-tests/D.png",
+      "prompt": "art/style-tests/D.txt",
+      "source_path": "/home/t-tsuji/.codex/generated_images/01a0ceaa-3f4c-7de0-86c5-334c919e6723/exec-75d0ce9b-f694-4b44-826a-1b79ebcf5ebd.png",
+      "width": 1536,
+      "height": 1024,
+      "png_bit_depth": 8,
+      "png_color_type": 2,
+      "sha256": "f6f1751eb4f08988078a4549c3b484ed14ce1e0f432ec22c9b79973ccf431550",
+      "prompt_sha256": "2720a398aa85b1b5929e9115f5b8549ee8cade48232d25c6b6ec1b22ab3751c5",
+      "attempts": 1,
+      "references": [],
+      "postprocessing": "none; byte-identical copy"
+    }
+  ],
+  "common_prompt_status": "proposed synthesis after evaluation; not generated as a fifth test"
+}

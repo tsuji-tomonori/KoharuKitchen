@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "chapter": "serial/ch01",
+  "assigned_pages": "P01-P08",
+  "tool": "built-in image_gen",
+  "status": "completed_with_known_defects",
+  "processing": "画像の描画・文字入れ・合成・加工は行わず、image_gen出力PNGを無加工コピー。文書とログ作成、コピー、ヘッダとハッシュ照合のみプログラム使用。",
+  "review_method": "生成ごとに画像を画面で目視。印刷実寸の検査は未実施。",
+  "attempt_policy": "各ページ最大3候補（初回＋再生成2回）の範囲で作成。",
+  "judgment_legend": {
+    "pass": "合格",
+    "partial": "要確認・指定との差異あり",
+    "fail": "不合格・採用候補にも残る"
+  },
+  "pages": [
+    {
+      "page": "P01",
+      "adopted_version": "initial",
+      "image": "manga/serial/ch01/pages/P01.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P01.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e8cb8286-d28d-4537-8f63-d47560733797.png",
+      "regeneration_count": 2,
+      "generation_count": 3,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/03-mizuno-maki.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "自信の笑いから椅子を引く驚きへ変化。"
+        ],
+        "identity": [
+          "pass",
+          "髪ピン2本、見学証、坂本の名札を確認。"
+        ],
+        "layout": [
+          "partial",
+          "6コマの右→左順は正しい。段高は約34/25/41%で指定25/25/50%からずれる。"
+        ],
+        "text": [
+          "pass",
+          "全台詞が読め、尾の対応も自然。"
+        ],
+        "style": [
+          "partial",
+          "黒ベタと網点の少年漫画調。髪に細い反射線が残る。"
+        ],
+        "props_time": [
+          "fail",
+          "時計は11:58ではなく11:20頃に見える。架空商品名が『青葉の詰め合わせ』。冒頭の遥は着席でなく立ち姿。"
+        ]
+      },
+      "remaining_defects": [
+        "時計の針が11:58と不一致",
+        "段高と上段幅がネーム比率と異なる",
+        "架空商品の表示名が指定外",
+        "冒頭の遥が立ち姿",
+        "髪に細い反射線"
+      ],
+      "selection_reason": "再生成1は髪ピンが両側に増殖、再生成2は中段の1→0が右→左で逆転したため、人物と読み順の良好な初稿を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P01.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e8cb8286-d28d-4537-8f63-d47560733797.png",
+          "adopted": true,
+          "visual_review": "時計の誤り、段高のずれ、架空商品名の追加、着席でなく立ち姿。表情と読み順は良好。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P01-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-368dbcee-eac8-4558-bceb-b82317bf8828.png",
+          "adopted": false,
+          "visual_review": "時計表示は改善。ピン4本、靴がパンプス、段高ずれ。"
+        },
+        {
+          "version": "rev2",
+          "prompt": "manga/serial/ch01/prompts/P01-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-727d69a2-6b62-4612-962b-d57051337041.png",
+          "adopted": false,
+          "visual_review": "ピンと靴は改善。中段左右が反転し残り0→1の読む順となる重大不具合。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "179aebe431b56fd3f1c9d1af1248ef3428502f457f7ba2f4027c97d7cd49f7b7",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P02",
+      "adopted_version": "rev1",
+      "image": "manga/serial/ch01/pages/P02.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P02-rev1.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-04c1217b-0dec-4482-b53b-d1062b0107c0.png",
+      "regeneration_count": 1,
+      "generation_count": 2,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "佐伯の困惑、仕事中の集中を確認。"
+        ],
+        "identity": [
+          "partial",
+          "顔・髪型・衣装を確認。佐伯の左手首は下端で時計を確認できない。"
+        ],
+        "layout": [
+          "partial",
+          "3段の読む順は一致。下段が約39%で指定50%より小さい。外余白が不足。"
+        ],
+        "text": [
+          "pass",
+          "台詞と尾は正しい。"
+        ],
+        "style": [
+          "partial",
+          "ペン線・ベタ・網点。髪の反射線と頬の薄線が残る。"
+        ],
+        "props_time": [
+          "partial",
+          "時刻文字と箱の推移は改善。12:19の分針が20分寄り、短針は12寄り。二本指の厨房指示が一本指に見える。"
+        ]
+      },
+      "remaining_defects": [
+        "下段面積が指定より小さい",
+        "時計の針の分単位の精度不足",
+        "二本指の指示が一本指に見える",
+        "佐伯の左腕時計を確認できない",
+        "外余白不足"
+      ],
+      "selection_reason": "初稿の正午から空の通常ケースを改善し、最後のから揚げ一箱も視認できる再生成1を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P02.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-d5b9702d-2cef-4e5a-bad2-8aa5db02800f.png",
+          "adopted": false,
+          "visual_review": "通常ケースが正午から空、時計精度、汗、段高の差。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P02-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-04c1217b-0dec-4482-b53b-d1062b0107c0.png",
+          "adopted": true,
+          "visual_review": "箱の販売前後を改善。針精度・段高・二本指に差が残る。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "ee285904f0300dac661d18a26e16c97601023f5859a0b0f1430d01213e1533e3",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P03",
+      "adopted_version": "rev2",
+      "image": "manga/serial/ch01/pages/P03.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P03-rev2.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e5fb4626-6535-445e-9199-41ed7a13cd44.png",
+      "regeneration_count": 2,
+      "generation_count": 3,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "坂本の謝罪、遥の集中、佐伯の静かな困惑。下段は佐伯に汗なし。"
+        ],
+        "identity": [
+          "pass",
+          "遥の右のピン2本、見学証、坂本名札、佐伯の左時計。"
+        ],
+        "layout": [
+          "partial",
+          "2コマ、上約36/下64%で近似。下段の遥の顔は画外にした。"
+        ],
+        "text": [
+          "pass",
+          "全台詞の字面と話者、読む順を確認。"
+        ],
+        "style": [
+          "partial",
+          "人物はベタとペン線。空棚に淡い陰影とやや軟らかい輪郭が残る。"
+        ],
+        "props_time": [
+          "partial",
+          "PCと財布、左腕時計あり。指が画面指示よりキーボード寄り。佐伯時計が丸型から角型になった。"
+        ]
+      },
+      "remaining_defects": [
+        "空棚に淡い陰影が残る",
+        "止まる指が画面よりキーボード寄り",
+        "佐伯の腕時計が角型",
+        "上下配分が指定より若干ずれる"
+      ],
+      "selection_reason": "ピンの重複を解消し、佐伯を主役にして静かな問いが最も読みやすい再生成2を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P03.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-7af8dbde-e86b-4f42-8535-627ee882586f.png",
+          "adopted": false,
+          "visual_review": "謝罪と焦りは良好。棚ぼかし、下段の汗、時計追加、顔正面寄り。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P03-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-a4eb3005-bc70-4a5f-b972-38972122024a.png",
+          "adopted": false,
+          "visual_review": "下段の汗改善。遥のピン4本、棚陰影。"
+        },
+        {
+          "version": "rev2",
+          "prompt": "manga/serial/ch01/prompts/P03-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e5fb4626-6535-445e-9199-41ed7a13cd44.png",
+          "adopted": true,
+          "visual_review": "ピン2本と佐伯の表情を改善。棚陰影と時計形状、指先位置に差。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "ada5efbda7b4de9dc19acf9632ef43c8d4453963f9989647c008a1720ac18525",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P04",
+      "adopted_version": "rev1",
+      "image": "manga/serial/ch01/pages/P04.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P04-rev1.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e11b4fa7-551f-4282-b0f1-9f1818af6825.png",
+      "regeneration_count": 1,
+      "generation_count": 2,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "内眉が上がり唇を閉じきれない焦り、下段の結ぶ口。"
+        ],
+        "identity": [
+          "pass",
+          "エプロンを除去、見学証と右こめかみピン2本。"
+        ],
+        "layout": [
+          "partial",
+          "2コマの上下順と顔・手の配置は一致。上段は約63%で指定67%に近似。"
+        ],
+        "text": [
+          "pass",
+          "佐伯の画外発話、パタンを判読。"
+        ],
+        "style": [
+          "partial",
+          "強弱線と黒ベタ。衣服の網点に模様状の細かい濃淡、PCに薄い中間調。"
+        ],
+        "props_time": [
+          "pass",
+          "左腕時計は12:20、閉じたPC一台、空袋へのもう片手を確認。"
+        ]
+      },
+      "remaining_defects": [
+        "段高が指定よりやや低い",
+        "衣服に細かい模様状のトーン",
+        "PC天板が完全な紙白でない"
+      ],
+      "selection_reason": "初稿のエプロン混入を解消し、時計と表情も良好な再生成1を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P04.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-c8b4d81d-0bbf-4be2-b9e4-05a37b2188ff.png",
+          "adopted": false,
+          "visual_review": "表情と2コマは良好。エプロン混入と時計の短針。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P04-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-e11b4fa7-551f-4282-b0f1-9f1818af6825.png",
+          "adopted": true,
+          "visual_review": "エプロンを除去、12:20と空袋・PCを確認。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "81a8c0ca134e3e578ddb6ff17e9b31e9c32575f10c56e9c5369f09c3f42ea1d3",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P05",
+      "adopted_version": "rev1",
+      "image": "manga/serial/ch01/pages/P05.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P05-rev1.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-ab0366b6-8d1d-46e3-bc96-6c14c35232b7.png",
+      "regeneration_count": 2,
+      "generation_count": 3,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png"
+      ],
+      "checks": {
+        "expression": [
+          "partial",
+          "佐伯は笑顔なしだが困り眉が弱い。坂本と遥は集中。"
+        ],
+        "identity": [
+          "fail",
+          "エプロン混入は解消。遥のピンが本人左（画面右）側になっている。"
+        ],
+        "layout": [
+          "partial",
+          "5コマの右→左順は一致。上段が約34%、下段約45%で比率に差。"
+        ],
+        "text": [
+          "partial",
+          "台詞は読める。『頼む』の尾が坂本の胴方向に向いている。"
+        ],
+        "style": [
+          "partial",
+          "ベタ・ペン線は保持。袋内面の陰影と魚の細密描写が強い。"
+        ],
+        "props_time": [
+          "partial",
+          "空袋→焼き魚一箱→受領とレシートあり。コマ4の蓋が不明瞭。"
+        ]
+      },
+      "remaining_defects": [
+        "遥の髪ピンが反対側",
+        "『頼む』の尾が胴方向",
+        "箱の透明蓋が不明瞭",
+        "段高比率のずれ",
+        "佐伯の困り眉が弱い"
+      ],
+      "selection_reason": "初稿と再生成2ではエプロンが混入。衣装と手の関係が良好な再生成1を採用、ピン左右は不合格を明記。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P05.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-9cea56e3-54d6-4a36-9d43-30b8e87d85f9.png",
+          "adopted": false,
+          "visual_review": "エプロン混入、魚が細密、段比率の差。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P05-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-ab0366b6-8d1d-46e3-bc96-6c14c35232b7.png",
+          "adopted": true,
+          "visual_review": "エプロン解消、4手と箱が明瞭。ピン左右不一致。"
+        },
+        {
+          "version": "rev2",
+          "prompt": "manga/serial/ch01/prompts/P05-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-5c2f7226-82db-4052-9661-3ee9bf291b67.png",
+          "adopted": false,
+          "visual_review": "終盤ピンは改善したが冒頭逆のまま、白胸当て再混入。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "9663e02a60d00c9ba7eae9d3a43fb8b5680f769ac2abb061cae83437e87387e1",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P06",
+      "adopted_version": "rev2",
+      "image": "manga/serial/ch01/pages/P06.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P06-rev2.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-3623b3a7-6afa-449d-9205-42cee82b3073.png",
+      "regeneration_count": 2,
+      "generation_count": 3,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png"
+      ],
+      "checks": {
+        "expression": [
+          "partial",
+          "謝罪と遥の落ち込みは良好。佐伯は生姜のコマだけでなく下段右でも口元が少し緩む。"
+        ],
+        "identity": [
+          "partial",
+          "エプロンを除去しピン2本。見学証はPCに隠れ、佐伯の左腕時計が省略。"
+        ],
+        "layout": [
+          "partial",
+          "5コマ・右→左順を修正。段高は約36/26/38%で28/32/40%からずれる。"
+        ],
+        "text": [
+          "pass",
+          "全台詞と翌日12:20一つを判読。"
+        ],
+        "style": [
+          "partial",
+          "主線・黒ベタは保持。写真と生姜に細密な陰影。"
+        ],
+        "props_time": [
+          "partial",
+          "購入済み袋・生姜の絵・閉じたPC・台帳記入あり。追加された壁時計は12:20付近で短針は12寄り。"
+        ]
+      },
+      "remaining_defects": [
+        "佐伯の左腕時計が省略",
+        "コマ4にも小さな笑み",
+        "段高比率のずれ",
+        "見学証がPCで隠れる",
+        "追加壁時計の短針位置が不正確"
+      ],
+      "selection_reason": "5コマ、購入済み袋、生姜の絵、台帳記入とエプロンなしを満たす再生成2を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P06.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-d83f15bd-7047-4412-90f6-aaaa75916fe2.png",
+          "adopted": false,
+          "visual_review": "6コマに増加、買い物袋なし、生姜の絵なし。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P06-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-c05605cc-e6f8-4e92-b875-0c969f09b409.png",
+          "adopted": false,
+          "visual_review": "5コマと袋・生姜・台帳改善。遥に胸当て混入。"
+        },
+        {
+          "version": "rev2",
+          "prompt": "manga/serial/ch01/prompts/P06-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-3623b3a7-6afa-449d-9205-42cee82b3073.png",
+          "adopted": true,
+          "visual_review": "胸当て除去、5コマ維持。左腕時計省略、コマ4小さな笑み。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "3754abaeb62d26636ebfa4d1717cb50835a69a953c8d99e8a4bcd92dac62df95",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P07",
+      "adopted_version": "rev1",
+      "image": "manga/serial/ch01/pages/P07.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P07-rev1.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-8d766ba5-7d6a-45c4-b2c7-d870a846dc7b.png",
+      "regeneration_count": 1,
+      "generation_count": 2,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/08-saeki-maho.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "困り眉、口角の下がった顔、退室時の下がる肩。"
+        ],
+        "identity": [
+          "pass",
+          "佐伯の髪型・ブラウス・カーディガン・左腕時計。"
+        ],
+        "layout": [
+          "pass",
+          "上下2コマ50:50、机と空椅子と退出方向を反復。"
+        ],
+        "text": [
+          "pass",
+          "同僚の尾を画外左に修正。時刻と当番表も判読。"
+        ],
+        "style": [
+          "partial",
+          "白場とベタを保持。机・床に淡い反射状の線が残る。"
+        ],
+        "props_time": [
+          "partial",
+          "12:23→12:25、机上の当番表、残る魚と置いた箸あり。壁時計の短針が12寄り。箱がP05の黒トレーから白い箱へ変化。"
+        ]
+      },
+      "remaining_defects": [
+        "壁時計の短針の進み不足",
+        "弁当容器の色がP05と不一致",
+        "指定外の小棚と窓口案内",
+        "床・机の淡い反射状の線"
+      ],
+      "selection_reason": "同僚の尾、机上当番表、時刻の判読性を修正した再生成1を採用。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P07.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-d86602f3-4c2e-4faa-83ef-5754a7af1e21.png",
+          "adopted": false,
+          "visual_review": "2分差と空椅子は良好。同僚の尾が佐伯へ向く、当番表が壁。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P07-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-8d766ba5-7d6a-45c4-b2c7-d870a846dc7b.png",
+          "adopted": true,
+          "visual_review": "尾と机上当番表を修正。容器が白、短針の進み不足。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "6449486ec67899049ce16829aad6819633bf967424334235335e9bdd7a5c9629",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    },
+    {
+      "page": "P08",
+      "adopted_version": "rev2",
+      "image": "manga/serial/ch01/pages/P08.png",
+      "adopted_prompt": "manga/serial/ch01/prompts/P08-rev2.txt",
+      "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-19f79d06-b55c-4fcd-b46b-7ef6daecc3fd.png",
+      "regeneration_count": 2,
+      "generation_count": 3,
+      "style": "E標準",
+      "referenced_image_paths": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/v2/backgrounds/02-aoba-counter.png",
+        "art/v2/characters/00-expression-guide.png",
+        "art/style-tests/round2/E-3.png"
+      ],
+      "checks": {
+        "expression": [
+          "pass",
+          "悔しさ→落ち込み→集中を眉と口で確認。"
+        ],
+        "identity": [
+          "pass",
+          "右こめかみ2本ピン、見学証、エプロンなし、坂本の名札。"
+        ],
+        "layout": [
+          "partial",
+          "3段と右遥・左坂本は一致。下段が約36%で指定42%より小さい。"
+        ],
+        "text": [
+          "pass",
+          "内語枠・接客台詞・希望の台詞と話者を確認。"
+        ],
+        "style": [
+          "partial",
+          "ベタ・ペン線・網点。PCに淡い中間調と中段で小さな指定外ロゴ状の印。"
+        ],
+        "props_time": [
+          "fail",
+          "PC収納とノートへの持ち替えは明瞭だが、右手ノート・左手PCで指定と逆。12:26表記は正しいが時計は余分な上向き針と25分寄りの長針が残る。"
+        ]
+      },
+      "remaining_defects": [
+        "ノートとPCを持つ手が左右逆",
+        "12:26の時計の針が不正確で余分な針が残る",
+        "下段面積が小さい",
+        "PCに薄い中間調と指定外の小さな印"
+      ],
+      "selection_reason": "再生成1の肩紐の曖昧さを改善し、固定衣装と感情を優先した再生成2を採用。持ち物の左右と時計は未解消。",
+      "attempts": [
+        {
+          "version": "initial",
+          "prompt": "manga/serial/ch01/prompts/P08.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-bd226a28-1e2f-4fda-aa9d-be0f959a5635.png",
+          "adopted": false,
+          "visual_review": "エプロン混入、ピン左右、時刻、次ページの指差し先取り。"
+        },
+        {
+          "version": "rev1",
+          "prompt": "manga/serial/ch01/prompts/P08-rev1.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-3e68b57b-580f-4891-aa82-298e8190826c.png",
+          "adopted": false,
+          "visual_review": "ピンと持ち替え左右は修正。時計3針、白肩紐の残存。"
+        },
+        {
+          "version": "rev2",
+          "prompt": "manga/serial/ch01/prompts/P08-rev2.txt",
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0cf69-30d5-7360-a37d-29405a119713/exec-19f79d06-b55c-4fcd-b46b-7ef6daecc3fd.png",
+          "adopted": true,
+          "visual_review": "白肩紐を改善。時計と持ち替え左右が未解消。"
+        }
+      ],
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "sha256": "cf1c8f78c9e091ba261d114266c2367c6a3a931bb926b8fd901ff1c7aec954e2",
+        "byte_identical_to_source": true,
+        "prompt_files_exist": true
+      }
+    }
+  ]
+}
