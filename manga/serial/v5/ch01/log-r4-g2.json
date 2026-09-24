@@ -1,0 +1,327 @@
+{
+  "round": 4,
+  "group": 2,
+  "date": "2026-09-24",
+  "generator": "built-in image_gen",
+  "scope": [
+    "P27",
+    "P30",
+    "P31-32",
+    "P35"
+  ],
+  "image_postprocessing": false,
+  "git_commit": false,
+  "review_method": "各生成結果を画像表示して目視。採用画像の実寸とコピーのSHA-256一致を別途検証。",
+  "tool_rejections": [
+    {
+      "page": "P27",
+      "reason": "最初の呼出しは参照画像が5枚を超えたため生成前に拒否。画像を生成していないので稿数に含めない。"
+    }
+  ],
+  "pages": [
+    {
+      "page": "P27",
+      "draft_count": 2,
+      "adopted_draft": 2,
+      "output": "manga/serial/v5/ch01/pages/P27.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P27-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": "合格：中段右に12:14の大西、中段左に親指の応酬。12:12→12:14→応酬→12:15。",
+        "コマの読み順": "合格：4コマ。アキを右、遥を左に配置し『そこ、私がやる』→『お願いします』の順。",
+        "台詞の文字・話者・しっぽ": "合格：指定の全台詞を確認。大西・アキ・遥・水道点検員の話者が判別できる。遥の尾は口の下側へ向く。",
+        "名前の見出し": "合格：水道点検員のみ。小川・大西・店長 坂本は衣服の名札。",
+        "人物の一貫性": "合格：遥の高い二股尾・右白ピン2本、アキのボブと白ポロ・黒腰、森の眼鏡・黒服、坂本の四角顎。大西は長鼻・細顎・白帽・白折返し袖。",
+        "時計": "概ね合格：12:12、12:14、12:15の見出しと二針。時針の分進みや分針の数度差は厳密一致していない。",
+        "手の持ち主": "合格：受け渡し、親指、調理、点検員の手は各人の袖・腕につながる。石田のヘルメットも確認。",
+        "見せ場の迫力": "合格：通常会話のE、下段の大きい工事音と点検員・坂本の顔。"
+      },
+      "remaining_issues": [
+        "時計の針は時刻を概ね示すが、指定角度との数度の差が残る。"
+      ],
+      "attempts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-80f42a99-6707-45a5-9d6b-db333561e6e5.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P27.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "中段の左右は修正。アキと遥の吹き出し順・時計の短針に再調整が必要。"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-e5fdc2be-7b37-4219-a35c-168dc1975da4.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P27.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "採用",
+          "review": "採用。人物配置の変更でアキ→遥の応答順を明確化。"
+        }
+      ],
+      "verification": {
+        "actual_size": [
+          1024,
+          1536
+        ],
+        "sha256": "ec15bf0c4075f5161d22e9a3bee26647975401eb31761f97ab63c397648c0dbf",
+        "source_and_saved_bytes_identical": true
+      }
+    },
+    {
+      "page": "P30",
+      "draft_count": 2,
+      "adopted_draft": 2,
+      "output": "manga/serial/v5/ch01/pages/P30.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P30-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": "合格：全コマ無言。箱停滞→空トレー復路→遥の両目→空トレーの白円。帯3枚は平置きで、答えの実行は未描写。",
+        "コマの読み順": "合格：上全幅→中段右→中段左の目→下全幅。",
+        "台詞の文字・話者・しっぽ": "合格：会話・内語・吹き出しなし。ダダダダ・スッ、帯の名字、名札、視界の1・2のみ。",
+        "名前の見出し": "合格：初出見出しの追加なし。",
+        "人物の一貫性": "合格：遥の髪と白ピン、アキのボブと白ポロ、大西の長鼻・細顎・白帽・折返し袖。視界内のみ黒ベタを除く細線化。",
+        "時計": "合格：壁時計・新たな時刻・秒数なし。",
+        "手の持ち主": "合格：右中段はアキの白ポロ腕と大西の白折返し袖の細腕。トレーは空。",
+        "見せ場の迫力": "合格：独立した両目アップ、均一な網点、細線人物、紙白の箱とトレー、黒丸白数字、筆矢印、白抜き円と短い放射線。矢印の方向も往路左・復路右。"
+      },
+      "remaining_issues": [],
+      "attempts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-be3d4649-e379-4671-9f21-6247955e691d.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P30.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "無言の構成は反映。視界内に遥の黒髪ベタと黒トレーが残り、箱に帯を巻く先走りがあった。"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-7779d374-a860-4bc9-bebf-22f498438177.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P30.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "採用",
+          "review": "採用。人物全員の視界内細線化・物の紙白・筆矢印・帯なし箱を確認。"
+        }
+      ],
+      "verification": {
+        "actual_size": [
+          1024,
+          1536
+        ],
+        "sha256": "37004990722566c82a99946bb5c54b12100fbc1ce95e67ef2e3dd2685be37a04",
+        "source_and_saved_bytes_identical": true
+      }
+    },
+    {
+      "page": "P31-32",
+      "draft_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P31-32.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P31-32-r4.txt",
+      "size": [
+        1536,
+        1024
+      ],
+      "checks": {
+        "今回の修正点": "主要修正は合格：斜めの低い視点、大きな遥の掌、太い集中線・長い速度線、左右巨大なダダダダ、大西の驚き、止まる坂本の手、森のタイマー、空トレーと岡田の帯1枚。",
+        "コマの読み順": "合格：1コマ見開き。右の大西から左の遥、掌と台の動きから右の白帯へ。中央46〜54%に顔・文字・帯・指の接点なし。",
+        "台詞の文字・話者・しっぽ": "合格：唯一の台詞『箱より先に、名前を送る！』。尾は左の遥へ。帯『12:16／岡田／焼き魚』は判読可能。",
+        "名前の見出し": "合格：初出紹介なし。服の名札と岡田の帯のみ。",
+        "人物の一貫性": "合格：遥・アキ・坂本・森の識別点を確認。大西は細長い顎、長い鼻、無地白帽、白折返し袖・細腕で坂本と区別。",
+        "時計": "合格：壁時計なし。森の小さなタイマー筐体と手があり、表示数字なし、停止操作を描かない。帯の12:16は予約時刻。",
+        "手の持ち主": "概ね合格：大きな手は遥の薄灰袖に接続。アキは脇へ退き、坂本の救援の手は空中、大西の受ける手は白作業袖。ただし遥の掌は上向きに開いたフォロースルーで、滑らせた動作の確かさに改善余地。",
+        "見せ場の迫力": "合格：大きな顔と掌、低い視点、斜めの台、筆勢のある復路矢印と往路矢印、工事音と白帯の対比。ノドの白場は確保。"
+      },
+      "remaining_issues": [
+        "帯の文字面が読者側を強く向き、大西へ向ける指定を厳密には満たしていない。",
+        "遥の掌が上向きのため、『自分でトレーを滑らせた』動作は速度線と位置関係で補われている。"
+      ],
+      "attempts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-42e50479-ceba-490b-ab67-e92126e45c13.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P31-32.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "迫力・空トレー・人物5人は反映。ノドに手と吹き出しが寄り、矢印が直線的。"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-7c438bfe-d8d8-405d-a5f2-a15d841b04de.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P31-32.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "掌とアキの指がノドにかかり、不要な食品入り箱が背景に増えた。"
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-ea1b6c2d-9033-48fe-b418-235c0ad2fda7.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "人物設定画中心へ参照変更。帯を載せた物が食品入り箱へ変化したため不採用。"
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-4a191717-aca0-48e8-88bc-7d68ea2a1cf7.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P31-32.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png"
+          ],
+          "visually_reviewed": true,
+          "result": "採用",
+          "review": "採用。空の浅いトレーと紙帯1枚、中央安全域、五人の手・顔・タイマーを確認。帯の文字面と掌の向きに残課題。"
+        }
+      ],
+      "verification": {
+        "actual_size": [
+          1536,
+          1024
+        ],
+        "sha256": "f534d1b05d2f4b3a45e32a882e4e33f6ef3dadf43390b2a6a9d4134f76acdfca",
+        "source_and_saved_bytes_identical": true
+      }
+    },
+    {
+      "page": "P35",
+      "draft_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P35.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P35-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": "合格：下段右『コト』で棚へ、左『パサ』で袋。箱は同じ棚に1個残り、アキの手へ戻らず複製なし。",
+        "コマの読み順": "合格：上全幅→中全幅→下右→下左の4コマ。",
+        "台詞の文字・話者・しっぽ": "合格：無言。ダダダ、ペタ、コト、パサ。佐伯／から揚げ／12:20、台帳最終行を確認。",
+        "名前の見出し": "合格：紹介枠なし。予約棚、帯、衣服の名札のみ。",
+        "人物の一貫性": "合格：アキの白ポロ・黒腰、遥の白胸当てと白ピン、大西の長鼻・細顎・白帽・白折返し袖。坂本とジップ上着の中村を区別。",
+        "時計": "概ね合格：12:19の見出しと二針。短針は12のすぐ右、長針は4付近。指定114度への厳密一致には数度の差。",
+        "手の持ち主": "合格：中段のアキの幅ある腕と大西の細腕。指先は唯一印字された佐伯の最終行の左上。遥の手の混入なし。下段はアキの棚置き→空いた両掌、遥の両手は袋。中村は本人右手に鍵。",
+        "見せ場の迫力": "合格：通常Eの静かな分担。中段の斜め俯瞰で帯・箱・台帳・二人の目と手を大きく見せる。"
+      },
+      "remaining_issues": [
+        "時計の長針は4付近で、12:19の指定114度に数度のずれが残る。",
+        "台帳の最終行を明確にするため、上の予約行は罫線のみへ省略した。"
+      ],
+      "attempts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-3417fb7d-b07a-412d-8e8f-434dd6944809.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P35.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "下段順・棚の箱と空いた手は反映。時計が9時台、台帳の指は12:16の行で不採用。"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-37b6e90c-75f2-42e0-b682-28b7019fb1b9.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P35.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "時計と棚の1箱は改善。台帳の指は12:16のまま。"
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-011eaa18-b579-4216-8d37-360a6fe65df5.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P35.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "不採用",
+          "review": "指は下へ移動したが12:18付近に残る。"
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a241-7c70-8f45-90dbd646ab83/exec-4d4aeb6c-3b7e-47ca-9745-c30f3367352e.png",
+          "reference_images": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P35.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/03-aoba-kitchen.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "result": "採用",
+          "review": "採用。台帳の既存行を罫線に省略し、最終行12:20 佐伯 から揚げと指を明確化。"
+        }
+      ],
+      "verification": {
+        "actual_size": [
+          1024,
+          1536
+        ],
+        "sha256": "6f19372031a796a1a6aa3ab84e7e2bc718410a650f0731691a8ef2f38d5a6439",
+        "source_and_saved_bytes_identical": true
+      }
+    }
+  ]
+}

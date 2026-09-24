@@ -1,0 +1,542 @@
+{
+  "round": 4,
+  "group": 3,
+  "date": "2026-09-24",
+  "language": "ja",
+  "tool": "built-in image_gen",
+  "scope": [
+    "P38",
+    "P42",
+    "P44",
+    "P47"
+  ],
+  "status": "完了（各頁4稿上限に達したため、差分を明記して採用）",
+  "git_commit": false,
+  "image_postprocessing": false,
+  "inspection_method": "全16生成画像を表示して目視。8項目は採用稿に対して個別記録。時計の小盤面など判断できない箇所は未確認と記した。",
+  "source_documents": [
+    "docs/serial/v5/review-r3.md",
+    "manga/serial/v5/ch01/style-common.txt",
+    "manga/serial/v5/ch01/names/P38.md",
+    "manga/serial/v5/ch01/names/P42.md",
+    "manga/serial/v5/ch01/names/P44.md",
+    "manga/serial/v5/ch01/names/P47.md"
+  ],
+  "tool_errors": [
+    {
+      "page": "P38",
+      "stage": "初回生成前",
+      "message": "参照画像が5枚上限を超えたため引数検証で拒否。画像は生成されず、稿数に含めない。以後は最大5枚。"
+    }
+  ],
+  "pages": [
+    {
+      "page": "P38",
+      "drafts_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P38.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P38-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": {
+          "status": "一部差分あり",
+          "detail": "顔の対峙を拡大。上段下端に受渡し。上段の坂本の掌と箱は白く離れ、中段では掌を腰脇へ下げた。矢印は消えた。"
+        },
+        "コマの読み順": {
+          "status": "確認",
+          "detail": "横長3段。下段は右の佐伯→中央アキの返答→左の遥の笑顔。指定60:22:18に対し目視約56:22:22。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "status": "確認",
+          "detail": "遥『店長、その手を空けてください』、坂本『……任せた』、佐伯『もう、行けるんですね』、アキ『はい！』。各話者は同じコマにおり取り違えなし。"
+        },
+        "名前の見出し": {
+          "status": "確認",
+          "detail": "紹介枠なし。名札『店長 坂本』『小川』と帯『佐伯／から揚げ／12:20』。"
+        },
+        "人物の一貫性": {
+          "status": "確認",
+          "detail": "遥の高い二股尾・白ピン・白胸当て、坂本の四角顎・白いこめかみ・黒胸当て、アキの短いボブ・白胸元と腰エプロン、佐伯の波髪を確認。"
+        },
+        "時計": {
+          "status": "小盤面は確認限界あり",
+          "detail": "見出し12:20。佐伯の左腕に小さな丸時計。盤面が小さく、二針の正確な120度・10度を確定できない。"
+        },
+        "手の持ち主": {
+          "status": "一部差分あり",
+          "detail": "袖と腕は各本人へ連続し、箱はアキ→佐伯。坂本は箱に触れない。中段の下降軌跡が、上段で伸ばした右手とは反対側の左手付近にある。"
+        },
+        "見せ場の迫力": {
+          "status": "改善・差分あり",
+          "detail": "顔を大きく対峙させ、あおりと集中線を加えた。胸当ての面積は指定より大きく、上段60%には届かない。"
+        }
+      },
+      "remaining_issues": [
+        "中段の下降軌跡が、上段で伸ばした手と反対側の手付近にある。",
+        "上段は目視約56%で指定60%より小さく、胸当ても指定より広く見える。頭髪が上端に近い。",
+        "佐伯の腕時計が小さく、二針の厳密な角度は確認できない。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-2e93b7dd-c7e7-4d9f-bf04-70c55015c4b4.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P38.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "顔は拡大したが下降矢印が残り、下げた掌が下枠で切れたため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-71000f06-26cb-47f5-acdd-21bd9ecbae14.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P38.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "顔と箱の白い隙間は改善。下降矢印が再び残り、掌の全体が見えないため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-376b44c3-3116-49ea-bd18-0fd3eb78e956.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "下降矢印は消え、手は腰脇へ。ただしアキの顔・髪・黒胸当て、佐伯の顔が設定から外れたため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-3813d96e-7791-41ea-853e-6dba9b856448.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "人物設定の一致と大きな顔、箱への非接触を優先して採用。軌跡の位置・コマ比率などの差分は残存問題へ。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "sha256": "2679e3d2c01ecb7b11a6c8f70dd1f25cccdcf62d96b31edaaa6e35c3ef88a5cf",
+      "byte_identical_to_generated_source": true
+    },
+    {
+      "page": "P42",
+      "drafts_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P42.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P42-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": {
+          "status": "主修正を確認",
+          "detail": "森が片手で坂本の弁当を受け、もう片手の黒鉛筆でメモ下段の○に接触。予約6件の6丸と『7 森の昼食 ○』を横罫で分離。笑いは中段に収め、上部白場を増やした。"
+        },
+        "コマの読み順": {
+          "status": "確認・比率差分あり",
+          "detail": "上段→中段右の森→中段左スマホ→下段。中段右が指定45%幅より広く約64%。段比率も30:30:40より上段が大きい。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "status": "一部差分あり",
+          "detail": "上段は遥『助かりました』→アキ『困る前に呼んでください』→遥『はい』。森『七件目、回収』と坂本の下段台詞も正しい。森の尾の先端は頭上で止まり、口の直前まで達していない。スマホ文は画面内。"
+        },
+        "名前の見出し": {
+          "status": "確認",
+          "detail": "余分な紹介見出しなし。『小川』『店長 坂本』、メモ『予約6件』『7 森の昼食』を確認。"
+        },
+        "人物の一貫性": {
+          "status": "確認",
+          "detail": "アキは上下とも白ポロと黒腰エプロン。遥の高い尾・白ピン・胸当てなし、森の黒袖・眼鏡・ボブ、坂本の白袖・黒胸当てを確認。"
+        },
+        "時計": {
+          "status": "確認",
+          "detail": "上段13:00、長針12・短針1の二針。余分な時計なし。"
+        },
+        "手の持ち主": {
+          "status": "確認",
+          "detail": "森の黒袖が受取る手と鉛筆の手へ連続。坂本の白袖太腕が弁当を渡す。スマホは坂本の手、下段の箸も坂本。"
+        },
+        "見せ場の迫力": {
+          "status": "確認",
+          "detail": "この頁はE標準の静かな会話。森のメモと手元を大きくして行為を読みやすくした。大きな集中線は加えていない。"
+        }
+      },
+      "remaining_issues": [
+        "中段右の幅が指定45%より広い（目視約64%）。段比率も指定と異なる。",
+        "森の吹き出しの尾は口の直前まで達していない。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-6d2ce12e-2dae-4b0a-a500-1edc399bbd8f.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P42.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "メモは可読だが鉛筆先がメモに接触せず、森の受取る手が描けていないため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-280d6265-e5a3-493e-bad4-24b05f436ae5.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "俯瞰とメモは出たが鉛筆先が下段○を外れる。遥の低い結び髪と『はい』の話者誤りもあり不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-df60c478-9f1e-4fd8-8454-c77412faca26.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P42.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "森の受取りと○への接触を確認。アキの黒胸当てが残ったため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-8b3cf394-988e-4f93-9bf6-a26c9d914eda.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P42.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png"
+          ],
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "森の弁当受取りと○の記入、アキの白ポロ＋腰エプロン、上端白場を確認し採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "sha256": "7a0cd50b33cd1961d784566cc1cb20a97f2fb822e77b6fc7b68efeed45baa088",
+      "byte_identical_to_generated_source": true
+    },
+    {
+      "page": "P44",
+      "drafts_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P44.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P44-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": {
+          "status": "主修正を確認・配置差分あり",
+          "detail": "『真柴 蓮』『遥の同期』を二行で明瞭に表示。見出しは吹き出しより上へ移したが、両者の縦方向の範囲には一部重なりが残る。枠同士は接触しない。"
+        },
+        "コマの読み順": {
+          "status": "確認・比率差分あり",
+          "detail": "上段→中段右の本部→中段左の店→下段。下段は指定40%より小さく目視約34%。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "status": "確認・終点差分あり",
+          "detail": "『その順番、借りるよ』『できた。八店分』は二重縁、話者は蓮。尾は画面内の蓮の顔へ向くが口の直前までは伸びていない。"
+        },
+        "名前の見出し": {
+          "status": "確認",
+          "detail": "『真柴 蓮／遥の同期』の内容を確認。『運の同期』は残していない。二行に改行。"
+        },
+        "人物の一貫性": {
+          "status": "確認",
+          "detail": "蓮の明るい髪と白開襟＋黒T、遥の高い尾と白ピン・胸当てなし、水野の低い尾とジャケット・角顎を維持。"
+        },
+        "時計": {
+          "status": "小差分あり",
+          "detail": "上段14:00は長針12・短針2。下段14:30は長針6・短針は2と3の間へ改善したが、目視では75度より僅かに2寄り。二針のみ。"
+        },
+        "手の持ち主": {
+          "status": "確認",
+          "detail": "蓮の両手と小型タブレットが通話画面内。遥のペンと紙を持つ手、水野の手帳・ペンも本人の袖へ連続。"
+        },
+        "見せ場の迫力": {
+          "status": "確認",
+          "detail": "E標準。蓮の笑顔と遥の止まったペン・驚く顔を保ち、下段の端末を読みやすくした。"
+        }
+      },
+      "remaining_issues": [
+        "14:30の短針が厳密な75度より僅かに2時寄り。",
+        "見出しと台詞は非接触だが、指定どおり完全に上下へ分離できていない。",
+        "通話吹き出しの尾は口の直前までは達しない。下段の面積は指定40%より小さい。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-fbd29c0a-6434-455a-958a-dec92a5d1af3.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "『遥の同期』へ変更したが14:30短針は2時寄り、端末が画面境界に重なり不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-e7b48a84-f1b5-4b17-ad93-949c5216aa7b.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "見出しと台詞の段差は改善したが大きな端末と通話枠が紛らわしいため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-8515197b-7742-4ca9-9061-8743d9aae4b2.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "小型タブレットと両手が通話枠内に収まる。見出しと吹き出しの上下分離をさらに明瞭にするため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-2dcd5e27-50aa-4570-8e8e-fb92b57f8e56.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "見出しを『真柴 蓮』『遥の同期』の二行へ。小型タブレットは通話枠内。採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "sha256": "9c4548e434fee3734d0baf0d37fa4d6e8ba7c3ad76a767cc07e35e9e8d60962d",
+      "byte_identical_to_generated_source": true
+    },
+    {
+      "page": "P47",
+      "drafts_count": 4,
+      "adopted_draft": 4,
+      "output": "manga/serial/v5/ch01/pages/P47.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P47-r4.txt",
+      "size": [
+        1024,
+        1536
+      ],
+      "checks": {
+        "今回の修正点": {
+          "status": "主修正を確認・尾に差分あり",
+          "detail": "右の通話画面の蓮『手加減、できないよ』は二重縁。左の店側の遥『頼んでない』は一重。尾の話者は一致し交差しない。"
+        },
+        "コマの読み順": {
+          "status": "確認・比率差分あり",
+          "detail": "上段の森の説明を高く、遥の返答を下へ。下段は右上の蓮→左下の遥。下段は指定45%より小さく目視約40%。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "status": "一部差分あり",
+          "detail": "全5台詞とメモ『説明書 ○／横から説明 ×』を確認。話者逆転なし。一部の尾は髪・頬方向で止まり、口の直前へ届かない。"
+        },
+        "名前の見出し": {
+          "status": "確認",
+          "detail": "追加の人物紹介枠なし。"
+        },
+        "人物の一貫性": {
+          "status": "確認",
+          "detail": "遥の本人右側白ピン・高い二股尾・薄灰袖、蓮の明るい髪・白開襟＋黒T、森のボブ・丸眼鏡・黒袖。左右配置変更に伴う人物の鏡像反転なし。"
+        },
+        "時計": {
+          "status": "該当なし",
+          "detail": "時計・時刻見出しを追加していない。"
+        },
+        "手の持ち主": {
+          "status": "確認",
+          "detail": "森は黒袖の両腕を交差しPCと机上ノートを指す。遥は店側の台帳を閉じ、蓮の手と端末は通話画面内。"
+        },
+        "見せ場の迫力": {
+          "status": "確認・余白差分あり",
+          "detail": "二人の大きな笑顔と左右対峙を保つ。下段左右の吹き出しが外縁に近く、5%の安全域を満たさない部分がある。文字の欠落なし。"
+        }
+      },
+      "remaining_issues": [
+        "一部の吹き出しの尾が口の直前まで達していない。話者の逆転は解消。",
+        "下段左右の吹き出しの外側余白が5%未満。文字欠落はない。",
+        "下段の面積は指定45%より小さい（目視約40%）。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-793cda75-77af-427b-9d2a-aa1bb7cf9c36.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "下段の蓮・遥の話者と左右配置を修正。上段の説明・返答の段差が弱いため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-92281dcf-8ca8-4a86-a96d-7f2fb9d40d95.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "上段の発話順が改善。ノートが浮いて見え、一部の尾が頭部で終わるため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-2846779c-f24c-4b3e-a57e-7d45e21a61f7.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "ノートを机上へ移し、下段の尾は改善。『頼んでない』が左端に寄り枠と接するため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "draft": 4,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1a9-a271-7123-bae6-f2152feda815/exec-cd0932e3-ccd1-4fae-8d4a-5a53bbaae9f9.png",
+          "references": [
+            "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "机上ノートと話者修正、読み順を維持。左吹き出しは枠内になった。安全域などの差分を記録して採用。",
+          "actual_size": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "sha256": "4408082d84400e50282284418b033dc0b11d91ad52bcda95c291f1fe1f078135",
+      "byte_identical_to_generated_source": true
+    }
+  ],
+  "validation": {
+    "json_valid": true,
+    "all_selected_images_1024x1536": true,
+    "all_selected_images_byte_identical_to_generated_sources": true,
+    "all_pages_have_eight_check_results": true,
+    "old_prompts_retained": true
+  }
+}
