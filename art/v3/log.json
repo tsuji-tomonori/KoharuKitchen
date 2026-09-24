@@ -1,0 +1,262 @@
+{
+  "project": "こはるキッチン",
+  "round": "v5-round-01",
+  "date": "2026-09-24",
+  "success_calls": 11,
+  "accepted": 8,
+  "rejected": 3,
+  "reference_policy": "art/v2/ and art/style-tests/round2/ only; generated v3 never used as input",
+  "entries": [
+    {
+      "id": "01-aoi-haruka",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/01-aoi-haruka.txt",
+      "reference_images": [
+        "art/v2/characters/01-aoi-haruka.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-da3a7879-a73c-4639-b046-b645532aa317.png",
+      "output": "art/v3/characters/01-aoi-haruka.png",
+      "retries": 0,
+      "visual_review": "正面・右横・4表情、白ピン二本の本人右、白エプロンを確認。尾の三角形の強調は控えめ。髪の細い白抜き線が残る。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "42169cfb8f773b637f27750dacdbef9d0849d277205442fee83eaed6f33a3a3d",
+      "output_sha256": "42169cfb8f773b637f27750dacdbef9d0849d277205442fee83eaed6f33a3a3d",
+      "byte_identical": true
+    },
+    {
+      "id": "02-sakamoto-makoto",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/02-sakamoto-makoto-r1.txt",
+      "reference_images": [
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-67ba13c2-04a4-49e7-bb00-354256f785d9.png",
+      "output": "art/v3/characters/02-sakamoto-makoto.png",
+      "retries": 1,
+      "visual_review": "再生成で右横の名札を除去。太い腕・四角い黒面・4表情を確認。笑いは指定の不器用な小笑いより大きい。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "c14d20abe5d03a267f091fcd18bd57196eb81e337783f7f4113e289be8b67bd3",
+      "output_sha256": "c14d20abe5d03a267f091fcd18bd57196eb81e337783f7f4113e289be8b67bd3",
+      "byte_identical": true
+    },
+    {
+      "id": "02-sakamoto-makoto-attempt-0",
+      "status": "rejected",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/02-sakamoto-makoto.txt",
+      "reference_images": [
+        "art/v2/characters/07-sakamoto-makoto.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-534051fb-59be-4dd8-b82d-c7765e185ca9.png",
+      "reason": "右横で遠側の左胸名札が手前に描かれた",
+      "output": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "845fd7529d6c6a384ea311abc969ae9c0cb59400281ab183de16edfad692daf8"
+    },
+    {
+      "id": "03-mashiba-ren",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/03-mashiba-ren.txt",
+      "reference_images": [
+        "art/v2/characters/09-mashiba-ren.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-1d518cea-f00e-4513-a2bd-16463c29b756.png",
+      "output": "art/v3/characters/03-mashiba-ren.png",
+      "retries": 0,
+      "visual_review": "明るい網点髪、白シャツと黒T、4表情を確認。本人の正面と右横を保持。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135",
+      "output_sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135",
+      "byte_identical": true
+    },
+    {
+      "id": "04-mori-risa",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/04-mori-risa-r1.txt",
+      "reference_images": [
+        "art/v2/characters/04-mori-risa.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-3311d548-66bc-4a21-87a6-1e12842eba07.png",
+      "output": "art/v3/characters/04-mori-risa.png",
+      "retries": 1,
+      "visual_review": "再生成でペンと鉛筆の混同を除去。全身2面・4表情、丸眼鏡と半眼を確認。初回は黒鉛筆。頭に手を触れる表情は営業外の演技参考。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "4281a6cb4d6c86e75efc707951fcc9957989c04a2b3282e5f9b42ee0b45db203",
+      "output_sha256": "4281a6cb4d6c86e75efc707951fcc9957989c04a2b3282e5f9b42ee0b45db203",
+      "byte_identical": true
+    },
+    {
+      "id": "04-mori-risa-attempt-0",
+      "status": "rejected",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/04-mori-risa.txt",
+      "reference_images": [
+        "art/v2/characters/04-mori-risa.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-e48f94e9-1e19-4265-88db-ec30b445c0c5.png",
+      "reason": "黒鉛筆と白帯つきペンが混同され、小道具に誤った名称が生成された",
+      "output": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "5570e0517a62c41b6cd1aa8719d9ece19ac15a7cd5bbb418f90ef167b45a5af7"
+    },
+    {
+      "id": "05-mizuno-maki",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/05-mizuno-maki.txt",
+      "reference_images": [
+        "art/v2/characters/03-mizuno-maki.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-56cad444-8fcc-4138-b1a2-3e6ace2f39dd.png",
+      "output": "art/v3/characters/05-mizuno-maki.png",
+      "retries": 0,
+      "visual_review": "全身2面・4表情、長い尾と広いパンツを確認。34歳の成熟度はまだ控えめ。指定外の短い人物説明が生成されたため台本へ流用しない。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "a141ec7235d339738a70c18ec41824746e7a6555691ac79e4fca26f8653d37ba",
+      "output_sha256": "a141ec7235d339738a70c18ec41824746e7a6555691ac79e4fca26f8653d37ba",
+      "byte_identical": true
+    },
+    {
+      "id": "06-saeki-maho",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/06-saeki-maho-r1.txt",
+      "reference_images": [
+        "art/v2/characters/08-saeki-maho.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-ef8efd01-e015-4c96-ba02-8a161a314a8c.png",
+      "output": "art/v3/characters/06-saeki-maho.png",
+      "retries": 1,
+      "visual_review": "再生成で右横の手前腕の時計を除去。正面の左時計・右肩バッグ・4表情を確認。32歳の顔の成熟度は控えめ。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "df1f617a699260fe5d31f8a2a503e56ec1b922b9bf8f3e0f429e99491651d31b",
+      "output_sha256": "df1f617a699260fe5d31f8a2a503e56ec1b922b9bf8f3e0f429e99491651d31b",
+      "byte_identical": true
+    },
+    {
+      "id": "06-saeki-maho-attempt-0",
+      "status": "rejected",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/06-saeki-maho.txt",
+      "reference_images": [
+        "art/v2/characters/08-saeki-maho.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-81c05e0c-8603-474d-a8b3-b55b8eb06d6e.png",
+      "reason": "右横の手前腕に時計が描かれた",
+      "output": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "04fc71a81952bdab260bf0c7f963616575d220c4fc511145448123bcac594787"
+    },
+    {
+      "id": "07-ogawa-aki",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/07-ogawa-aki.txt",
+      "reference_images": [
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-da785a18-1e20-4182-b91b-977e8aa99e0a.png",
+      "output": "art/v3/characters/07-ogawa-aki.png",
+      "retries": 0,
+      "visual_review": "丸い短髪、右眉外のほくろ、腰エプロン・4表情を確認。横姿に左胸の名札が見えるため、厳密な右真横では名札を隠す。個人画を顔の正本候補にする。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "d8edbad2dcc1454d6aa163b2c62eef268d7eede1c40790fa09ae01b296e224bb",
+      "output_sha256": "d8edbad2dcc1454d6aa163b2c62eef268d7eede1c40790fa09ae01b296e224bb",
+      "byte_identical": true
+    },
+    {
+      "id": "00-lineup",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/00-lineup.txt",
+      "reference_images": [
+        "art/v2/characters/00-lineup.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d0ee-6842-7f03-9a27-04024e154b7a/exec-88c708a9-9e4b-4087-a0a1-71a7ec840d7b.png",
+      "output": "art/v3/characters/00-lineup.png",
+      "retries": 0,
+      "visual_review": "7人と順序・姓名・衣装の大きな白黒差を確認。身長比は近似。森の目が個人画より丸く、アキのほくろが小さく不鮮明。正確な顔・左右は個人設定と文章を優先。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "source_sha256": "1facffd4e696bb01dd1f3e44d9976091a983771352a955be8f8d67c4cba7a4e6",
+      "output_sha256": "1facffd4e696bb01dd1f3e44d9976091a983771352a955be8f8d67c4cba7a4e6",
+      "byte_identical": true
+    }
+  ]
+}
