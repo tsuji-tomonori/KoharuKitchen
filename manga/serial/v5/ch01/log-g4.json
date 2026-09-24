@@ -1,0 +1,1044 @@
+{
+  "担当": "g4",
+  "対象頁": [
+    "P39",
+    "P40",
+    "P41",
+    "P42",
+    "P43",
+    "P44",
+    "P45",
+    "P46",
+    "P47",
+    "P48"
+  ],
+  "状態": "担当10頁の生成・目視確認・無加工保存完了。残課題あり。",
+  "生成方式": "組み込み image_gen",
+  "総生成稿数": 28,
+  "最大稿数": 3,
+  "画像加工": false,
+  "git_commit": false,
+  "参照方針": "art/v3/characters/、art/v2/backgrounds/、art/style-tests/round2/のみ。生成済み漫画本文は入力に使用せず、修正稿も許可資料から再生成。",
+  "確認方法": "全28稿をgeneratedImage表示で目視。採用10枚はPNG寸法と生成元とのSHA-256一致を別途検証。コマ比率は目視概算。",
+  "連続性": "P38のネームとシナリオを確認。P48が第1話最終頁のため同話P49は存在しない。担当外の漫画画像は閲覧・参照しない。",
+  "生成前エラー": [
+    {
+      "頁": "P39",
+      "内容": "入力参照8枚が上限5枚を超過し、生成前の引数検証で失敗。5枚へ減らして実行。画像が生成されていないため稿数に含めない。"
+    }
+  ],
+  "補完事項": [
+    "P48の練習注文の未指定名は山田とし、予約カードと帯で統一。",
+    "P45の未指定の架空注文を練習A・練習Bとして青葉・駅前に配置。未指定の残る六店名は生成補完されており、他頁の店名図との統一確認は残る。"
+  ],
+  "pages": [
+    {
+      "頁": "P39",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P39.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P39.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "2c840695459d6672af09f303c167cb6f1da04c076f04a1e0ee5cca0301174c80",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "4コマと右→左の順序を修正。段比率に小差、安全域が狭い箇所あり。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "注意",
+          "詳細": "会話の話者と尾は識別可。記録の08等に12:を補記。水野の吹き出しは一重。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "既出人物のため再紹介の指定なし。坂本・小川の名札あり。"
+        },
+        "顔・髪型・服": {
+          "結果": "適合",
+          "詳細": "遥の高い尾と右ピン、黒胸当ての坂本、眼鏡の森、佐伯の黒波髪と左腕時計を確認。"
+        },
+        "時計の数字と針": {
+          "結果": "注意",
+          "詳細": "現在時刻の壁時計なし。佐伯の小さい腕時計盤面は厳密な判読困難。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "遥の拳、アキの筆記、坂本のスマホ、佐伯の左腕時計を識別。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "合格の任命と拳、出口の安堵を描写。"
+        }
+      },
+      "残った問題": [
+        "記録の省略時刻08等に12:が補われている",
+        "水野の通話吹き出しが細い二重縁ではない",
+        "一部文字と人物が外縁5%安全域に近い",
+        "佐伯の小さな腕時計盤面は時刻を厳密には判読できない"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-b77c6869-ee1f-48d7-87b3-29250e62cd2c.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "下段コマ3・4の左右が逆",
+            "佐伯の髪が灰色・時計が本人右腕",
+            "坂本の任命台詞に遥へ向く余分なしっぽ",
+            "六件後の句点欠落"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-349bbc9c-8230-4d33-9d42-3d768c383fdd.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "坂本の任命台詞に遥へ向く尾が残る",
+            "佐伯の時計が本人右腕",
+            "下段面積が指定より小さい"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-b050a2fd-7fcb-4fc7-a96d-06b048920d58.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png"
+          ],
+          "目視確認で残った問題": [
+            "記録の省略時刻08等に12:が補われている",
+            "水野の通話吹き出しが細い二重縁ではない",
+            "一部文字と人物が外縁5%安全域に近い",
+            "佐伯の小さな腕時計盤面は時刻を厳密には判読できない"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P40",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P40.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P40.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "b938d477454b42cbf4ff50e502ade15a20bf2a41385f40fe74f784cc35d078c6",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "無言の3コマと順序は適合。段比率は約18:40:42で指定と異なる。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "会話なし。コツ・ス・コト、12:22・12:30交代を確認。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "既出人物のため名前見出し指定なし。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "佐伯の黒波髪、淡いカーディガン、右肩バッグ、左腕時計は適合。靴の踵が設定より高め。"
+        },
+        "時計の数字と針": {
+          "結果": "注意",
+          "詳細": "二針の角度は概ね12:22。盤面の数字配置が不均等で4と長針が近く見える。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "椅子へ伸びる左腕と袖・時計がつながる。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "足先、椅子脚、床への接地を見せ、座れた瞬間を描写。"
+        }
+      },
+      "残った問題": [
+        "段比率が概ね18:40:42で指定25:35:40からずれる",
+        "壁時計の数字配置が不均等で長針が4に近く見える",
+        "佐伯の靴の踵が設定より高め"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-acb5eaea-c720-4cdb-9e78-986f6c83a967.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "12:22見出しに対して長針が20分付近",
+            "下段面積が指定より小さい",
+            "指定外の小さな動作曲線"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-b40d3789-b7e4-4442-9df5-2e598ee2630f.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "三段がほぼ均等で指定比率と異なる",
+            "足と椅子脚の接地部分が枠外",
+            "動作曲線が残る"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-b6f142b7-7179-45cb-896f-4bc0906ae45e.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "段比率が概ね18:40:42で指定25:35:40からずれる",
+            "壁時計の数字配置が不均等で長針が4に近く見える",
+            "佐伯の靴の踵が設定より高め"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P41",
+      "稿の数": 1,
+      "採用した稿": 1,
+      "画像": "manga/serial/v5/ch01/pages/P41.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P41.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "31e9f523c25c0e9ea784305cb9af938c09525202c3ce827f39b62f022845b2be",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "適合",
+          "詳細": "上の開封と下の一口の2コマ。下の大コマが頁の大部分。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "しょうが、きいてる／パカ／さくを目視確認。台詞は佐伯へ。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "既出人物のため名前見出し指定なし。"
+        },
+        "顔・髪型・服": {
+          "結果": "適合",
+          "詳細": "黒波髪、頬、カーディガン、白ブラウス、濃いスカート、左腕時計。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "壁時計・現在時刻見出しなし。既存の左腕時計のみ。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "本人右手の箸、本人左手が椅子座面、袖との連続性を確認。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "一口の頬と緩む目、座面の手と広い画面で余韻を確保。"
+        }
+      },
+      "残った問題": [],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-287538b5-b765-4206-ac37-40a97f08b1c5.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": []
+        }
+      ]
+    },
+    {
+      "頁": "P42",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P42.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P42.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "69d1acc9d40bdb57f1d03548aefb2dc47679490dbf73c8570d54549150745391",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "4コマと順序は適合。中段左右幅は約40:60で指定55:45からずれる。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "全会話と息子との画面メッセージを確認。息子の声の吹き出しなし。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "既出人物のため再紹介なし。坂本・小川の名札あり。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "遥はエプロンなし・右ピン。アキが指定の黒腰エプロンでなく黒胸当て。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "13:00見出し、長針12・短針1、二針。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "白袖と太腕・黒胸当て端でスマホの手を坂本と識別。"
+        },
+        "見せ場の迫力": {
+          "結果": "注意",
+          "詳細": "弁当の受渡し、七件目、父子の返信を描写。上段の笑顔が大きく白場が少ない。"
+        }
+      },
+      "残った問題": [
+        "アキが黒腰エプロンでなく黒胸当てになった",
+        "中段左右幅は約40:60で指定55:45と異なる",
+        "上段の笑顔が指定より大きく白場が少ない"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-d992ed37-c45b-465d-9359-1c8faf925186.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "13:00の時計に余分な針",
+            "スマホの手に白ポロ袖と黒胸当て端なし",
+            "中段左右の幅が逆の比率",
+            "森が箸を卓に置かず保持"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-a6411ede-55ea-4ca8-9837-7f910991f6d7.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "遥の白ピンが本人左こめかみへ反転",
+            "中段左右幅が指定と異なる",
+            "森の前に指定外の空容器、箸が置かれていない"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-97dbd76d-314e-4cdc-a0e2-3d36cb660535.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "アキが黒腰エプロンでなく黒胸当てになった",
+            "中段左右幅は約40:60で指定55:45と異なる",
+            "上段の笑顔が指定より大きく白場が少ない"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P43",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P43.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P43.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "7674b4ad041dcf409310920d889ed8816ea4c62d844b5417e82f357fdb0c14f0",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "3コマ。段比率は約40:32:28。コマ2は坂本の問いが上、遥の返事が下。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "全台詞と話者を確認。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "名前見出し指定なし。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "コマ2の遥の白ピンが本人左側へ反転。その他の顔・髪・衣装は概ね適合。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "新たな時計なし。"
+        },
+        "手の持ち主": {
+          "結果": "注意",
+          "詳細": "灰袖から描く手の所属は明瞭。描き足す動作よりノートを見せる構図が強い。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "八店・八脚の図と遥の大きい決意顔、食事へ戻る落差あり。"
+        }
+      },
+      "残った問題": [
+        "コマ2の遥の白ピンが本人左側に反転",
+        "段比率は概ね40:32:28で指定45:25:30と異なる",
+        "前景の描画はノートへ書く動作より図を見せる構図が強い"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-2755be1f-6635-45d9-9650-1a12d85913b5.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "コマ2で遥の返答を先に読みやすい配置",
+            "八店舗の図が一店と八椅子の図に変化",
+            "前景の描く手に灰袖が見えず所属が弱い"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-17a63248-2d4f-4584-8918-760baf8de6ce.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "椅子が7脚",
+            "コマ2の遥の白ピンが反転",
+            "最終コマに小さな弁当容器が重複"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-3ff0e289-8408-47da-ad45-92083fffabe3.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "コマ2の遥の白ピンが本人左側に反転",
+            "段比率は概ね40:32:28で指定45:25:30と異なる",
+            "前景の描画はノートへ書く動作より図を見せる構図が強い"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P44",
+      "稿の数": 3,
+      "採用した稿": 2,
+      "画像": "manga/serial/v5/ch01/pages/P44.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P44.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "8aa8f7df0d67feecbb6c2b1622d7f1a908153199d08da22d44f04550ffb27abb",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "第2稿採用。指定の4コマ・中段右本部→左店を確認。段比率に小差。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "蓮の台詞二つ、再掲名、14:00の手帳を確認。細い二重吹き出しは通話内の蓮へ。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "真柴 蓮／遥の同期をコマ1に再掲。"
+        },
+        "顔・髪型・服": {
+          "結果": "適合",
+          "詳細": "遥はエプロンなし。蓮は明髪・白開襟・黒T、水野は低い尾と明色ジャケット。"
+        },
+        "時計の数字と針": {
+          "結果": "注意",
+          "詳細": "14:00は適合。14:30は長針6だが短針が2時寄りで、指定75度へ未修正。"
+        },
+        "手の持ち主": {
+          "結果": "注意",
+          "詳細": "手の持ち主は識別可。コマ4の蓮の手と端末が通話枠をまたぐ。"
+        },
+        "見せ場の迫力": {
+          "結果": "注意",
+          "詳細": "八店を見せ遥のペンが止まる。コマ4の練習環境の文字が欠落。"
+        }
+      },
+      "残った問題": [
+        "14:30の短針が2時に近い",
+        "蓮の端末と手が通話枠から飛び出している",
+        "コマ4の練習環境表示がない"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-a30eb610-6743-44eb-90f5-adccff37ba46.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "中段左右分割が二つの横長段へ変更",
+            "コマ3の蓮が通話枠外で同室に見える",
+            "水野の開始時刻14:00の記入が読めない",
+            "通話の吹き出しが一重"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-e2ec7492-d90d-4ef5-8447-5424b761e660.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "14:30の短針が2時に近い",
+            "蓮の端末と手が通話枠から飛び出している",
+            "コマ4の練習環境表示がない"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-dbb60314-6caf-4463-9f30-b6593f12b58b.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "八店設定が本を開く絵になり八店表示が消失",
+            "14:30の短針が2時寄りのまま",
+            "遥の中段髪ピンが反転",
+            "蓮の端末が通話枠から飛び出す"
+          ]
+        }
+      ],
+      "採用理由": "第3稿では八店表示が消えたため、第2稿を採用。納品プロンプトは第2稿の生成指示に一致させた。"
+    },
+    {
+      "頁": "P45",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P45.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P45.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "30378ca7815f8b5b2053c2113210219349aa199edcf18cbd84d58579cdb5e4fc",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "4段と順序は適合。段比率は約26:20:35:19で指定と小差。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "私の、一日がは尾なし。蓮の台詞は画面内の本人へ。青葉12:20と駅前12:25の差、試し刷り、未検証表記を確認。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "再紹介見出し指定なし。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "遥の襟足に低い髪束が増え、高い二股の尾だけという固定からずれる。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "新たな現在時計なし。12:20/12:25は架空注文時刻。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "蓮の白袖の指と駅前、遥の灰袖の紙帯を識別。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "八店への到達と一店更新、試し刷り、額の縦線と白く開く目を大きく描写。"
+        }
+      },
+      "残った問題": [
+        "遥の襟足に余分な低い髪束があり高い二股の尾と不一致",
+        "段比率は概ね26:20:35:19で指定24:20:38:18と小差",
+        "残る六店の店名は資料未指定部分を生成補完"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-128e89bb-ab6e-40e5-9785-3b39eb470e02.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "青葉と駅前の受取情報がアイコン中心で注文到達が弱い",
+            "蓮の最下段が通話画面内でない",
+            "遥の紙帯に駅前12:25が出て本部との位置関係が混乱",
+            "コマ2に実弁当があり試し刷りの表現が弱い"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-16578cb9-98fb-480b-b179-4e55541d7c83.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "遥の背景にグラデーションと発光風の処理",
+            "負け顔のコマが指定より小さい",
+            "蓮の指が更新対象の駅前でなく青葉を指す",
+            "通話吹き出しが一重"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-18d26564-1d9b-475f-bec3-6bf8d1b52654.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "遥の襟足に余分な低い髪束があり高い二股の尾と不一致",
+            "段比率は概ね26:20:35:19で指定24:20:38:18と小差",
+            "残る六店の店名は資料未指定部分を生成補完"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P46",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P46.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P46.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "65e70163192b9d26936809256165589503d709bd773cebf516137e6e09d120b2",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "4コマと中段右→左は適合。下段は約46%で指定40%より大きい。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "注意",
+          "詳細": "話者は識別できるが、貸すよ後の句点が欠落。通話吹き出しが一重。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "再紹介指定なし。試作予定表に青井 遥・真柴 蓮あり。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "遥の白ピンが本人左側へ反転するコマが複数。服装はエプロンなし。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "時計なし。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "帯を掲げる遥と黒袖の森を識別。カードは表1枚・裏2枚。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "二つの試作名、同条件の予定、明朝とただしの引きを確認。"
+        }
+      },
+      "残った問題": [
+        "遥の白ピンが本人左側へ反転するコマが複数",
+        "貸すよの後の句点が未修正",
+        "通話の吹き出しが一重",
+        "段比率は概ね28:26:46で指定30:30:40と差"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-0d65ebf0-4d90-4ef0-88a2-7815a70fa46d.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "5コマに増加し指定の中段割りに不一致",
+            "蓮が通話枠内でない",
+            "遥がエプロン着用",
+            "弁当くんの表示欠落",
+            "昼食防衛要塞の昼が誤字",
+            "遥のピンが反転"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-93827ffd-2ff4-4208-8a61-a16c56344941.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "次週・試作1名の予定表と二人の氏名が欠落",
+            "貸すよの後の句点が欠落",
+            "コマ3の遥のピンが反転",
+            "森の鉛筆が口元に近い"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-f57823ac-d554-4d50-8b23-a80a0ad24261.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "遥の白ピンが本人左側へ反転するコマが複数",
+            "貸すよの後の句点が未修正",
+            "通話の吹き出しが一重",
+            "段比率は概ね28:26:46で指定30:30:40と差"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P47",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P47.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P47.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "c9272e311fb76c1f24a200ae80e5d5edc602bd57c132fd76544207476f73be76",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "3コマと読む順を確認。段比率は約32:27:41で指定と小差。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "注意",
+          "詳細": "全台詞は判読でき話者も識別可。コマ2の森の尾は髪側を指し口への接続が弱い。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "名前見出し指定なし。"
+        },
+        "顔・髪型・服": {
+          "結果": "適合",
+          "詳細": "黒袖・眼鏡の森、灰袖・右ピンの遥、通話内の明髪・白袖・黒Tの蓮を確認。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "時計なし。"
+        },
+        "手の持ち主": {
+          "結果": "注意",
+          "詳細": "森の腕が交差し紙と画面を指す。紙の支えが見えず浮いて見える。下段の二人の道具は別々の空間。"
+        },
+        "見せ場の迫力": {
+          "結果": "適合",
+          "詳細": "交差させるルールと台帳を閉じる動作、蓮の端末を回す動作を確認。"
+        }
+      },
+      "残った問題": [
+        "コマ1のノートが腕の脇に浮いて見え支えが不明瞭",
+        "段比率は約32:27:41で指定30:25:45と小差",
+        "コマ2の森の尾が髪側を指し口への終点が弱い"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-bf9b1489-7cf3-4cdb-a626-e557e65312bf.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "コマ1の遥の返答を先に読みやすい",
+            "コマ1遥のピンが反転",
+            "コマ3の通話PCを画面外の手が保持",
+            "紙と画面を交差させる指示動作が弱い"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-c6faeeab-47bc-46e6-8fd0-b32921ba7773.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "コマ1の二つの吹き出しが上端横並び",
+            "森が紙と画面を交差させず鉛筆で図を指す",
+            "指定外の相手・うちという図ラベル",
+            "下段が指定45%より小さい"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-bf306f44-ca71-4e7d-8681-15dcee79a790.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/04-aoba-back-office.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "目視確認で残った問題": [
+            "コマ1のノートが腕の脇に浮いて見え支えが不明瞭",
+            "段比率は約32:27:41で指定30:25:45と小差",
+            "コマ2の森の尾が髪側を指し口への終点が弱い"
+          ]
+        }
+      ]
+    },
+    {
+      "頁": "P48",
+      "稿の数": 3,
+      "採用した稿": 3,
+      "画像": "manga/serial/v5/ch01/pages/P48.png",
+      "プロンプト": "manga/serial/v5/ch01/prompts/P48.txt",
+      "実寸": [
+        1024,
+        1536
+      ],
+      "形式": "PNG",
+      "無加工コピー検証": true,
+      "sha256": "66bbd52533b4c816d696425f561edc8e23d975e60874c63b650d1a005c55dc12",
+      "目視確認済み": true,
+      "7点の確認結果": {
+        "コマ割りと読み順": {
+          "結果": "注意",
+          "詳細": "3段と順序を確認。欄外予告があり最終コマ面積は50%に届かない。"
+        },
+        "台詞・話者・しっぽ": {
+          "結果": "適合",
+          "詳細": "代理受取、森の台詞、遥と蓮の台詞、欄外予告の全文を確認。尾で話者を識別。"
+        },
+        "名前の見出し": {
+          "結果": "適合",
+          "詳細": "人物の再紹介指定なし。条件カード代理受取と注文・帯の山田は一致。"
+        },
+        "顔・髪型・服": {
+          "結果": "注意",
+          "詳細": "最終コマの遥の白ピンが本人左側へ反転。森・蓮の顔髪と衣装は概ね適合。"
+        },
+        "時計の数字と針": {
+          "結果": "適合",
+          "詳細": "時計なし。"
+        },
+        "手の持ち主": {
+          "結果": "適合",
+          "詳細": "カードを持つ森の黒袖から腕がつながる。中段の図は実人物の手ではない。"
+        },
+        "見せ場の迫力": {
+          "結果": "注意",
+          "詳細": "下段の顔は大きく集中線あり。蓮が正面寄りで互いの視線の衝突は弱い。"
+        }
+      },
+      "残った問題": [
+        "最終コマの遥の白ピンが本人左こめかみに反転",
+        "蓮の顔・視線が正面寄りで遥との視線の衝突が弱い",
+        "欄外のため最終コマの面積は指定50%より小さい",
+        "一部の顔・吹き出しが外縁5%安全域に近い"
+      ],
+      "ノド": "単ページのため対象外",
+      "稿履歴": [
+        {
+          "稿": 1,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-4a3882db-63ba-45d7-98b0-88c5ab9c5daf.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "段比率が約34:20:40で指定25:25:50と異なる",
+            "予約者と別の来店者であることの図示が弱い",
+            "二人の視線が向き合わず集中線もない",
+            "蓮の通話吹き出しが一重",
+            "欄外予告が外縁5%より外へ近い"
+          ]
+        },
+        {
+          "稿": 2,
+          "採否": "不採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-6260fb78-ace2-440c-8751-068a20744e0d.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "最上段の代理受取のカード文字が欠落",
+            "最終コマの遥の白ピンが本人左へ反転",
+            "段比率と最終コマの面積が指定と異なる",
+            "蓮の視線が中央の遥へ十分向かない"
+          ]
+        },
+        {
+          "稿": 3,
+          "採否": "採用",
+          "生成元": "/home/t-tsuji/.codex/generated_images/01a0d156-0e86-7491-9ec2-4bbdf175cfc7/exec-3bae2814-83b3-4e75-bd12-add8b9a9934a.png",
+          "入力画像": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "目視確認で残った問題": [
+            "最終コマの遥の白ピンが本人左こめかみに反転",
+            "蓮の顔・視線が正面寄りで遥との視線の衝突が弱い",
+            "欄外のため最終コマの面積は指定50%より小さい",
+            "一部の顔・吹き出しが外縁5%安全域に近い"
+          ]
+        }
+      ]
+    }
+  ]
+}

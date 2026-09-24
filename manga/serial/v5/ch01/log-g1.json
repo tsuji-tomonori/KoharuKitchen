@@ -1,0 +1,1634 @@
+{
+  "group": 1,
+  "chapter": "こはるキッチン v5 第1話",
+  "date": "2026-09-24",
+  "scope": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+  ],
+  "generator": "組み込み image_gen",
+  "status": "全12頁保存済み・未解決点あり",
+  "inspection_method": "全36画像を実際に表示し目視確認。機械検証は寸法・ファイル同一性・記録整合性のみ。",
+  "maximum_drafts_per_page": 3,
+  "image_processing": "なし。採用元PNGをshutil.copyfileでバイト列のままコピー。",
+  "references_policy": "art/v3/characters、art/v2/backgrounds、art/style-tests/round2のみ。自他グループの漫画頁は参照入力に使わず、全稿を設定資料から再生成。",
+  "read_names": [
+    "P01.md",
+    "P02.md",
+    "P03.md",
+    "P04.md",
+    "P05.md",
+    "P06.md",
+    "P07.md",
+    "P08.md",
+    "P09.md",
+    "P10.md",
+    "P11.md",
+    "P12.md",
+    "P13.md"
+  ],
+  "continuity_note": "P01が冒頭のため前頁なし。P13は接続確認のみで作画・変更なし。P12は事務側での再現からP13の回想へつながる。",
+  "common_style_sha256": "47c281527faae1dfc452d29bc8577751b6a387dcd9488b62e5a8b610dc98e0c3",
+  "scenario_sha256": "33dbc8ca108821f8e8317e5e346b3c15705b5455e1263fbf0ea7056f72180787",
+  "tool_retries_without_image": [
+    {
+      "pages": [
+        "P06",
+        "P11",
+        "P12"
+      ],
+      "note": "参照6枚の初回呼び出しでは画像を取得できず、背景画像の添付を除いて5枚で再実行し成功。初回の例外本文は取得していないため原因断定せず。画像未取得の試行は稿数に含めない。"
+    }
+  ],
+  "pages": [
+    {
+      "page": "P01",
+      "draft_count": 3,
+      "selected_draft": 3,
+      "selected_reason": "第2稿は左右順が正しいが主人公の初出見出しが欠落。全員の名前と台詞を備えた第3稿を採用し、配置の未解決を明示。",
+      "image": "manga/serial/v5/ch01/pages/P01.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P01.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "要修正",
+          "detail": "4コマだが下段のコマ3と4が左右逆。下段右から読むと『明日は、全部やれます』が先になる。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "指定の全台詞は判読できる。コマ順の逆転で会話の因果が崩れる。吹き出しの尾は概ね話者側。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "坂本 誠／青葉店・店長、青葉の千手、添え文、青井 遥／灯台ソフト・開発、小川 アキ／青葉店・受取係を確認。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "概ね一致",
+          "detail": "四角い坂本、短い二股尾の遥、短髪と白ポロのアキを識別。遥は見学証。"
+        },
+        "時計の数字と針": {
+          "result": "要修正",
+          "detail": "見出し11:45に対し短針が12付近に直立。352.5度の11側への傾きが不足。"
+        },
+        "手の持ち主": {
+          "result": "要修正",
+          "detail": "実体腕と点線残像は区別可能。ただし八像の個数・配置が両者で一致せず、返事待ちの左掌も一致しない。残像の箱が増えて見える。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "太い腕・黒面・速度線に迫力はある。正確な一回模写という見せ場の意味は残像の不一致で弱まる。"
+        }
+      },
+      "remaining_issues": [
+        "下段左右逆転",
+        "11:45の短針不正確",
+        "八動作の数・配置と止める左掌の不一致、残像の箱の重複",
+        "一部文字が外縁5%の安全域内に収まらない"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-1dfdbb9a-d93e-47c2-a87b-8d3c36b6016b.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "6350937ddaac8c0f2011c5c3420f273dfe0c40bb6bd6ffff57b7e61b67153285",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "下段左右逆転",
+            "実体と残像の境界が弱く手が多い",
+            "箱重複"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "eecd1273f812cb2afaee36e1c53d738d220cd0e212bd131569adbba119cab01a"
+        },
+        {
+          "draft": 2,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-86920ebd-08fc-4aee-b756-5b6a396cbc34.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "3cc7dd633d91147391587b0c8326de808329e8e6a03b5422ce707a97864abc2a",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "遥の初出見出し欠落",
+            "時計の短針が12の右",
+            "コマ2で実体手が三つに見える",
+            "残像の配置不一致"
+          ],
+          "revision_instruction": "下段の左右逆転を必ず修正。上32%はコマ1、次28%はコマ2。下40%は右45%がコマ3『一回で盗んだのか』『八つです。三つじゃない』、左55%がコマ4『明日は、全部やれます』とアキ。最下段右から読む。上二段は一人につき本物の腕2本のみ、残像8個を小さな途切れた手だけで描き、それぞれ同配置とする。箱は空の練習箱1個だけ、残像として重複箱を足さない。遥の白ピン二本は本人右こめかみ。コマ1は左掌を白場で止め、コマ2も同位置の左掌が止まる。コマ3は掌二つを同じ形で対置。コマ4で箱と台帳を引き寄せる。名前見出しと顔・文字は外周5%内側へ。",
+          "submitted_prompt_sha256": "ff17e7731834965b737f2605cc3ca920d70def394d58c3830ee7a58ee91f4fcf"
+        },
+        {
+          "draft": 3,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-90888b54-ba8e-4a67-a340-dc666c164513.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "5414776c37475bdb9febc2f7a05a36d393c88c8fefa9de6ec12c453c98a2b7b3",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "下段左右逆転",
+            "11:45の短針不正確",
+            "八動作の数・配置と止める左掌の不一致、残像の箱の重複",
+            "一部文字が外縁5%の安全域内に収まらない"
+          ],
+          "revision_instruction": "最終稿。4コマ。上32%、中28%、下段右45%幅のコマ3／下段左55%幅のコマ4。コマ2に『青井 遥／灯台ソフト・開発』の名前見出しを必ず大きく置く。コマ1に『青葉の千手』『八店の応援が頼る手』『坂本 誠／青葉店・店長』、コマ4に『小川 アキ／青葉店・受取係』。11:45の短針は12の左側！長針は9真横、短針は11と12の間の12寄り352.5度。右へ傾けない。上二段の各動作主の実体腕は二本だけ。遥の袋を持つ実体の第3腕を描かない。8個の残像は手首で途切れる点線の小さな手で、肉体へつながない。坂本と遥の左掌を同じ角度・位置で止める。白ピンは本人右こめかみ。下段左で遥が箱と台帳を自分へ引く。文字はx52〜972、y77〜1459内。",
+          "submitted_prompt_sha256": "3012db687a23fce4c6f0efa18962c1b615a24fe639c65f67a42d71a713ecbb9a"
+        }
+      ],
+      "name_sha256": "80c6aa64371bfa4d86c1e7d655a771ff78d07c3f72b0a579896e3b3b2ffd650b"
+    },
+    {
+      "page": "P02",
+      "draft_count": 3,
+      "selected_draft": 3,
+      "selected_reason": "帯なしの空容器と4コマの配置を優先して第3稿。",
+      "image": "manga/serial/v5/ch01/pages/P02.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P02.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "上全幅・中段右→左・下全幅の4コマ。段比率も指定に近い。最終コマの二つ目の遥の台詞が右にあり、視線順に注意。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "会話全文とルール文は読める。『予約：坂本→空欄』の空欄は白い枠に置換。最終3台詞の上下差が小さい。"
+        },
+        "名前の見出し": {
+          "result": "概ね一致",
+          "detail": "森 理沙／テスト担当を確認。ただし独立した人物紹介枠ではなくメモ上部に入った。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "概ね一致",
+          "detail": "坂本・遥・森の顔髪と服を識別できる。コマ2の遥のピンは横顔で左右判定が難しい。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "現在時刻の時計なし。日曜の12:20出発、12:50着、13:00試合を確認。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "坂本の白ポロ太腕、遥の灰袖の指、森の黒袖と鉛筆が対応。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "黒掌＋×と空の練習箱は明確。息子のユニフォーム写真がなく個人的な賭けの絵が弱い。"
+        }
+      },
+      "remaining_issues": [
+        "息子のユニフォーム写真が欠落",
+        "『空欄』の文字が空の枠へ置換",
+        "森の名前がメモ内、最終コマの台詞順の誘導が弱い",
+        "一部文字の外縁安全域不足"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-8e4f1b0e-d82c-47cf-90a2-e65b52e622f8.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "cf45b6b04ca306ae991e3fd1f9d5085fec97d7e7de4236eeab0ece2052c2c423",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "遥の白ピンの左右揺れ",
+            "空箱の代わりに多数の帯付き箱",
+            "写真と一部動作不足"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "c5c03030b4467f482933aeb5bcd466bff0cf9fa73689ae6528bbcf05a063535b"
+        },
+        {
+          "draft": 2,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-043ac92d-95be-479f-98e0-21d7f42e7a4b.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "1b3367fa9b594e511c6575ab620191583cdfedefc10931565f3ae985a64b080e",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "箱に帯が残る",
+            "コマ面積比のずれ",
+            "空欄文字の置換"
+          ],
+          "revision_instruction": "遥の髪ピンは本人右こめかみだけに白い平行二本。正面顔なら画面左。全コマで逆側へ移さない。日曜シフトに正確に『通常販売・電話：応援確保』『予約：坂本→空欄』『12:20出発→12:50着／13:00試合』。コマ2にユニフォームの息子の写真を入れる。コマ4の台詞読み順は右上・遥『蓮と争う枠も、取ります』→その下左・坂本『まずは明日の客だ』→さらに下右・遥『その前に、一つ穴があります』。この段に空の練習箱は1個のみ、帯はまだない。森のメモ全文と名見出しを保持。外縁5%内側に文字。",
+          "submitted_prompt_sha256": "47ed6d13fad873caa511de9c1034986c3b35909f9514c7b63e6822d12962337d"
+        },
+        {
+          "draft": 3,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-f24a2631-37be-4771-be30-5be31da8e15c.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "b8ac70ab8b2736e4bc46b9888528f6800eeb0c1ed79f5695110a6eb0ca44dc1f",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "息子のユニフォーム写真が欠落",
+            "『空欄』の文字が空の枠へ置換",
+            "森の名前がメモ内、最終コマの台詞順の誘導が弱い",
+            "一部文字の外縁安全域不足"
+          ],
+          "revision_instruction": "最終稿の要点。コマ境界はy=461pxとy=922px。最上段30%、中央30%を右コマ2・左コマ3、下40%。全員の顔、台詞、森の名前見出し、メモ全文を保持。遥の頭は後頭部高い位置の二股の短い尾が唯一、襟足から垂れる長い尾はゼロ。本人右こめかみ白ピン2本。下コマの空の練習箱1個には紙帯・ラベルを一切付けない。黒の浅い箱と淡い無地の蓋だけ。『予約：坂本→空欄』は空欄という文字も正確に印字。台詞の優先順は遥→坂本→遥の三段の高さをしっかり分ける。下段遥の胸元にエプロン肩紐を足さない。",
+          "submitted_prompt_sha256": "9455fbe5915d6588d5acd76099a84cf489b66256d408a641be573944aafdb915"
+        }
+      ],
+      "name_sha256": "125b7019da7dab65c7c30e0185552e158c6fd984cf2f4705add55499aa15197c"
+    },
+    {
+      "page": "P03",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は図の方向を改善したが食品入り・帯付きの箱が生じ、名前が箱に付かないという核心に反するため、無帯の第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P03.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P03.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "要修正",
+          "detail": "横3段の構成は一致するが、上47%・中23%・下30%の面積比からずれる。図③の矢印が森の手から箱を経て右へ向き、指定の箱→森の手と逆。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "全会話・図の3ラベル・『ぽと』を確認。コマ2の遥の台詞の尾が左へ寄り、口への終点が不明瞭。"
+        },
+        "名前の見出し": {
+          "result": "対象外",
+          "detail": "新規人物の初出見出し指定なし。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "概ね一致",
+          "detail": "遥・森・坂本を設定の髪顔・服で識別。道具を抱える人物は遥へ改善。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "時計なし。"
+        },
+        "手の持ち主": {
+          "result": "要修正",
+          "detail": "主要動作の袖と手は識別可能。図①の筆記手は持ち主へのつながりが弱い。"
+        },
+        "見せ場の迫力": {
+          "result": "要修正",
+          "detail": "遥の大きい勝ち顔とノート落下は伝わる。図の矢印逆向きと未来の六名入り台帳で発見の説明が不正確。"
+        }
+      },
+      "remaining_issues": [
+        "図③の矢印が逆向き",
+        "台帳に翌日の六名が混入",
+        "上中下の面積比が指定と違う",
+        "コマ2の吹き出しの尾と図①の手の所属が不明瞭"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-cab2a6b8-1328-41fa-aa13-517447f847e7.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "e900ab27a3d7bf5900ef32a304cd655af181c27d3527d301f8679498f670c000",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "道具を抱える人物が坂本に入替",
+            "練習箱が食品入り帯付き箱",
+            "図の線が不正確"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "8cea9df8c7fefc4b6664c14dd4a4a706d090a14abfb716dab194b3ce2ecf7b4e"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-dae64447-6095-49dd-827d-18d6aafb3846.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "ea556d676cad72a77c3fd58de4fa34dda1f7b2bab282f1c92b6eca8b088a28f6",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "図③の矢印が逆向き",
+            "台帳に翌日の六名が混入",
+            "上中下の面積比が指定と違う",
+            "コマ2の吹き出しの尾と図①の手の所属が不明瞭"
+          ],
+          "revision_instruction": "3コマを横全幅の三段に。上47%、中23%、下30%。上の図は『①予約を書く』『②厨房が返す』『③箱が売場を通る』。名前の実線は台帳で止める。無記名・無帯の空箱の進行線は森の黒袖の手へ伸びる。太い白抜き円は箱の直前。実客の食品・帯付き箱・厨房係の顔は描かない。最後に全道具を抱えるのは遥本人！坂本に抱えさせない。遥の腕二本が空箱・電話・ノートを抱え、遥の腕からノート1冊だけ落ちる。坂本は左で驚き、森は最左で片眉のみ上げる。台詞は坂本『そこまで見えたか』が最も上、遥『店長の手、一本いただきます』が次、森『もう足りてない』が最後。外縁5%の安全域。",
+          "submitted_prompt_sha256": "bb4d92331b19d37648d076e6253d7923b27d3ae5d480b236529c82051f4c9213"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-37dfa919-f1a7-4875-b1dc-a4e6d57ff307.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "ec1a61d71ce983252f85748f95e0aa79867c6d439ad8ae954292567e4c857edc",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "食品入り帯付き箱が再発",
+            "上中下の面積比のずれ"
+          ],
+          "revision_instruction": "最終稿。上47%・中23%・下30%の3横段。図の全ての矢印が重要。図③は画面右の無帯の箱→画面左の森の黒袖につながる掌へ、矢印を左向きに描く。箱の右から左へ流れる途中の空白に太い白抜き円。①の台帳に書く名前の線は台帳で完全に止まり、箱へ接続しない。①の台帳も中コマの台帳も『練習』の一行だけ。明日の六人の予約名を書かない。中コマの『これ、一個を二回売れます』の尾は画面右の遥の口へまっすぐ下向き、坂本へ向けない。下コマは遥が道具を抱えノート1冊を落とす。坂本の台詞を最上、遥を次、森を最下へ。森は片眉を上げる。余白内に全文字。",
+          "submitted_prompt_sha256": "299cd0d7a912a9d03068e53821584a5c4333e91cd00dc8d552c726cbaed3cd88"
+        }
+      ],
+      "name_sha256": "3342e42f1257b72021386e162067294d1e81c59543d2a8ff1b5b02da4c0e9360"
+    },
+    {
+      "page": "P04",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は椅子が7個に見え帯に余分な結び目、箱の追加も発生。8脚が明確な第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P04.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P04.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "合格",
+          "detail": "1コマの扉。上の巨大な掌、下の遥と左の坂本、下辺の箱・椅子を確認。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "合格",
+          "detail": "タイトル、副題、煽り、遥『まず、一勝』、坂本『まず、昼飯』、『ぐう』を照合。尾は各人物へ向く。"
+        },
+        "名前の見出し": {
+          "result": "対象外",
+          "detail": "扉に初出名指定なし。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "合格",
+          "detail": "遥の高い二股尾・白ピン・白胸当て、坂本の四角顔・黒胸当てを確認。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "時計なし。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "遥の灰袖につながる二本指、黒い象徴の掌を区別。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "黒い巨大掌と大きな二本指で迫力あり。8個の椅子を数えられ白帯で箱と接続。ただし文字周囲にぼかし状の縁取りがある。"
+        }
+      },
+      "remaining_issues": [
+        "タイトル・煽り周囲にぼかし状の縁取りが残る",
+        "タイトル等の外縁5%安全域不足"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-a259ff88-5a86-422a-a585-75a046970cd0.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "9b9012994876f92df9987772f16ae8a74d468cc59876a7cd9dc4ede2a95a5d08",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "八脚の椅子が欠落",
+            "象徴掌が灰色",
+            "タイトル安全域不足",
+            "追加の商品ラベル"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "3aff64a7cb2ae99faef6c55480a3bc9e92c05c5f695e7d925b45f09830f215ce"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-19ec165b-c5b8-4ae4-9978-24ac213a41cd.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "dfb37d7d978750d00a8fcac1c426fe7106646f113466c72fafae50580382c4c8",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "タイトル・煽り周囲にぼかし状の縁取りが残る",
+            "タイトル等の外縁5%安全域不足"
+          ],
+          "revision_instruction": "扉の巨大な象徴の掌を黒ベタ主体にする。一本の無地の白い帯が、黒い弁当箱1個と八脚の独立した小さな椅子をつなぐ。椅子の脚が8本という意味ではなく、椅子本体が正確に8個。下20%に8個を数えられるよう横一列で描く。箱や帯へ商品名等の追加文字なし。タイトルと全ての文字は外縁5%から離し欠けさせない。遥が2本指を伸ばす強いあおり、白胸当て、坂本の顔を左下。台詞と煽りは指定どおり。",
+          "submitted_prompt_sha256": "541e38fac3c81e144020defa1042f9bc8ae5c702415266b73fa63f245914f569"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-09f91271-b895-4747-962c-56aa5d6bd46b.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "b5d8aa7fe34030723b4abffed9c3a35ab721caec8f3113189c857118181fbdb7",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "椅子が7個に見える",
+            "白帯に余分な結び目",
+            "坂本の手持ち箱が追加",
+            "タイトル周囲のぼかしと安全域不足"
+          ],
+          "revision_instruction": "最終稿。第2稿方針どおり巨大な黒ベタの掌、白胸当て遥、二本指、小さな坂本、白帯に結ばれた箱と正確に8個の椅子。黒ベタは均一なインク面、手描き短いハッチングのみ。文字の外周をぼかした黒い発光や影で縁取らない。タイトルも煽りもクリアな紙白の抜きか硬い輪郭のみ。タイトル上端y=90px以上、全ての文字x=60〜960以内・y=90〜1440以内。下の8個の椅子の形を消さない。追加のラベルを足さない。指定日本語を正確に。",
+          "submitted_prompt_sha256": "dd4c43c85e52b82f6a7de75da5b30684dda76f72dcd1006d49170f2f36c4fb07"
+        }
+      ],
+      "name_sha256": "c36b387329ad25a2660a931e53d2a7eef8b68d9c4fd9f5894c54765109518fe0"
+    },
+    {
+      "page": "P05",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は中央の左右が逆転。4コマの正しい順序を優先して第2稿。",
+      "image": "manga/serial/v5/ch01/pages/P05.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P05.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "4コマ、上全幅・中央右から左・下全幅。研修記憶は中央左コマ内の角丸枠。面積比は中央がやや大きい。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "全会話・内語・予定文字は判読可能。中央右で蓮と遥の台詞が同じ高さにあり遥を先に読みやすい。下段の遥の通常台詞まで二重縁になった。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "水野 真紀／進行責任者、真柴 蓮／開発・遥の同期を確認。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "要修正",
+          "detail": "水野と蓮はモニター内。現在の人物識別は概ね良い。小さな研修回想の遥にエプロン様の肩紐が残る。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "新たな時計なし。予定表の明日14:00〜14:30、来週試作担当1名を確認。"
+        },
+        "手の持ち主": {
+          "result": "概ね一致",
+          "detail": "画面内の蓮の白袖、遥の灰袖は識別可能。水野が応援枠を指す動作・研修で端末を回す動作が弱い。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "同期の親しい競争の表情は伝わる。冒頭が店外より店内に見える。"
+        }
+      },
+      "remaining_issues": [
+        "コマ2の会話順が弱い",
+        "遥の通常台詞まで二重縁",
+        "研修回想の遥の衣服に肩紐状の線",
+        "店外と分かる背景・水野の指示動作が不足"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-e324092c-b021-4fe7-b88d-d965bd4f1fe9.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "c914c66527b9ee2072dc5241cf1b5108711fd89566871b90b0f9c2f4f432d065",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/01-aoba-exterior.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "5コマ相当に分割され会話順が逆",
+            "下段水野がモニター外へ出る",
+            "遥の低い尾が追加"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "1bfdb9452257e6c0da2031705de7968c6b8c7dbc0fe705adc52ce2c44b65b561"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-90d23e8b-e570-4c02-8096-447142747c2c.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "606fc9444b1957db8239a331e9448d7aeda1e07551562f2a4c2238b1d21e7d51",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/01-aoba-exterior.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "コマ2の会話順が弱い",
+            "遥の通常台詞まで二重縁",
+            "研修回想の遥の衣服に肩紐状の線",
+            "店外と分かる背景・水野の指示動作が不足"
+          ],
+          "revision_instruction": "厳密に4コマ、三段構成。上30%＝コマ1。中央30%を左右に分割し、右半分コマ2に蓮の画面と遥の顔を両方描き、蓮『俺は、八店へ届く方を作る』→遥『私は、八店の店長を』→遥『同じ日に休ませる』。中央左半分コマ3に蓮と遥と小さな角丸の研修記憶、蓮『だから、君の話を待ってる』→遥内語『見つけると、すぐ追い越す』。下40%コマ4。現在の蓮と水野は必ず明確なモニターの枠の内側！水野を店の遥と同じ室内へ出さない。通話吹き出し細い二重縁、尾はモニター内の本人の口。遥の髪は高い短い二股の尾だけ、襟足から出る2本目の尾を完全に除く。本人右こめかみ白ピン2本。初出名と予定表文字を保持。",
+          "submitted_prompt_sha256": "f0d50a99b93d153e5d13fc1b7c10d00a666c039a65c9351d70bb932beca18d9c"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-c500c571-861f-4051-8b91-10b96d9f3f95.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "e4b7dba0bcbe68a7f21c77b61da8e70325f9eaac0a409b2f50862a6d5af986ef",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/01-aoba-exterior.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "中央左右逆転",
+            "研修回想に低い尾",
+            "機器やモニターが増えた"
+          ],
+          "revision_instruction": "最終稿。上30%・中央30%右コマ2左コマ3・下40%。コマ2で蓮『俺は、八店へ届く方を作る』が上側、遥『私は、八店の店長を』『同じ日に休ませる』が順に下側。コマ3で蓮『だから、君の話を待ってる』が上、遥の内語が下。現在の蓮と水野はモニターの枠内だけ。水野が画面内で予定を指している手を見せる。現地の遥の吹き出しは一重楕円、蓮・水野の通話だけ二重縁。研修の角丸小窓でも遥にエプロンを着せない。蓮がもう動いた端末を遥へ回す手を見せる。遥は高い二股短尾一本・本人右の白ピン二本。店外の静かな場所で会話していると分かる背景。顔と文字の安全域5%。",
+          "submitted_prompt_sha256": "30ed59b22a21c49c00cdedd1fb32c11893d15eeecb1d41db3f66baf8758c0b8e"
+        }
+      ],
+      "name_sha256": "eb017afba15c05a5ff55e556559ff38431a7b2486e576b2b8fb58e8a12698091"
+    },
+    {
+      "page": "P06",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は最後の箱の後にも複数箱が残り、電話も複数台に増えたため、第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P06.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P06.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "5コマの段構成と右→左順は一致。上段が指定24%より大きい。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "合格",
+          "detail": "確認します、今の返事、誰に？、ありがとう、擬音、客見出しを照合。内語は尾なし枠、客の口から返答。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "店頭のお客さんの小見出しあり。主要人物の見出しを不要に繰り返さない。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "合格",
+          "detail": "遥・森・坂本・アキは顔髪服で識別、遥は見学証で胸当てなし。"
+        },
+        "時計の数字と針": {
+          "result": "要修正",
+          "detail": "12:00は上向きの重なり。12:19は短針が12へ直立、長針も114度より浅く不正確。"
+        },
+        "手の持ち主": {
+          "result": "要修正",
+          "detail": "各袖と手は対応するが、上段で坂本の手の受話器と台座上の受話器が二重に見える。"
+        },
+        "見せ場の迫力": {
+          "result": "要修正",
+          "detail": "手渡しの動きと追い付けない表情はある。①②③が動作でなく人物図になった。腰壁はあるが深い窓・足の経路の実景描写が弱い。"
+        }
+      },
+      "remaining_issues": [
+        "12:19の二針不正確",
+        "コマ1の受話器重複",
+        "①②③が動作図でなく人物図",
+        "厨房東口への実景の迂回経路と窓の奥行きが弱い"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-aeb11ff4-3410-4ddd-9672-9e74b0f3829e.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "14db6343234201d74423f1f524dad009c3252289b911cd114b7c21019cb859bd",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "①②③欠落",
+            "最後の販売後も複数箱が残る",
+            "内語が思考吹き出し",
+            "窓と東口の実景経路不足"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "b1419c0525e908d47f0aacfa61541ac7b9925a2a9c93dd817943aca0b185e94a"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-5119a48e-aa9d-40ac-ac49-9672cfddb5d6.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "5ee0d37d9f518b2ba1cbb5c73c83cf8e8a24e950a1567394c45064269072e459",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "12:19の二針不正確",
+            "コマ1の受話器重複",
+            "①②③が動作図でなく人物図",
+            "厨房東口への実景の迂回経路と窓の奥行きが弱い"
+          ],
+          "revision_instruction": "全5コマの位置はネーム厳守。コマ3の遥の視界に『①』『②』『③』、①から②への実線、③へ届かず途切れる線を必ず描く。内語『今の返事、誰に？』は尾なし四角枠に入れる。コマ1で物専用窓の腰壁と深い台、人が東口へ回る通路、壁際の遥と森の足まで示す。コマ5は最後のから揚げ1箱だけがアキの手から客の袋へ入り、売場にから揚げの残り箱を積まない。予約棚は空。12:19の長針114度は4の少し上、短針9.5度は12の少し右。二針以外なし。遥はエプロンなし。台帳は一冊で電話の下に開く。",
+          "submitted_prompt_sha256": "ec661c4321fcf44c5fbd59b947611362b9e52264f8e8818d3fd26644470059cb"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-c0cd92e0-2cc3-4e37-84f5-52d81a8fee94.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "d97afc073b1e03df7532b79033a9713082b61c815fcfbecec545cd58b56f44fc",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "最後のから揚げ販売後も複数の食品箱が残る",
+            "電話が複数台に見える",
+            "12:19の針不正確"
+          ],
+          "revision_instruction": "最終稿。コマ1で坂本は右手に唯一の受話器、台座は空。台座に2個目の受話器を描かない！コマ5では受話器を台座へ戻す。コマ3の①②③は人の顔でなく作業動作の番号、①②の線から③へ届かず途切れる。時計12:19の短針は上に垂直ではなく右へ9.5度、長針は114度。時計中央から短針先端は少し右上、長針先端は右下。コマ5の空の予約棚、最後のから揚げ箱1個の袋入れ。店内の北西受渡し窓は腰壁＋奥行き深い台、北東の廊下を曲がって厨房東口。森と遥は壁際。全5コマ位置と台詞維持。遥エプロンなし。",
+          "submitted_prompt_sha256": "3122df763a4a8978ef1faeab64004e4cb09ebe10c0c80915b48ea3fd20b71166"
+        }
+      ],
+      "name_sha256": "6df567cef339bb68e6da689c67aa0064ffb4452649527fb389dbfa196598f437"
+    },
+    {
+      "page": "P07",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は4コマに増加。3コマの正しい読み順を保つ第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P07.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P07.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "要修正",
+          "detail": "3コマ、上全幅・下段右→左は一致。上が約50%、下の左右が約60:40となり45%＋50:50からずれる。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "合格",
+          "detail": "3台詞と佐伯の名見出し、台帳の佐伯／から揚げ／12:20を確認。尾は各話者側。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "佐伯 真帆／予約のお客さんが明瞭。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "要修正",
+          "detail": "佐伯の波髪・左腕時計・右肩バッグ、坂本の四角顔を確認。下段遥のピンが本人左側に移る。"
+        },
+        "時計の数字と針": {
+          "result": "要修正",
+          "detail": "長針は4方向。短針が10度より1側に進みすぎ、12:20と厳密に一致しない。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "佐伯が左腕の時計を見下ろし、手首・袖・顔の関係が明確。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "空棚、謝罪、佐伯の時計、遥の表情変化は明確。"
+        }
+      },
+      "remaining_issues": [
+        "コマ面積比のずれ",
+        "遥の白ピンの左右逆転",
+        "12:20の短針が進みすぎ",
+        "当日の台帳に翌日の安田の行が混入"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-07027eab-bc81-4049-8386-bd98ecaa2553.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "92b78e59ea6ed4f16bf9a1fdf4b82eadeef8b2d5f75f4c29a1d60ccc7a3dd73e",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "上全幅＋下左右の3コマが横3段に変更",
+            "時計の針角度ずれ"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "b1eee419cf23756356784d1569e2d893bc0139c1e1b44680e6dc4f97d5739f32"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-7c0f3c69-f65f-4f1a-be69-792548841203.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "4faa02ea7b24b6a0c9571eb5fdaf817a5c078a37c0b54c1f173c147f09a7a6c4",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "コマ面積比のずれ",
+            "遥の白ピンの左右逆転",
+            "12:20の短針が進みすぎ",
+            "当日の台帳に翌日の安田の行が混入"
+          ],
+          "revision_instruction": "厳密に3コマ、上45%は全幅コマ1『予約した、佐伯です』。下55%は左右二分割。下段右にコマ2『……すみません』、台帳の大写しはこの枠内で人物と同居。下段左にコマ3『予約分まで、お渡ししました』と坂本・佐伯・遥全員の顔。横三段にしない。下段左の佐伯は必ず本人左手首の時計へ目を落とす。壁時計または左腕時計は12:20の長針120度・短針10度の2本のみ。遥に低い尾を足さず、高い二股の短い尾だけ。空の予約棚は最後まで空。",
+          "submitted_prompt_sha256": "1b4254afa1caf7ac7e06524e5e6d513d31f4ee30ed5a91f3880103431d1f02fb"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-d07f64b4-3204-4bdd-8027-cac40e4dc878.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "1affcad8a4f2b35953ce62aed0619966e89556417d7ba1a833ff5bdce018d798",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "4コマに増加",
+            "上段財布欠落"
+          ],
+          "revision_instruction": "最終稿。上45%=691px全幅、下55%は左右50%ずつ。最下右が謝罪、最下左が予約分を売った告白。下コマの時計も12:20。長針は正確に4、短針は12から1へ全体の3分の1だけ進める=10度。25度に傾けない。遥の白ピン2本は本人右だけ=正面で画面左、低い尾はなし。台帳に示す記録は『佐伯／から揚げ／12:20』だけ。他の客の名と翌日の予約を追加しない。予約棚は空、左コマ佐伯が自分の左腕の時計を見下ろす。先行稿に出た感情の驚き線を足さず静かな重さ。上コマ佐伯の名前見出し保持。",
+          "submitted_prompt_sha256": "32d3fe933ae2ba1a2a8bab06ed7584f681a1a89a64406594408f6d261da2b9e9"
+        }
+      ],
+      "name_sha256": "8e1a145cbace2eb59adde548f2f9928c8490021d37d7b68c86a9cabbb439dce8"
+    },
+    {
+      "page": "P08",
+      "draft_count": 3,
+      "selected_draft": 3,
+      "selected_reason": "空棚と売切れ状態を最後まで維持し、正しい3コマ順と指の持ち主が分かる第3稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P08.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P08.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "3コマ、上全幅・下右が佐伯アップ・下左が応対で順序一致。下段左右は約60:40で指定50:50ではない。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "台詞文字は判読可能。ただし佐伯『その画面から』『お弁当が出てきます？』が一吹き出しに統合。遥末尾の長ダッシュは一続きで二文字の厳密判別困難。"
+        },
+        "名前の見出し": {
+          "result": "対象外",
+          "detail": "新規の名前見出し指定なし。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "概ね一致",
+          "detail": "遥・佐伯・坂本の顔髪服を識別。遥は胸当てなし。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "現在時刻見出し・新規壁時計なし。左腕時計は小さく時刻照合対象として扱わない。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "前景の止まった指が遥の灰袖につながり、品札を持つ太腕は坂本へつながる。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "佐伯の大きな顔と空棚、止まった指が伝わる。PCの試作画面が見えず、無地天板が灰色。"
+        }
+      },
+      "remaining_issues": [
+        "PCの架空注文・試作画面が見えない",
+        "佐伯の二つの吹き出しが統合",
+        "下段左右の面積比のずれ",
+        "PC天板が紙白でなく灰色"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-ac117a6c-79ed-4125-94cb-b04901c41593.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "397d3bc1218e2d92ba1619a12773a97bc534c9826c2cf6c02457814ee0c55151",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "下段左右逆転",
+            "予約棚と売場に大量の完成箱",
+            "PC試作画面が見えない"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "dd96e10c94360db7b4f99a2e9c0ebb03f59294e64c858a94b169a08d1a593b6e"
+        },
+        {
+          "draft": 2,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-49941a1b-3f5a-48bf-9211-77176a5a9faf.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "c82380799b79d53282014c3f3408b9e316655b9bfe78cd3dd6a2990dc8404204",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "完成食品が通常ケースに残る",
+            "下段左右面積比のずれ"
+          ],
+          "revision_instruction": "厳密な3コマ。上45%全幅にPCを開く遥と佐伯。下55%を半分に分け、右半分に佐伯のアップ『その画面から』『お弁当が出てきます？』。左半分に『十二時半には、窓口へ』と言う佐伯の顔を左上、坂本と魚の品札を奥、遥の止まった指を前景。下段の左右を逆にしない！全コマ予約棚は完全に空。売場にから揚げの箱も魚の完成弁当もまだない。箱や帯を積まない。遥のPCは白天板、画面を視認できる角度で『架空注文』『試作』。遥は白丸首と灰カーディガン・見学証、エプロンなし。",
+          "submitted_prompt_sha256": "c65985733ebb943b3bc70b4a3610d1814c1244fd525c1214ed7234c3929ce66c"
+        },
+        {
+          "draft": 3,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-389d7f72-1e2d-4f8a-8d92-3e6355afdf48.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "1e6365c136cfcf3a8f20c7869561c75d25ff03edc7f163a04dec29bb458ed77b",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "PCの架空注文・試作画面が見えない",
+            "佐伯の二つの吹き出しが統合",
+            "下段左右の面積比のずれ",
+            "PC天板が紙白でなく灰色"
+          ],
+          "revision_instruction": "最終稿。3コマ、上45%全幅、下右50%コマ2佐伯アップ、下左50%コマ3全員。全頁に完成した弁当箱も食品の入ったトレーも一切描かない。予約棚・通常ケースは空のまま。から揚げはすでに最後の1個を売り切っている！品札だけあり、坂本は魚の品札を取る。PCの試作画面と止まった指、佐伯の台詞・顔を明確に。PCは1台だけ。佐伯の左時計の盤面は遠近で隠す（時刻の新規強調は不要）。台詞の『――』を二本のダッシュとして正確に。遥エプロンなし。",
+          "submitted_prompt_sha256": "1d084c1f0c046baa1b9633b1cb783a1720f214c4cb634c545d3deb7aa98f62c5"
+        }
+      ],
+      "name_sha256": "bdacf2ec1671a259804f9d2c18f41823d83c86faa8f9b2583647c01220c5e75e"
+    },
+    {
+      "page": "P09",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿で中央の左右が再逆転したため、正しい時系列の第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P09.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P09.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "5コマの順は正しい。12:21の選択は中央右、12:26受領は中央左。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "合格",
+          "detail": "全会話と擬音を照合、佐伯・坂本の尾も対応。魚の札と生姜から揚げの写真がある。"
+        },
+        "名前の見出し": {
+          "result": "対象外",
+          "detail": "新規の名前見出し指定なし。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "要修正",
+          "detail": "主要3人は識別可能。遥の胸元に白い肩紐状の線が残り、厨房係は設定より太腕・黒い胸当てになっている。"
+        },
+        "時計の数字と針": {
+          "result": "要修正",
+          "detail": "12:21/12:26見出しは正しい。短針が1方向へ進みすぎ、12:26長針も156度からずれる。"
+        },
+        "手の持ち主": {
+          "result": "概ね一致",
+          "detail": "坂本・佐伯・遥の手の所属は明確。厨房の作業袖と太腕は大西の設定と不一致。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "客自身の選択・受領・翌日予約の流れは読める。遥が袋を開く動作はコマ2で不足。"
+        }
+      },
+      "remaining_issues": [
+        "12:21・12:26の時計の針が不正確",
+        "厨房係の太腕・黒胸当てが大西設定と不一致",
+        "遥の衣服に肩紐状の線、袋を開く動作が不足"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-eb2eea2c-97f4-433a-8a13-01b7333a7c8c.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "8bc0456c220570c376cc04ca38b69e779e8b31cac2b6eaff7ad75d39a4018e9b",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "中央左右逆転",
+            "12:26時計不正確",
+            "帯付き魚箱",
+            "遥の笑顔が強い"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "1087babce422536bcfc8ac8afd90a15823fe4d6a8a0a55085835a2882527ac8a"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-6a3aef9d-962d-456b-8e45-aac6f14ddd38.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "2f16338c217f20665f4014165a39c2ac02793ddf4cb67b00be8fccc4a948acb5",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "12:21・12:26の時計の針が不正確",
+            "厨房係の太腕・黒胸当てが大西設定と不一致",
+            "遥の衣服に肩紐状の線、袋を開く動作が不足"
+          ],
+          "revision_instruction": "5コマの中央の左右を厳守。最上段24%が12:21の提案。次の25%右半分が12:21の佐伯『それで、お願いします』と遥がPCを閉じ袋を開く。左半分が12:26の坂本『お待たせしました』と魚弁当を袋へ。12:26は長針156度=5と6の間で6寄り、短針13度=12と1の間で12寄り。次25%全幅が出口で佐伯『明日も十二時二十分に』『ここの生姜味、好きなので』。最下26%全幅が翌日予約記入。遥に得意な笑顔をさせず反省した表情。佐伯の微笑は控えめな大人。本人左手首だけ時計、右肩にバッグ。予約棚は空。初日の魚の箱は無帯。",
+          "submitted_prompt_sha256": "2003774be43432f92b505deac3f464c54fab33813f2584c77166a72363f97281"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-0acb59bc-3433-4dd4-8859-4ffb2feb8ed0.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "c125c84bf4da60377796deef7f574a1978769ba97ca01215833ef009d4d3524d",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v2/backgrounds/02-aoba-counter.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "中央左右が再逆転",
+            "時計不正確"
+          ],
+          "revision_instruction": "最終稿。右→左の5コマ配置を維持し、時計を最優先で正す。12:21は長針126度(4を少し越え5に届かない)、短針10.5度(12のすぐ右)。12:26は長針156度(5と6の間)、短針13度(12と1の間で12寄り)。いずれも短針を1近くまで進めない。厨房係は白折返し袖と細い前腕のみ見せ、顔や黒エプロンを足さない。ネームの5コマ全台詞を保持。コマ2で佐伯は左時計を見る、遥はPCを閉じて袋を開く。箱は無帯。コマ5の遥は白エプロンではなく手に持つ白い空袋の底を見る。佐伯は右肩バッグ。空の予約棚。上24%、中二分割25%、次25%、最下26%。",
+          "submitted_prompt_sha256": "abd5b4b6f44de7893ced3d5ae7d0c86130016d6e63144b43c44a640e39f4a5f9"
+        }
+      ],
+      "name_sha256": "0213ac1e28743ae6d4323fdd8afce36fc63d2c0d6df8e60de1ebcbd0060b7332"
+    },
+    {
+      "page": "P10",
+      "draft_count": 3,
+      "selected_draft": 3,
+      "selected_reason": "第3稿で制服切替・バッグ重複・立食の膝・食べ残しが揃った。",
+      "image": "manga/serial/v5/ch01/pages/P10.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P10.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "合格",
+          "detail": "上下2コマ。同じ室内の戸口左奥・机左・椅子右・窓右を維持。膝まで見え、立食と空席が明確。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "合格",
+          "detail": "窓口交代12:30、同僚『交代、お願いします』を確認。尾は戸口の同僚へ。上段は無言。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "受付の同僚の小見出しあり。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "合格",
+          "detail": "佐伯の波髪・大人の顔・左腕時計。下段は受付の上着を整える姿へ切替。"
+        },
+        "時計の数字と針": {
+          "result": "概ね一致",
+          "detail": "上12:28・下12:30。数字は1〜12順、二針。上長針は6の少し右、下は6、両短針は12の少し右。目視上指定時刻と整合。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "上段右手の箸・左手の椅子、下段の襟を整える両手が身体と袖につながる。"
+        },
+        "見せ場の迫力": {
+          "result": "合格",
+          "detail": "半分残った弁当・置いた箸・空席で失った時間が伝わる。効果線なし。"
+        }
+      },
+      "remaining_issues": [],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-015e3510-71f1-4586-946e-fb231858f6d4.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "1a28731e0f933f0e25b9d0b80373fc153642838e6a0010cf49aa72561d1ce466",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "膝が見えず水平ロング不足",
+            "下段制服切替なし",
+            "バッグ位置揺れ",
+            "食べ残しが弱い"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "0c1d75a98c4681bd3cfaf86a23c8f41d3b920c001de3e6c063afcf5f2126576d"
+        },
+        {
+          "draft": 2,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-3a7a6b22-281d-4df5-93fe-b973dfce83a6.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "3d3796a2f18f144b33ce8d698e59c6ef99321100b68f8525626b63732fee8b3f",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "机脇バッグと肩紐の重複",
+            "制服へ切り替わらない"
+          ],
+          "revision_instruction": "上下二段各50%の完全に同じ固定水平ロング。前景左に机、前景右に空いた椅子、奥左に戸口、右壁に窓。膝まで入れ佐伯が座っていないことを明確に。上：12:28、長針168度(6の少し右)、短針14度(12の少し右)、佐伯は右手の箸で魚弁当へ箸を付け、左手で椅子を引きかける。バッグは本人右肩から机脇へ置く。下：12:30、長針真下180度、短針15度。弁当の半分は明確に空、箸は机に置き、空いた椅子を強く見せる。佐伯は受付制服の上着を整えて出る。戸口の同僚の顔から『交代、お願いします』、小見出し『受付の同僚』。佐伯の顔を笑わせない。時計はアラビア数字1〜12正順、二針のみ。",
+          "submitted_prompt_sha256": "a7481333a142ef08218c1e31e68375de7466fb74a39821ad16f069bd8a68c473"
+        },
+        {
+          "draft": 3,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-a5859bad-6a51-45f1-aa41-e0adf94c2d9c.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "273e0114a2a7bf2dcd95666e93edea6491ea91efe01f45f8c06a44b342ff8b26",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/06-saeki-maho.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [],
+          "revision_instruction": "最終稿。上下同じ水平ロング、机左・椅子右・戸口左奥・窓右を固定。上では佐伯のバッグは既に机脇に置いているので肩に2個目のバッグや残った肩紐を描かない。立つ膝まで見える構図。12:28の長針168度、短針14度。下12:30では佐伯が淡いカーディガンの上から受付用の濃色ジャケットへ腕を通して襟を整え、戸口へ向く。バッグは机脇の同じ位置へ残してよい。半分残った弁当と置いた箸と空席を中央に。同僚の顔と口、台詞『交代、お願いします』の尾は同僚へ。小見出し『受付の同僚』。下時計の短針15度、長針180度。時計の数字1〜12を一巡正順に、余分な数字や針なし。",
+          "submitted_prompt_sha256": "4aa2556e92382c000acbf66b5edd2a9906f3952e21eefb7056e93f1f2e46f4e7"
+        }
+      ],
+      "name_sha256": "660e6e1708b6e8647fd4ff6b74dc340f9511aff8ee792e4ee96085f50df08be5"
+    },
+    {
+      "page": "P11",
+      "draft_count": 3,
+      "selected_draft": 3,
+      "selected_reason": "第2稿より時計の二針が近づき、構成と空容器が整う第3稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P11.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P11.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "4コマの上全幅・中央右→左・下全幅。指定比率に近い。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "要修正",
+          "detail": "全台詞と擬音は判読可能。中央右は二台詞の高さが近く、右のアキを先に読む余地。遥の二台詞は連結吹き出し。"
+        },
+        "名前の見出し": {
+          "result": "対象外",
+          "detail": "既出人物のみ。名札小川と店長坂本がある。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "要修正",
+          "detail": "顔髪服は概ね一致するが、最後の遥は本人左にも白ピンが追加されている。"
+        },
+        "時計の数字と針": {
+          "result": "要修正",
+          "detail": "13:05見出し、二針が近接する1方向を確認。針が目盛1の少し手前に見え、30度/32.5度との厳密一致は取れていない。"
+        },
+        "手の持ち主": {
+          "result": "合格",
+          "detail": "アキの白ポロ袖、坂本の太腕、遥の灰袖、森の黒袖を識別。空容器1個と台帳1冊。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "アキの任されたい表情と空容器を置く動作、遥の依頼へつながる。"
+        }
+      },
+      "remaining_issues": [
+        "最後の遥に余分な白ピン",
+        "13:05の針角度の厳密な一致不足",
+        "中央右コマの会話順の誘導が弱い"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-dae4c196-4434-4ad5-a854-1c8c1c5680d5.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "9e7cc0156c7bd1609b4539b42e878e21e35e84892256beebc920e7194908ef53",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "4コマが横4段",
+            "13:05の短針が進みすぎ",
+            "遥の胸当て・余分な容器"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "e5dfd7dfe43e22041781bac927188372ce4f5ebc47a8eaeb969fa9dc19c2fe10"
+        },
+        {
+          "draft": 2,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-147c0e66-b99a-4df2-b9f4-514fc0492337.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "f691a18910d8902620b4dd525df8d0201a14703b4111911c960f1d266ebcc778",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "ピン左右逆転",
+            "時計の短針角度不足",
+            "二台詞統合"
+          ],
+          "revision_instruction": "4コマの三段構成必須。上30%全幅コマ1、中央30%右半分コマ2坂本とアキ、中央左半分コマ3遥とアキ、下40%全幅コマ4アキ・森・遥。横4段は禁止。コマ2は坂本の台詞を上、アキの返答を下に置く。時計13:05は長針が1ぴったり30度、短針が1よりわずかに先32.5度で、2本はほぼ重なる。遥は見学証＋白丸首＋薄灰カーディガンのみ、白い胸当てやエプロンの肩紐を描かない。最後の空容器は蓋なしで中に何もない1個のみ、追加トレーや白い大箱を増やさない。台帳は箱でなく綴じた紙の本1冊。",
+          "submitted_prompt_sha256": "2d60f317fe288f552ac964956d53356aedc57cd3cde9cedd1a2fced26ddae893"
+        },
+        {
+          "draft": 3,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-47ae6f22-621f-4ace-a7a6-21e39416d463.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "01aafb0c7d966345f7a5ded8d9751a4e13f722628d7a3495c6380d56810ef3ea",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "最後の遥に余分な白ピン",
+            "13:05の針角度の厳密な一致不足",
+            "中央右コマの会話順の誘導が弱い"
+          ],
+          "revision_instruction": "最終稿。4コマ。上30%、中央30%右コマ2/左コマ3、下40%。13:05の長針は30度、短針32.5度、ほぼ同じ1の方向で2本が2.5度だけ離れる。短針を2へ向けない。遥の白ピンは本人右こめかみ=正面で画面左に二本だけ、本人左側は黒髪無地。遥はエプロンなし。最後の『見えてたことなら』はアキの口へ尾、森は黒鉛筆、台帳1冊と空の蓋なし箱1個。コマ2の坂本『通常の方も忙しいだろ』が上、アキ『店長も、二人はいません』がその下。コマ3の遥の二つの台詞を別の楕円へ。コマ割り比率・文字の安全域5%を守る。",
+          "submitted_prompt_sha256": "c42cafc5b124f26f38fe24e7b27d8bf9c68a0453f07752ece755e5c6d8e651bd"
+        }
+      ],
+      "name_sha256": "535ae5530a82dd532da94276d319453fd898d8a65335f9623c080741e242e229"
+    },
+    {
+      "page": "P12",
+      "draft_count": 3,
+      "selected_draft": 2,
+      "selected_reason": "第3稿は大西がエプロンを再着用し空箱に帯が追加された。厨房外の服装と無帯空容器を優先し第2稿を採用。",
+      "image": "manga/serial/v5/ch01/pages/P12.png",
+      "prompt": "manga/serial/v5/ch01/prompts/P12.txt",
+      "prompt_note": "採用画像の生成時に実際に送信したプロンプトと一致。各稿の修正指示はdraftsへ記録。",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "source_byte_identical": true,
+      "checks": {
+        "コマ割りと読み順": {
+          "result": "概ね一致",
+          "detail": "4コマ。上全幅・中段右アキ／左坂本・下全幅で順序一致。上中下の比率は指定からずれる。"
+        },
+        "台詞の文字・話者・しっぽ": {
+          "result": "概ね一致",
+          "detail": "大西・アキ・坂本・森・遥の全台詞は読める。アキと坂本の二台詞がそれぞれ一吹き出しに統合。"
+        },
+        "名前の見出し": {
+          "result": "合格",
+          "detail": "大西／青葉店・厨房の初出見出しと左胸名札を確認。"
+        },
+        "人物の顔・髪型・服": {
+          "result": "要修正",
+          "detail": "大西の長い直鼻・細い顎・白衛生帽・折返し袖は文章設定に概ね一致し、エプロンは外している。吊ったエプロンが淡灰でなく黒。遥の左右両側に白ピンがあり、胸当て状の白い肩紐が残る。"
+        },
+        "時計の数字と針": {
+          "result": "対象外",
+          "detail": "現在時計なし。台帳・札の予約時刻12:20は読める。"
+        },
+        "手の持ち主": {
+          "result": "要修正",
+          "detail": "大西・アキ・坂本の腕は所属明確。最下段は遥が顔に手を寄せ、札から箱へ線を引きかける手が欠落。"
+        },
+        "見せ場の迫力": {
+          "result": "概ね一致",
+          "detail": "帯なし空容器と札の間の白い丸で、名前と箱が離れている事実は読める。台帳に翌日の六件が混入。"
+        }
+      },
+      "remaining_issues": [
+        "当日の再現台帳に翌日の六件が混入",
+        "遥の白ピン増加と胸当て状の肩紐",
+        "外した大西のエプロンが黒",
+        "遥が線を引きかける手の動作欠落",
+        "二台詞の吹き出し統合・コマ面積比のずれ"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-46513b64-438b-4314-8a0b-a60c0a98da76.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "394b886591f35868daf213da91d448f5700029a131b1c1f6b0e4c6b5b98ee5d8",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "大西のエプロン着用",
+            "太めの眉腕",
+            "帯付き箱",
+            "翌日予約一覧と誤時刻",
+            "遥の胸当て"
+          ],
+          "revision_instruction": null,
+          "submitted_prompt_sha256": "5400fbf49b23bf22d6b899844268d4a40fee64d16d612b3ca4d32d58066fe025"
+        },
+        {
+          "draft": 2,
+          "selected": true,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-a1d74d48-dd0e-46c9-bc57-e803eecc10e9.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "39825aa1982bfaf342792c51987950fba6816a163fbc83603d4aa4de7c32e8bc",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "当日の再現台帳に翌日の六件が混入",
+            "遥の白ピン増加と胸当て状の肩紐",
+            "外した大西のエプロンが黒",
+            "遥が線を引きかける手の動作欠落",
+            "二台詞の吹き出し統合・コマ面積比のずれ"
+          ],
+          "revision_instruction": "大西は厨房東口の外にいるためエプロンを完全に外している。白い折返し作業シャツと左胸の『大西』、細い前腕、細肩、縦長顔と細顎、長い真っ直ぐな鼻、細い水平眉、小さい目、白無地衛生帽を固定。脱いだ淡灰エプロンは背後のフックに1枚掛ける。太腕や黒エプロンは禁止。台帳は当日の『佐伯／から揚げ／12:20』の一行を指す。翌日の六件一覧はこの頁に一切描かない。アキは蓋なし・中が空・帯なし・名前なしの空容器1個を置く。全頁を通じ紙帯を箱に巻かない。遥も胸当てなし、白丸首・灰カーディガン・見学証のみ。最後は名前の札と空箱の間の丸だけ、六件の矢印図へ変えない。森の台詞が最上、遥の返答はその下。4コマの上30%全幅・中央右アキ/左坂本各15%・下40%全幅を維持。",
+          "submitted_prompt_sha256": "27245c3aa1b0692a3862355fe6fd55a3f98a18e0ef678bffec34601b36051c11"
+        },
+        {
+          "draft": 3,
+          "selected": false,
+          "source_path": "/home/t-tsuji/.codex/generated_images/01a0d156-0e46-77e3-967b-d9d6b31b2715/exec-5e6d3b4a-f1b5-4eda-857a-3a9230841566.png",
+          "dimensions": [
+            1024,
+            1536
+          ],
+          "format": "PNG",
+          "sha256": "03439080ededc90870776ab6bd3cd8d97b5880124cfa743e12ee0133f32a9371",
+          "reference_paths": [
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/07-ogawa-aki.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/02-sakamoto-makoto.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+            "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/E-3.png"
+          ],
+          "visually_reviewed": true,
+          "issues": [
+            "大西のエプロン再着用",
+            "空箱に帯が追加",
+            "白抜き円欠落",
+            "森の鉛筆が口に近い"
+          ],
+          "revision_instruction": "最終稿。4コマ。上30%全幅/中央30%右アキ・左坂本/下40%全幅。大西は細い長方形の顔・長い直鼻・細い水平眉・白衛生帽・白い折返し作業袖と細い前腕。大西のエプロンは完全に外して背後に淡灰の一枚を吊るす。台帳には『佐伯／から揚げ／12:20』の一行だけ、他の5人の翌日予約は一切描かない。アキは一つの帯なし空容器を置く。坂本の電話は手に一個、台座は空。下コマ遥の白ピンは本人右こめかみ=正面で画面左に平行二本だけ、反対側へ二本増やさない。遥は白丸首・灰カーディガン・見学証だけ、エプロンなし。遥が札から空箱へ鉛筆で線を引きかけて止める手を見せ、丸はその中間。森『用途を伝えた順は、まだ不明』が上で先、遥『でも、名前が箱に付かなかった』が下で後。全ての指定台詞と大西の名見出しを保持。",
+          "submitted_prompt_sha256": "dcf8978f9f1241f277374f924b30d5b46d08950130bcb0f309e4ae0321acd1a2"
+        }
+      ],
+      "name_sha256": "ecb07a8a09236547b65dccb0b49c08297bb2e2e0ba55a9158ad0260bbea7a9e3",
+      "onishi_text_design_review": {
+        "鼻": "長い直鼻を確認",
+        "顎": "縦長で細い顎を確認",
+        "帽子": "白い無地衛生帽を確認",
+        "袖": "白い折返し作業袖、細めの前腕を確認",
+        "衣服の残課題": "脱いで掛けたエプロンが淡灰でなく黒",
+        "reference_note": "個人画像は存在しないため使用せず。共通文書の文章設定のみで照合。"
+      }
+    }
+  ],
+  "generated_image_count": 36,
+  "saved_image_count": 12,
+  "pages_with_remaining_issues": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P11",
+    "P12"
+  ]
+}
