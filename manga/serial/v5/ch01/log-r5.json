@@ -1,0 +1,663 @@
+{
+  "round": 5,
+  "date": "2026-09-24",
+  "language": "ja",
+  "status": "完了",
+  "tool": "built-in image_gen",
+  "scope": [
+    "P43",
+    "P44",
+    "P45",
+    "P46",
+    "P47",
+    "P48"
+  ],
+  "page_count": 48,
+  "image_postprocessing": false,
+  "git_commit": false,
+  "max_drafts_per_page": 4,
+  "inspection_method": "改稿前に全46画像・48頁をview_imageで順番に通読。生成後はツールの原寸画像表示を自身の目で確認し、採用前に修正点・読み順・台詞と話者・人物の一貫性・迫力を点検。画像の後加工は行わない。",
+  "source_documents": [
+    "docs/serial/v5/review-r4.md",
+    "docs/serial/v5/ch01.md",
+    "docs/serial/v5/characters.md",
+    "manga/serial/v5/ch01/style-common.txt"
+  ],
+  "pages": [
+    {
+      "page": "P43",
+      "prompt": "manga/serial/v5/ch01/prompts/P43-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P43.png",
+      "adopted_draft": 1,
+      "checks": {
+        "revision": "三箱完食の無言コマから、森が『森』の帯を巻いた箱を両腕で抱え、遥の教えを返す落ちを確認。",
+        "reading_order": "全幅4段。二人の台詞は上段右→左、落ちは右の森→左の遥。",
+        "dialogue": "指定台詞を確認。『まだ何も言ってません!!』は遥、帯の教えは森。",
+        "identity": "遥の高い二股・右こめかみの白ピン二本・薄灰袖、森の水平ボブ・眼鏡・半眼・黒袖を維持。",
+        "impact": "遥の白目と大口、森の徹底した無表情と箱を囲む両腕の落差が出た。",
+        "continuity": "佐伯の食事の次のめくり後、スタッフの昼休み。三箱は遥の食事で客の予約ではない。"
+      },
+      "remaining_issues": [
+        "落ちの段は指定40%に対し目視約33%。",
+        "第3コマの空箱は重ねず並べた状態、最終コマで重なる。因果は維持。",
+        "左端の抗議吹き出しは5%の安全域より外へ寄る。文字の欠落はない。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-99a565af-3d28-4105-a183-3bf8bbc01d70.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P43.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "7674b4ad041dcf409310920d889ed8816ea4c62d844b5417e82f357fdb0c14f0"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+              "role": "入力3＝art/v3/characters/04-mori-risa.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P42.png",
+              "role": "入力5＝manga/serial/v5/ch01/pages/P42.png。直前の頁の連続性。台詞をコピーしない。",
+              "sha256": "7a0cd50b33cd1961d784566cc1cb20a97f2fb822e77b6fc7b68efeed45baa088"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "120ee4d5d661bdb538ad0f3fbbed19766d647c4a2cfa2bc3d8780b91efe895b4"
+        }
+      ],
+      "before_sha256": "7674b4ad041dcf409310920d889ed8816ea4c62d844b5417e82f357fdb0c14f0",
+      "after_sha256": "120ee4d5d661bdb538ad0f3fbbed19766d647c4a2cfa2bc3d8780b91efe895b4",
+      "raw_copy_verified": true,
+      "prompt_sha256": "e4e1c62f05e6ce9819434548a122648c713450bd0321be6c4a6feaf1b9b0db4c"
+    },
+    {
+      "page": "P44",
+      "prompt": "manga/serial/v5/ch01/prompts/P44-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P44.png",
+      "adopted_draft": 2,
+      "checks": {
+        "revision": "黒地、白線の三つの既存部品、噛み合う接点、技名『組み上げ』、集中する蓮と操作する実体の手を確認。八店の建物は次頁へ留保。",
+        "reading_order": "全幅3段、手順を受け取る→既存の三部品→組立の順。下段は目視約49%で最大。",
+        "dialogue": "『その順番、借りるよ』は通話画面内の蓮。再紹介『真柴 蓮／遥の同期』と14:00を確認。",
+        "identity": "蓮の明るい跳ね髪、白い開襟と黒T、遥の高い二股・本人右の白ピン二本・薄灰袖。",
+        "impact": "無言で大きい手を動かす蓮、白い溝と接点、黒地の余白で遥の技と異なる見た目を確保。",
+        "continuity": "本部で実際のキーを押す手と象徴の部品を区別。『練習環境』『既存部品』あり。"
+      },
+      "remaining_issues": [
+        "下段は指定53%より小さく目視約49%。",
+        "八本の接続線と細い効果線は厳密には分離しにくい。八店の数はP45で確定させる。",
+        "三部品の見出しは左から入力→厨房表示→帯出力。図のラベルを読む向きは通常の右始まりと異なるが、三段の物語の読線は明瞭。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-bcba4d70-d8b0-4d07-b92e-5dc076e674b6.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "9c4548e434fee3734d0baf0d37fa4d6e8ba7c3ad76a767cc07e35e9e8d60962d"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "黒地の技は出たが、P44で八店を先に描いてしまい、組立の途中を飛ばした。旧P45との役割重複のため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "7db7f81f4d6b2f548d7e43950bb5220558db4c8fe46b5c9725f0c91221ec079e"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-6cc35145-f2d5-485a-91dc-cb312d2ecab3.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "9c4548e434fee3734d0baf0d37fa4d6e8ba7c3ad76a767cc07e35e9e8d60962d"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "初稿本文＋第2稿の修正指示（同txtに保存）",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "8554a96d2de033fd977afb43707d955252eeb4c2b3fbdf6f5fd7003c0f16d251"
+        }
+      ],
+      "before_sha256": "9c4548e434fee3734d0baf0d37fa4d6e8ba7c3ad76a767cc07e35e9e8d60962d",
+      "after_sha256": "8554a96d2de033fd977afb43707d955252eeb4c2b3fbdf6f5fd7003c0f16d251",
+      "raw_copy_verified": true,
+      "prompt_sha256": "031d192b265873446658ab81f18bafa43b57857dc05144611f6bb06d25600332"
+    },
+    {
+      "page": "P45",
+      "prompt": "manga/serial/v5/ch01/prompts/P45-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P45.png",
+      "adopted_draft": 2,
+      "checks": {
+        "revision": "黒地・八本の白線・八つの店を確認。核をP44第2稿と同じ溝付きの三部品に合わせ、14:30／30分後を明示。",
+        "reading_order": "全幅3段。技→実画面→遥の負け顔の順。",
+        "dialogue": "蓮『できた。八店分』『これ、八店で育てられる』、遥の内語『私の、一日が』を確認。",
+        "identity": "蓮の明るい跳ね髪・白開襟・黒T、遥の高い二股尾・白ピン・薄灰袖を確認。ただし下段の遥の襟足の髪量が設定より多い。",
+        "impact": "黒い上段と大きい負け顔が対比。左右四店ずつ計八店を目視で数えられる。",
+        "continuity": "青葉の練習A 12:20、駅前の練習B 12:20→12:25。駅前の枠からプリンターへ矢印、帯は練習B／駅前／12:25。他六店の到達印。『店内運用・実客 未検証』あり。"
+      },
+      "remaining_issues": [
+        "上段は対称的な配置で図解感が残る。",
+        "店の外形周囲に薄い灰色の縁が残る。核と接続線は初稿より硬質になったが、画風指定の完全な紙白二値ではない。",
+        "八枠の店名は整合するが、上段の左右配置はネームの指定と逆。更新された駅前と保持された青葉は明瞭。",
+        "下段の手前に追加の端末外面が小さく入った。物語上の役割は与えていない。",
+        "最終通読で、下段の遥に指定外の『佐伯 12:20』の紙と、設定より厚い襟足の髪を確認。終了した一日の記憶として意味は通るが、余分な視覚情報が残る。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-e4ce026c-dd17-4116-8543-b74a4123a009.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P45.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "30378ca7815f8b5b2053c2113210219349aa199edcf18cbd84d58579cdb5e4fc"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "八店と更新・帯出力は読める。中央核がサーバー塔になり、P44採用稿の三部品と形状が続かない。光彩も強く再生成。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "14fe77d27139f1c4e9000d15431a3dfceee6ef1450bc9033592550e440b398f3"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-152699f1-8027-494c-87a5-ab46c4bd3bf8.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P45.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "30378ca7815f8b5b2053c2113210219349aa199edcf18cbd84d58579cdb5e4fc"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P44.png",
+              "role": "追加参照5＝直前頁の採用済み第2稿。組み上げの形と白線の画風。",
+              "sha256": "8554a96d2de033fd977afb43707d955252eeb4c2b3fbdf6f5fd7003c0f16d251"
+            }
+          ],
+          "prompt_recipe": "初稿本文＋第2稿の修正指示（同txtに保存）",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "ef8cd8744a3c3ba5cac3b3b12b28a4d86fb086778a2daaebc78a111d3244a4ad"
+        }
+      ],
+      "before_sha256": "30378ca7815f8b5b2053c2113210219349aa199edcf18cbd84d58579cdb5e4fc",
+      "after_sha256": "ef8cd8744a3c3ba5cac3b3b12b28a4d86fb086778a2daaebc78a111d3244a4ad",
+      "raw_copy_verified": true,
+      "prompt_sha256": "a4fec907baebd5b32fac668177412cb89d331eae2e2ddbba27fed9a3555887b9"
+    },
+    {
+      "page": "P46",
+      "prompt": "manga/serial/v5/ch01/prompts/P46-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P46.png",
+      "adopted_draft": 1,
+      "checks": {
+        "revision": "勝った方に来週の試作を渡す一枠と、森の『相手の仕組み』をP46内に明示。",
+        "reading_order": "全幅4段。各段の発話は右上→左下。最終段は右の明朝→左の交換条件。",
+        "dialogue": "遥『箱まで行かなきゃ、まだ途中』『……その速さ、ずるい』、蓮の返答、水野の選考、森の条件の話者を確認。",
+        "identity": "遥の二股尾・白ピン・薄灰袖、蓮の明髪・白開襟・黒T、水野の額・低い尾と大襟、森の眼鏡・半眼・黒袖。",
+        "impact": "遥の悔しそうな笑いから、交換条件を聞いて驚く顔に変わる。会話頁の役目は果たす。",
+        "continuity": "本部の蓮・水野はPC内。カードは本人受取一枚と伏せた二枚。"
+      },
+      "remaining_issues": [
+        "通話の吹き出しは二重縁ではなく通常の一重線になった。画面枠・尾・同じコマ内の顔で話者は識別できる。",
+        "森の右向きの指の先の紙の手順が枠外。腕の交差と、PC・カードで交換条件を読む。",
+        "第三段の担当表は読めるが、指定の24%より小さく目視約19%。"
+      ],
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-08ab8349-d01c-4339-9089-6030728d7f85.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P46.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "65e70163192b9d26936809256165589503d709bd773cebf516137e6e09d120b2"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+              "role": "入力4＝art/v3/characters/04-mori-risa.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/05-mizuno-maki.png",
+              "role": "入力5＝art/v3/characters/05-mizuno-maki.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "121df11636f6294e54927b370280632908cd2fdd416f3b6c48c5f572628a7792"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "6c943cdc7ee44a5b4decd82b52deb92cda9ccfdaab89734854101fd80a726ae4"
+        }
+      ],
+      "before_sha256": "65e70163192b9d26936809256165589503d709bd773cebf516137e6e09d120b2",
+      "after_sha256": "6c943cdc7ee44a5b4decd82b52deb92cda9ccfdaab89734854101fd80a726ae4",
+      "raw_copy_verified": true,
+      "prompt_sha256": "c06b37c9f4ae03c0db2d419ec50c6fefb7b8d54a4aa4f72d9b2c495d671d29d0"
+    },
+    {
+      "page": "P47",
+      "prompt": "manga/serial/v5/ch01/prompts/P47-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P47.png",
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-61be14b9-50b2-47a9-9f06-eb6eb836e27c.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "4408082d84400e50282284418b033dc0b11d91ad52bcda95c291f1fe1f078135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+              "role": "入力4＝art/v3/characters/04-mori-risa.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "台詞・話者・代理受取の未解決提示は成立。机にカードが積層して三枚の条件を超えたため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "47f12836bd96d28da21ea23307c61181cfc98a939ac1c5a68464c9ee1240cd54"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-3ed71445-724b-4a60-af1f-d9794ffa4358.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P47.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "4408082d84400e50282284418b033dc0b11d91ad52bcda95c291f1fe1f078135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/04-mori-risa.png",
+              "role": "入力4＝art/v3/characters/04-mori-risa.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762"
+            }
+          ],
+          "prompt_recipe": "初稿本文＋第2稿の修正指示（同txtに保存。以前の追記は累積しない）",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "5c4ccae29a82c02e4b9e0a67fcdc02994ea95d71c8c178633dc3935bf658b618"
+        }
+      ],
+      "before_sha256": "4408082d84400e50282284418b033dc0b11d91ad52bcda95c291f1fe1f078135",
+      "adopted_draft": 2,
+      "checks": {
+        "revision": "作者の口出し禁止、代理受取の課題、相手の仕組みを使う受諾を三段で確認。解き方は示していない。",
+        "reading_order": "全幅三段。最終段は右の蓮から左の遥へ読む。",
+        "dialogue": "森『作者は、口を出さない』『この予約をした人は、来ません』、蓮『君の帯で、やってみる』、遥『じゃあ、私は君のを』を確認。",
+        "identity": "遥の高い二股尾と右こめかみの白ピン、蓮の明髪・開襟、森のボブ・眼鏡・半眼を維持。",
+        "impact": "森のカードを出す手が課題を作り、下段の両者が引き受ける顔で次頁の勝負へ進む。",
+        "continuity": "本人受取一枚、森が持つ代理受取一枚、伏せた一枚で計三枚。画面内の蓮は本部の練習箱と三欄の帯を持つ。"
+      },
+      "remaining_issues": [
+        "第2段の山田と書く帯は生成で省略。予約者と来店者が異なる小図と代理受取カードで意味は伝わる。",
+        "上段が指定28%よりやや大きく、目視約32%。",
+        "最終段の遥の吹き出しが高めで、右の蓮の発話から読むには画面と左右位置を手がかりにする。"
+      ],
+      "after_sha256": "5c4ccae29a82c02e4b9e0a67fcdc02994ea95d71c8c178633dc3935bf658b618",
+      "raw_copy_verified": true,
+      "prompt_sha256": "63da3f93060db68e300c7d189a71668164b41c756a1649d44307ed0f35b3b5d0"
+    },
+    {
+      "page": "P48",
+      "prompt": "manga/serial/v5/ch01/prompts/P48-r5.txt",
+      "output": "manga/serial/v5/ch01/pages/P48.png",
+      "drafts": [
+        {
+          "draft": 1,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-4b700eec-c136-4397-855b-749c95084ff6.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P48.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "66bbd52533b4c816d696425f561edc8e23d975e60874c63b650d1a005c55dc12"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "Pxx-r5.txtの第2稿区切りより前の初稿本文",
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "研修回想と決め台詞は成立。最終コマの白ピンが本人左へ逆転し、最終大ゴマも指定より小さいため不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "a1366cd3ff60cfe1a70fe11b56072e6f9112b386cdf266508c85f48aa5fe1248"
+        },
+        {
+          "draft": 2,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-42703cc7-302a-4015-b986-0346275245b9.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P48.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "66bbd52533b4c816d696425f561edc8e23d975e60874c63b650d1a005c55dc12"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "初稿本文＋第2稿の修正指示（同txtに保存。以前の追記は累積しない）",
+          "visually_inspected": true,
+          "adopted": false,
+          "assessment": "最後の目と本人右のピンは改善。ただし中段で蓮の手と箱が通話画面から店側へ飛び出し、佐伯の予約帯が追加された。研修の尾も低くなり、不採用。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "a521e920d3ff6f96c75ff7138bd16f652964e3afc7bf3192c736bb052695faa2"
+        },
+        {
+          "draft": 3,
+          "source_image": "/home/t-tsuji/.codex/generated_images/01a0d1d9-fa8e-7610-b946-a657a95f9f3f/exec-aba85cfa-4a63-4e27-97f5-6ee1ffad9394.png",
+          "references": [
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/manga/serial/v5/ch01/pages/P48.png",
+              "role": "入力1＝改稿対象の現在の頁。人物・場所・線を継承し、コマと台詞は新ネームへ全面更新する。",
+              "sha256": "66bbd52533b4c816d696425f561edc8e23d975e60874c63b650d1a005c55dc12"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/01-aoi-haruka.png",
+              "role": "入力2＝art/v3/characters/01-aoi-haruka.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/v3/characters/03-mashiba-ren.png",
+              "role": "入力3＝art/v3/characters/03-mashiba-ren.png。人物同一性の参照。服装は新ネームを優先。",
+              "sha256": "c8d51537374206749569666f2fa3e5d2e9b95161bee368922853bf3688752135"
+            },
+            {
+              "path": "/home/t-tsuji/project/KoharuKitchen/art/style-tests/round2/F-2.png",
+              "role": "入力4＝art/style-tests/round2/F-2.png。線・表情の強度のみ。顔・文字・コマ構成を転用しない。",
+              "sha256": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+            }
+          ],
+          "prompt_recipe": "初稿本文＋第3稿の修正指示（同txtに保存。以前の追記は累積しない）",
+          "visually_inspected": true,
+          "adopted": true,
+          "assessment": "採用。個別QAと残る差分を参照。",
+          "actual_size": [
+            1024,
+            1536
+          ],
+          "sha256": "cfeb9fc31e4a247445a1845f7133eae3bf09de953e76a3e8207bd8b6715b53a0"
+        }
+      ],
+      "before_sha256": "66bbd52533b4c816d696425f561edc8e23d975e60874c63b650d1a005c55dc12",
+      "adopted_draft": 3,
+      "checks": {
+        "revision": "研修の『修正済』『実装担当 真柴』と遥の内語を確認。現在の蓮『また俺が先に直す』から、遥の目と『今度は、私が直して渡す』『来週の担当は、私が取る』へつながる。",
+        "reading_order": "全幅三段。回想は角丸、現在は直角。最終段は右上の台詞→顔→左下の決め台詞。",
+        "dialogue": "指定の発話・内語・担当名を読める。蓮の二重縁の尾は画面内へ、最終段の二つの尾は遥へ。",
+        "identity": "高い二股の黒い尾、本人右こめかみ＝正面の画面左の白ピン二本、薄灰袖を確認。蓮の明髪・白開襟・黒Tも維持。",
+        "impact": "頁で最大の顔、寄せた眉と鋭い目、歯を見せる挑戦的な笑み、自分で袖をまくる動作。説明図や煽りで最後を塞いでいない。",
+        "continuity": "蓮の手と『練習用』の帯付き黒箱一つは通話画面内に収まる。実予約の帯を足していない。研修は二人だけ。代理受取の解決はない。"
+      },
+      "remaining_issues": [
+        "最終段は再生成指示60%に対し目視約48%。中段の通話が広い。顔そのものは大きく、最終大ゴマの役割は成立。",
+        "左下の吹き出し文字は外縁5%よりやや近い（約4%）。欠落はない。",
+        "目は強くなった一方で口は明るい笑いに寄り、歯を噛みしめる悔しさより挑戦の快活さが前面に出た。"
+      ],
+      "after_sha256": "cfeb9fc31e4a247445a1845f7133eae3bf09de953e76a3e8207bd8b6715b53a0",
+      "raw_copy_verified": true,
+      "prompt_sha256": "6d27da7e78415aac3d57afbc99f1afb23cbcfb34596a7b55e98620dab3918667"
+    }
+  ],
+  "read_through": {
+    "all_48_pages_visually_read": true,
+    "files": [
+      "P01.png",
+      "P02.png",
+      "P03.png",
+      "P04.png",
+      "P05.png",
+      "P06.png",
+      "P07.png",
+      "P08.png",
+      "P09.png",
+      "P10.png",
+      "P11.png",
+      "P12.png",
+      "P13.png",
+      "P14.png",
+      "P15.png",
+      "P16.png",
+      "P17.png",
+      "P18.png",
+      "P19.png",
+      "P20.png",
+      "P21-22.png",
+      "P23.png",
+      "P24.png",
+      "P25.png",
+      "P26.png",
+      "P27.png",
+      "P28.png",
+      "P29.png",
+      "P30.png",
+      "P31-32.png",
+      "P33.png",
+      "P34.png",
+      "P35.png",
+      "P36.png",
+      "P37.png",
+      "P38.png",
+      "P39.png",
+      "P40.png",
+      "P41.png",
+      "P42.png",
+      "P43.png",
+      "P44.png",
+      "P45.png",
+      "P46.png",
+      "P47.png",
+      "P48.png"
+    ],
+    "method": "view_imageでP01からP48まで順番に表示。P21-22とP31-32は一枚の見開きとして通読。改稿前に完了。"
+  },
+  "generation_count": 11,
+  "adopted_image_count": 6,
+  "self_evaluation": {
+    "score": 90,
+    "estimated_rank": "3〜5位",
+    "independent_review": false,
+    "top_3_confirmed": false,
+    "notes": "docs/serial/v5/round-05-notes.md"
+  },
+  "final_six_pages_visually_reread": true,
+  "validation": {
+    "page_count": 48,
+    "image_file_count": 46,
+    "changed_images": [
+      "P43.png",
+      "P44.png",
+      "P45.png",
+      "P46.png",
+      "P47.png",
+      "P48.png"
+    ],
+    "unchanged_images": 40,
+    "unchanged_pages": 42,
+    "all_raw_copies_match": true,
+    "reference_scope_valid": true,
+    "all_drafts_visually_inspected": true,
+    "max_actual_drafts": 3,
+    "name_revision_sections": 6,
+    "scenario_pages_complete": true,
+    "git_diff_check": "pass"
+  }
+}
