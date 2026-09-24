@@ -1,11 +1,11 @@
 {
   "project": "こはるキッチン",
-  "round": "v5-round-01",
+  "round": "v5-round-02",
   "date": "2026-09-24",
-  "success_calls": 11,
-  "accepted": 8,
-  "rejected": 3,
-  "reference_policy": "art/v2/ and art/style-tests/round2/ only; generated v3 never used as input",
+  "success_calls": 19,
+  "accepted": 14,
+  "rejected": 5,
+  "reference_policy": "Per-round policy in rounds. Round 2 additionally permits current art/v3 images. reference_sha256 identifies input revision before replacement.",
   "entries": [
     {
       "id": "01-aoi-haruka",
@@ -257,6 +257,297 @@
       "source_sha256": "1facffd4e696bb01dd1f3e44d9976091a983771352a955be8f8d67c4cba7a4e6",
       "output_sha256": "1facffd4e696bb01dd1f3e44d9976091a983771352a955be8f8d67c4cba7a4e6",
       "byte_identical": true
+    },
+    {
+      "id": "01-aoi-haruka-round-02-attempt-0",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "rejected",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/01-aoi-haruka-r2.txt",
+      "reference_images": [
+        "art/v3/characters/01-aoi-haruka.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/01-aoi-haruka.png": "42169cfb8f773b637f27750dacdbef9d0849d277205442fee83eaed6f33a3a3d",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-7caef7a4-f042-4b61-97c4-dacaa444f533.png",
+      "output": null,
+      "retries": 0,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "012d42b50eac2fd4347208df81d4456e285c573408338a07d4d78292788d5470",
+      "reason": "高い尾と旧版の低い尾が併存し、一つの結び目という指定に反した"
+    },
+    {
+      "id": "01-aoi-haruka-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/01-aoi-haruka-r2b.txt",
+      "reference_images": [
+        "art/v3/characters/01-aoi-haruka.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/01-aoi-haruka.png": "42169cfb8f773b637f27750dacdbef9d0849d277205442fee83eaed6f33a3a3d",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-7ed69c10-7cf8-4187-9534-2a9f2574bbaf.png",
+      "output": "art/v3/characters/01-aoi-haruka.png",
+      "retries": 1,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4",
+      "visual_review": "再生成で低い尾を除去。一つの高い二股の尾、吊り目、正面と右側面の白ピン二本を確認。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4",
+      "byte_identical": true
+    },
+    {
+      "id": "07-ogawa-aki-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/07-ogawa-aki-r2.txt",
+      "reference_images": [
+        "art/v3/characters/07-ogawa-aki.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/07-ogawa-aki.png": "d8edbad2dcc1454d6aa163b2c62eef268d7eede1c40790fa09ae01b296e224bb",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-c4c7155a-aca0-4caf-b28a-452fbe176052.png",
+      "output": "art/v3/characters/07-ogawa-aki.png",
+      "retries": 0,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "4e02d8f41f4fb28d1ae2522d9f8399a2c142fc605f2fde66c9ef32c34ab3b6e2",
+      "visual_review": "短い水平前髪、細い横長の目、幅のある顎と体、腰エプロン。遥と顔の型が異なる。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "4e02d8f41f4fb28d1ae2522d9f8399a2c142fc605f2fde66c9ef32c34ab3b6e2",
+      "byte_identical": true
+    },
+    {
+      "id": "04-mori-risa-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/04-mori-risa-r2.txt",
+      "reference_images": [
+        "art/v3/characters/04-mori-risa.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/04-mori-risa.png": "4281a6cb4d6c86e75efc707951fcc9957989c04a2b3282e5f9b42ee0b45db203",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-1abc6108-a5fd-4e91-b3e1-a763d9eff237.png",
+      "output": "art/v3/characters/04-mori-risa.png",
+      "retries": 0,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762",
+      "visual_review": "半眼、角のある眉、片口角、食べ忘れの横へ崩れる口を確認。右眉優位の差は小さめ。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762",
+      "byte_identical": true
+    },
+    {
+      "id": "05-mizuno-maki-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/05-mizuno-maki-r2.txt",
+      "reference_images": [
+        "art/v3/characters/05-mizuno-maki.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/05-mizuno-maki.png": "a141ec7235d339738a70c18ec41824746e7a6555691ac79e4fca26f8653d37ba",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-c9009a54-e4fc-4d17-94a9-696034865c90.png",
+      "output": "art/v3/characters/05-mizuno-maki.png",
+      "retries": 0,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "121df11636f6294e54927b370280632908cd2fdd416f3b6c48c5f572628a7792",
+      "visual_review": "広く露出した額、長い直線の輪郭、小さい目、長い尾。指定外の人物説明が残るため本文へ転記しない。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "121df11636f6294e54927b370280632908cd2fdd416f3b6c48c5f572628a7792",
+      "byte_identical": true
+    },
+    {
+      "id": "06-saeki-maho-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/06-saeki-maho-r2.txt",
+      "reference_images": [
+        "art/v3/characters/06-saeki-maho.png",
+        "art/style-tests/round2/E-2.png",
+        "art/style-tests/round2/F-2.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/06-saeki-maho.png": "df1f617a699260fe5d31f8a2a503e56ec1b922b9bf8f3e0f429e99491651d31b",
+        "art/style-tests/round2/E-2.png": "e9354768dbe80dcb190f026ce95c855469a1b4b8668fa488d612a7a36b8610c8",
+        "art/style-tests/round2/F-2.png": "f4eab9ef7fc6511485f94acd62391917e66df7114fc02d4ae358105de4b08227"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-f03c9ece-efc2-4985-ad46-50adead59274.png",
+      "output": "art/v3/characters/06-saeki-maho.png",
+      "retries": 0,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source_sha256": "ce9589b81cbed3b471551e7724e8ae7e3769cef3b01407ae7aedb218a3023083",
+      "visual_review": "量の多い波髪、頬の幅、少し垂れる目。左時計、右肩バッグ、右横の手前腕の時計なし。年齢感はやや若い。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "ce9589b81cbed3b471551e7724e8ae7e3769cef3b01407ae7aedb218a3023083",
+      "byte_identical": true
+    },
+    {
+      "id": "00-lineup-round-02-input-limit",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "failed_before_generation",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/00-lineup-r2-input-limit.txt",
+      "reference_images": [
+        "art/v3/characters/01-aoi-haruka.png",
+        "art/v3/characters/02-sakamoto-makoto.png",
+        "art/v3/characters/03-mashiba-ren.png",
+        "art/v3/characters/04-mori-risa.png",
+        "art/v3/characters/05-mizuno-maki.png",
+        "art/v3/characters/06-saeki-maho.png",
+        "art/v3/characters/07-ogawa-aki.png"
+      ],
+      "source": null,
+      "output": null,
+      "reason": "referenced_image_paths must contain at most 5 paths; 入力検証で失敗、画像は生成されなかった"
+    },
+    {
+      "id": "00-lineup-round-02-attempt-0",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "rejected",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/00-lineup-r2.txt",
+      "reference_images": [
+        "art/v3/characters/01-aoi-haruka.png",
+        "art/v3/characters/07-ogawa-aki.png",
+        "art/v3/characters/05-mizuno-maki.png",
+        "art/v3/characters/06-saeki-maho.png",
+        "art/v3/characters/00-lineup.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/01-aoi-haruka.png": "54b79e012aaf0f8093046cbdd68d8746232697ad9dbb3c9baae2b3325b43c8e4",
+        "art/v3/characters/07-ogawa-aki.png": "4e02d8f41f4fb28d1ae2522d9f8399a2c142fc605f2fde66c9ef32c34ab3b6e2",
+        "art/v3/characters/05-mizuno-maki.png": "121df11636f6294e54927b370280632908cd2fdd416f3b6c48c5f572628a7792",
+        "art/v3/characters/06-saeki-maho.png": "ce9589b81cbed3b471551e7724e8ae7e3769cef3b01407ae7aedb218a3023083",
+        "art/v3/characters/00-lineup.png": "1facffd4e696bb01dd1f3e44d9976091a983771352a955be8f8d67c4cba7a4e6"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-61abc3f9-6d1f-4e8a-9667-2c3b11214905.png",
+      "output": null,
+      "retries": 0,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "source_sha256": "be44bf21ff6184582b9aac201e2e8877d04d7fb29a4310a1a9db960d040505d9",
+      "reason": "集合で森が大きい丸い目に戻り、新個人画の半眼と一致しなかった"
+    },
+    {
+      "id": "00-lineup-round-02",
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "status": "accepted",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "prompt": "art/v3/prompts/00-lineup-r2b.txt",
+      "reference_images": [
+        "art/v3/characters/00-lineup.png",
+        "art/v3/characters/04-mori-risa.png"
+      ],
+      "reference_sha256": {
+        "art/v3/characters/00-lineup.png": "be44bf21ff6184582b9aac201e2e8877d04d7fb29a4310a1a9db960d040505d9",
+        "art/v3/characters/04-mori-risa.png": "e88a03b4a39f83ecd74f4f7e9dd120449802d4203a56735851169a97e758b762"
+      },
+      "source": "/home/t-tsuji/.codex/generated_images/01a0d120-6e58-7400-9c3d-6ac9009c254c/exec-d4522c02-8803-40aa-8e6d-3d59576c6494.png",
+      "output": "art/v3/characters/00-lineup.png",
+      "retries": 1,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "source_sha256": "f3283ab80b3890d02d8c0046c28e61419cb7f08435050d6c8f18d0570a3c5625",
+      "visual_review": "7人・順序・姓名と外形差を確認。再生成で森の丸い目を半眼へ。身長比は近似、固定点と左右は個人画と本文を優先。",
+      "postprocessing": "none; byte-for-byte PNG copy",
+      "output_sha256": "f3283ab80b3890d02d8c0046c28e61419cb7f08435050d6c8f18d0570a3c5625",
+      "byte_identical": true
     }
-  ]
+  ],
+  "rounds": [
+    {
+      "round": "v5-round-01",
+      "date": "2026-09-24",
+      "success_calls": 11,
+      "accepted": 8,
+      "rejected": 3,
+      "reference_policy": "art/v2/ and art/style-tests/round2/ only; generated v3 never used as input",
+      "reference_policy_scope": "ラウンド1のみ。ラウンド2ではユーザーの許可によりart/v3も参照可能。"
+    },
+    {
+      "round": "v5-round-02",
+      "date": "2026-09-24",
+      "success_calls": 8,
+      "accepted": 6,
+      "rejected": 2,
+      "failed_before_generation": 1,
+      "reference_policy": "art/v2/, art/style-tests/round2/, art/v3/ current images; built-in tool; no postprocessing",
+      "retained_outputs": [
+        "art/v3/characters/02-sakamoto-makoto.png",
+        "art/v3/characters/03-mashiba-ren.png"
+      ]
+    }
+  ],
+  "failed_before_generation": 1,
+  "counts_scope": "Cumulative generation history, including replaced accepted revisions; current outputs are latest accepted entry for each path."
 }
